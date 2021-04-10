@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
+    bool hasActiveWave, hasWavesLeft;
+
+    public GameObject blueBlob;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +18,10 @@ public class WaveManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void StartWave(Wave wave_)
+    {
+
     }
 }
