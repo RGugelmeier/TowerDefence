@@ -293,7 +293,6 @@ GameObject:
   m_Component:
   - component: {fileID: 444074349}
   - component: {fileID: 444074350}
-  - component: {fileID: 444074351}
   m_Layer: 0
   m_Name: BGImage
   m_TagString: Untagged
@@ -365,19 +364,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &444074351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444074348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21c9cd286b285464cbe097a3946790ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blueBlob: {fileID: 0}
 --- !u!4 &459725825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1933997162011255283, guid: 804c5a9660afd3a4ba5741673e8240f6,

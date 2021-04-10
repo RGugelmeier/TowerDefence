@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  damage: 5
+  damage: 50
   health: 15
 --- !u!61 &7717274322141507438
 BoxCollider2D:
