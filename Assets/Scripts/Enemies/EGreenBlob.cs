@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-public class EBlueBlob : BaseEnemy, IEnemy
+public class EGreenBlob : BaseEnemy, IEnemy
 {
-    //When enemy reaches the end of the level's path.
     public void OnReachedEnd()
     {
         //Deal damage to player's health.
@@ -21,7 +20,7 @@ public class EBlueBlob : BaseEnemy, IEnemy
         if (other.gameObject.CompareTag("RotateNode"))
         {
             //If the next node is the end of the path, run OnReachedEnd function.
-            if(nextNode + 1 == moveToNodes.Length)
+            if (nextNode + 1 == moveToNodes.Length)
             {
                 OnReachedEnd();
             }
