@@ -2,7 +2,7 @@
 
 public class EOrangeBlob : BaseEnemy, IEnemy
 {
-    public void OnReachedEnd()
+    public void ReachedEnd()
     {
         //Deal damage to player's health.
         gameMan.health -= damage;
@@ -22,7 +22,7 @@ public class EOrangeBlob : BaseEnemy, IEnemy
             //If the next node is the end of the path, run OnReachedEnd function.
             if (nextNode + 1 == moveToNodes.Length)
             {
-                OnReachedEnd();
+                ReachedEnd();
             }
             //Else, set what node to move to next.
             else

@@ -17,6 +17,7 @@ public abstract class BaseEnemy : MonoBehaviour
     protected GameManager gameMan;          //Reference to the game manager. Used to check and affect game stats.
 
     public static Action<GameObject> OnDie; //Event raised when I die.
+    public static Action OnReachedEnd;
 
     void Awake()
     {

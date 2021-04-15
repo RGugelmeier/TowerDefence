@@ -3,12 +3,14 @@
 public class EBlueBlob : BaseEnemy, IEnemy
 {
     //When enemy reaches the end of the level's path.
-    public void OnReachedEnd()
+    public void ReachedEnd()
     {
         //Deal damage to player's health.
         gameMan.health -= damage;
-        //Check if health is <= zero.
-        gameMan.CheckDeath();
+
+        //Raise OnReachedEnd event. This checks if  the player's health in the game manager is <= zero.
+        if(OnReachedEnd != null)
+            OnReachedEnd();
 
         //Destroy self.
         Destroy(gameObject);
@@ -23,7 +25,7 @@ public class EBlueBlob : BaseEnemy, IEnemy
             //If the next node is the end of the path, run OnReachedEnd function.
             if(nextNode + 1 == moveToNodes.Length)
             {
-                OnReachedEnd();
+                ReachedEnd();
             }
             //Else, set what node to move to next.
             else

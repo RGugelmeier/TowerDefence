@@ -1,21 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [HideInInspector]
-    public float health;
+    //The player's health.
+    [HideInInspector] public float health;
 
     void Awake()
     {
-        health = 100.0f;
+        BaseEnemy.OnReachedEnd += CheckDeath;
+
+        health = 1.0f;
     }
 
-    void Update()
-    {
-    }
-
+    //Checks if the player's heal;th has dropped to or below zero. If it has, end the game.
     public void CheckDeath()
     {
         if(health <= 0.0f)

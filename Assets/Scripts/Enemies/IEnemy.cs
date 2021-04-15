@@ -10,5 +10,5 @@ public interface IEnemy
     //What happens when the enemy reaches the end of the path.
     //  This is in an interface because some enemies will do something special when they reach the end
     //before they die, but every enemy will do something, such as calling lightning down on each unit.
-    void OnReachedEnd();
+    void ReachedEnd();
 }
