@@ -10,16 +10,16 @@ public class WaveManager : MonoBehaviour
     //holds the current wave object.
     Wave currentWave;
 
+    //An object that has a wave component on it.
     [SerializeField] GameObject wavePrefab;
-    GameObject wave_;
 
-    //Check that holds if there is an active wave and if all of waves have been completed or not.
-    bool hasActiveWave, hasWavesLeft;
+    //Reference to the instantiated, active wave.
+    GameObject wave_;
 
     //Enemies that can be spawned. Insert prefabs in editor.
     public GameObject blueBlob, greenBlob, orangeBlob;
 
-    // Start is called before the first frame update
+    //Set action events and other default variables. Then start the first wave.
     void Start()
     {
         Wave.OnWaveFinished += EndWave;
@@ -45,9 +45,11 @@ public class WaveManager : MonoBehaviour
     {
         Debug.Log("Wave " + currentWaveNum + " completed!");
 
+        currentWaveNum += 1;
+
         Destroy(wave_);
 
-        StartWave(currentLevelNum, currentWaveNum + 1);
+        StartWave(currentLevelNum, currentWaveNum);
     }
 
     //Called when the wave does not exist.

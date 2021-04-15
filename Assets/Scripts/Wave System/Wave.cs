@@ -12,6 +12,9 @@ public class Wave : MonoBehaviour
     public List<GameObject> enemiesToSpawn;// = new List<GameObject>();
     public List<GameObject> enemiesAlive;// = new List<GameObject>();
 
+    private GameObject addedGameObject;
+    private GameObject spawnedEnemy;
+
     //Default to true when initialized. Set to false when the wave has no more enemies left.
     bool isActive;
 
@@ -27,8 +30,6 @@ public class Wave : MonoBehaviour
     //Awake is performed as soon as the object becomes valid.
     void Awake()
     {
-        BaseEnemy.OnDie += OnEnemyDeath;
-
         //Get reference to the wave manager.
         waveMan = FindObjectOfType<WaveManager>();
 
@@ -43,17 +44,23 @@ public class Wave : MonoBehaviour
                 //Blue blob
                 if (line.Equals("BB"))
                 {
-                    enemiesToSpawn.Add(waveMan.blueBlob);
+                    addedGameObject = Instantiate<GameObject>(waveMan.blueBlob);
+                    addedGameObject.SetActive(false);
+                    enemiesToSpawn.Add(addedGameObject);
                 }
                 //Green blob
                 else if (line.Equals("GB"))
                 {
-                    enemiesToSpawn.Add(waveMan.greenBlob);
+                    addedGameObject = Instantiate<GameObject>(waveMan.greenBlob);
+                    addedGameObject.SetActive(false);
+                    enemiesToSpawn.Add(addedGameObject);
                 }
                 //Orange blob
                 else if (line.Equals("OB"))
                 {
-                    enemiesToSpawn.Add(waveMan.orangeBlob);
+                    addedGameObject = Instantiate<GameObject>(waveMan.orangeBlob);
+                    addedGameObject.SetActive(false);
+                    enemiesToSpawn.Add(addedGameObject);
                 }
             }
         }
@@ -62,6 +69,8 @@ public class Wave : MonoBehaviour
             if (OnFileNotFound != null)
                 OnFileNotFound();
         }
+
+        BaseEnemy.OnDie += OnEnemyDeath;
     }
 
     // Start is called before the first frame update
@@ -84,9 +93,10 @@ public class Wave : MonoBehaviour
             {
                 if(enemiesToSpawn.Count != 0)
                 {
-                    Instantiate<GameObject>(enemiesToSpawn[enemiesToSpawn.Count - 1]);
-                    enemiesAlive.Add(enemiesToSpawn[enemiesToSpawn.Count - 1]);
-                    enemiesToSpawn.RemoveAt(enemiesToSpawn.Count - 1);
+                    spawnedEnemy = enemiesToSpawn[0];
+                    spawnedEnemy.SetActive(true);
+                    enemiesAlive.Add(spawnedEnemy);
+                    enemiesToSpawn.Remove(spawnedEnemy);
                     Debug.Log("Enemy spawned. Enemies left to spawn: " + enemiesToSpawn.Count);
 
                     spawnTimer = 2;
@@ -98,12 +108,15 @@ public class Wave : MonoBehaviour
     //Called when an enemy dies.
     public void OnEnemyDeath(GameObject deadEnemy)
     {
-        enemiesAlive.RemoveAt(enemiesAlive.IndexOf(deadEnemy) + 1);
-
-        if (enemiesAlive.Count <= 0 && enemiesToSpawn.Count == 0)
+        if (this != null)
         {
-            if(OnWaveFinished != null)
-                OnWaveFinished();
+            enemiesAlive.RemoveAt(enemiesAlive.IndexOf(deadEnemy) + 1);
+
+            if (enemiesAlive.Count == 0 && enemiesToSpawn.Count == 0)
+            {
+                if (OnWaveFinished != null)
+                    OnWaveFinished();
+            }
         }
     }
 }
