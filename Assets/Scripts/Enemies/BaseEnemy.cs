@@ -9,7 +9,7 @@ public abstract class BaseEnemy : MonoBehaviour
 {
     [SerializeField]
     protected float moveSpeed, damage;    //The unit's stats.
-    public float health;
+    public float health, worth;
 
     protected int nextNode;                 //The next node that the unit has to move to. Changed whenever it reaches it's current value.
 
@@ -17,7 +17,7 @@ public abstract class BaseEnemy : MonoBehaviour
     protected GameManager gameMan;          //Reference to the game manager. Used to check and affect game stats.
 
     public static Action<GameObject> OnDie; //Event raised when I die.
-    public static Action OnReachedEnd;
+    public static Action<GameObject> OnReachedEnd; //Event raised when I reach the end of the path.
 
     void Awake()
     {

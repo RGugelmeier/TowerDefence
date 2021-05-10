@@ -1,0 +1,2201 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19041.928; Version 2004; 64bit' Language: 'en' Physical Memory: 32718 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+G:/UNITY/Projects/TowerDefence
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58866
+Successfully changed project path to: G:/UNITY/Projects/TowerDefence
+G:/UNITY/Projects/TowerDefence
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 38.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path G:/UNITY/Projects/TowerDefence/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   
+    VRAM:     2988 MB
+    Driver:   27.21.14.6089
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002723 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.147 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000826 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 39.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1863 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2308.
+Total: 2.356000 ms (FindLiveObjects: 0.232200 ms CreateObjectMapping: 0.049100 ms MarkObjects: 1.908500 ms  DeleteObjects: 0.164300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/PixelFont.fontsettings
+  artifactKey: Guid(e6ed04fb87df8794a93205d76eca7422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PixelFont.fontsettings using Guid(e6ed04fb87df8794a93205d76eca7422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88456bdcdfd95e34d65e841cba3d7f3') in 0.037484 seconds
+  Import took 0.040970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 508.595816 seconds.
+  path: Assets/Art/PixelFont.png
+  artifactKey: Guid(85f46e1e42b3fc344b0e107ccb851516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/PixelFont.png using Guid(85f46e1e42b3fc344b0e107ccb851516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8521134f47714f1d1285fea3218e1b87') in 0.098663 seconds
+  Import took 0.101969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.746209 seconds.
+  path: Assets/Art/PixelFont.png
+  artifactKey: Guid(85f46e1e42b3fc344b0e107ccb851516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/PixelFont.png using Guid(85f46e1e42b3fc344b0e107ccb851516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0ff647952a6ab40b18d7e55af84776') in 0.011623 seconds
+  Import took 0.014847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001109 seconds.
+  path: Assets/Art/PixelFont.png
+  artifactKey: Guid(85f46e1e42b3fc344b0e107ccb851516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/PixelFont.png using Guid(85f46e1e42b3fc344b0e107ccb851516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0ff647952a6ab40b18d7e55af84776') in 0.005355 seconds
+  Import took 0.008468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 215.908847 seconds.
+  path: Assets/Art/PixelFont.png
+  artifactKey: Guid(85f46e1e42b3fc344b0e107ccb851516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/PixelFont.png using Guid(85f46e1e42b3fc344b0e107ccb851516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6af4056fc7c8e728cf7b4645d415e2') in 0.082636 seconds
+  Import took 0.086199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 255.598350 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/atlas.png
+  artifactKey: Guid(6cb1ad934a9c77447a812812d4229306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/atlas.png using Guid(6cb1ad934a9c77447a812812d4229306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f951a5492fd4d2e0d7e5ed4d7153916f') in 0.023643 seconds
+  Import took 0.027281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Art/Sprites/UI_UX/GameHUD/ButtonBase.png
+  artifactKey: Guid(b33861fe23e39b74f920ceb2dec381f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/GameHUD/ButtonBase.png using Guid(b33861fe23e39b74f920ceb2dec381f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ce33f6d0297ad49a080e6fd4d6553f') in 0.014307 seconds
+  Import took 0.017282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Art/Sprites/Characters/Enemies/BlueBlob (1).png
+  artifactKey: Guid(9a72e030dbd5b044b9368f37b183f18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Enemies/BlueBlob (1).png using Guid(9a72e030dbd5b044b9368f37b183f18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50e16ef0d66e95bab194c240ea38462') in 0.019345 seconds
+  Import took 0.022298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/boss_bee.png
+  artifactKey: Guid(6c10518fd1f093c4eb483029c67e8225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/boss_bee.png using Guid(6c10518fd1f093c4eb483029c67e8225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da45a4a89ef1a0e9c97dc84f4c22c7b0') in 0.019671 seconds
+  Import took 0.022672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/atlas.png
+  artifactKey: Guid(6cb1ad934a9c77447a812812d4229306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/atlas.png using Guid(6cb1ad934a9c77447a812812d4229306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f951a5492fd4d2e0d7e5ed4d7153916f') in 0.013074 seconds
+  Import took 0.015850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Art/Sprites/Characters/Enemies/BlueBlob (1).png
+  artifactKey: Guid(9a72e030dbd5b044b9368f37b183f18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Enemies/BlueBlob (1).png using Guid(9a72e030dbd5b044b9368f37b183f18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50e16ef0d66e95bab194c240ea38462') in 0.010106 seconds
+  Import took 0.013009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Art/Sprites/Characters/Enemies/fox-run.png
+  artifactKey: Guid(f2506ea4477d6dd4b896727e94d1b02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Enemies/fox-run.png using Guid(f2506ea4477d6dd4b896727e94d1b02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cd9a26b9f80f06aef0fa12a47f90242') in 0.018367 seconds
+  Import took 0.021218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.943764 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/fox-run.png
+  artifactKey: Guid(960dfeeed66dd014aac5440f15ccc88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/fox-run.png using Guid(960dfeeed66dd014aac5440f15ccc88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c20692ea74d7f922f6f6249459aecb6') in 0.009113 seconds
+  Import took 0.012618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Art/Sprites/Characters/Units/gabe/gabe-idle-run.png
+  artifactKey: Guid(941321793dd33414c9722fd33b3ec8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Units/gabe/gabe-idle-run.png using Guid(941321793dd33414c9722fd33b3ec8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7fdb2d6e57bdb6f3ee37e4f98000035') in 0.030058 seconds
+  Import took 0.032775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/fox-run.png
+  artifactKey: Guid(960dfeeed66dd014aac5440f15ccc88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/fox-run.png using Guid(960dfeeed66dd014aac5440f15ccc88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c20692ea74d7f922f6f6249459aecb6') in 0.006716 seconds
+  Import took 0.009439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021014 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel01.png
+  artifactKey: Guid(afc710693bd9b11459d2488cdf5ac58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel01.png using Guid(afc710693bd9b11459d2488cdf5ac58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d225fa93e67a2e946dcfc9c832f1a30') in 0.016605 seconds
+  Import took 0.019700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-barrel02.png
+  artifactKey: Guid(d03b600c3fd5ae24aa8845b48ccc59c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-barrel02.png using Guid(d03b600c3fd5ae24aa8845b48ccc59c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a43ca50cbf8b38cc4c0dc9aabc801e2') in 0.017457 seconds
+  Import took 0.020266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board01.png
+  artifactKey: Guid(3753fafdb77793444b232608a0fec183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board01.png using Guid(3753fafdb77793444b232608a0fec183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a693e68f86e69f13910a4fa03b4f444d') in 0.016394 seconds
+  Import took 0.019195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel03.png
+  artifactKey: Guid(e39e7a5dd086ac8418142b184d1cc86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel03.png using Guid(e39e7a5dd086ac8418142b184d1cc86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0317821f2c860ce7db81665ad169774a') in 0.017518 seconds
+  Import took 0.020636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-board01.png
+  artifactKey: Guid(c3187820386061b40bdae02b6222f3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-board01.png using Guid(c3187820386061b40bdae02b6222f3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8c42b79d08cd8299078001bf8754da') in 0.006297 seconds
+  Import took 0.009411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-barrel03.png
+  artifactKey: Guid(59557fe1a79415b4cbf4885ba5411d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-barrel03.png using Guid(59557fe1a79415b4cbf4885ba5411d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f42efd8738f51959326c4f3d83c4eb') in 0.006803 seconds
+  Import took 0.010405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel02.png
+  artifactKey: Guid(38b46264394a16048be1a1f70cc4b99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-barrel02.png using Guid(38b46264394a16048be1a1f70cc4b99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a848bcead67bbaa0b5304b063893ef') in 0.008012 seconds
+  Import took 0.011362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board02.png
+  artifactKey: Guid(3c8fcea17ff07114fa54d57b057a6933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board02.png using Guid(3c8fcea17ff07114fa54d57b057a6933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48f8ff9f602d4ab7fa48e151d05161b') in 0.017357 seconds
+  Import took 0.021108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-board03.png
+  artifactKey: Guid(11ef83eec14df0446966cda2cb653c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-board03.png using Guid(11ef83eec14df0446966cda2cb653c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c978b37155805c3cf492bc82f1f7f44') in 0.019494 seconds
+  Import took 0.022755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-barrel01.png
+  artifactKey: Guid(29073714ff4fbe947a0fcc548ab1e6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-barrel01.png using Guid(29073714ff4fbe947a0fcc548ab1e6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95055bb2f57f7ea070d874d2fc19fdfd') in 0.007152 seconds
+  Import took 0.010764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-board02.png
+  artifactKey: Guid(713bc850ed635bf4d9681ec334821507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-board02.png using Guid(713bc850ed635bf4d9681ec334821507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a25d0a10c70daf573f461e38ba182a5') in 0.005996 seconds
+  Import took 0.009056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003559 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-board02.png
+  artifactKey: Guid(713bc850ed635bf4d9681ec334821507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-board02.png using Guid(713bc850ed635bf4d9681ec334821507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a25d0a10c70daf573f461e38ba182a5') in 0.005641 seconds
+  Import took 0.008721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.762936 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board03.png
+  artifactKey: Guid(6a85606eab6d13d4697e67fa2cbed6db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board03.png using Guid(6a85606eab6d13d4697e67fa2cbed6db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd556dc067ff9903cf564a2c7e53cade5') in 0.008077 seconds
+  Import took 0.011148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-board04.png
+  artifactKey: Guid(b38712285f20d6e45bb20e05d844174f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-board04.png using Guid(b38712285f20d6e45bb20e05d844174f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98fb4e843c82f08c76bb65d852db098b') in 0.017805 seconds
+  Import took 0.020515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board04.png
+  artifactKey: Guid(47aa2c29e3a2dc141ae78468ecb15512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-board04.png using Guid(47aa2c29e3a2dc141ae78468ecb15512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04555e89e5870e286174fd9ab21e765e') in 0.006402 seconds
+  Import took 0.009317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-bridge.png
+  artifactKey: Guid(b57ffc31422148e4783b542fff26589a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-bridge.png using Guid(b57ffc31422148e4783b542fff26589a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c116b643fa2cde8ecc0a829aa93204') in 0.017961 seconds
+  Import took 0.021076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-bridge.png
+  artifactKey: Guid(bf3dd167fc7d08c489da5cae7719eba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-bridge.png using Guid(bf3dd167fc7d08c489da5cae7719eba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907ed5d7639be364c760fb09e7a75e4d') in 0.011864 seconds
+  Import took 0.014658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate01.png
+  artifactKey: Guid(f98ed29b99ddbee4e9fac9a86450c3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate01.png using Guid(f98ed29b99ddbee4e9fac9a86450c3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cff6a58556b0373a9971a8f01117a6a') in 0.018521 seconds
+  Import took 0.021270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-crate01.png
+  artifactKey: Guid(07ae6b911a22cf9448e06196fd969788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-crate01.png using Guid(07ae6b911a22cf9448e06196fd969788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67f61a248e1214a79722b21cb18775cb') in 0.006445 seconds
+  Import took 0.009138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016405 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate01.png
+  artifactKey: Guid(f98ed29b99ddbee4e9fac9a86450c3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate01.png using Guid(f98ed29b99ddbee4e9fac9a86450c3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cff6a58556b0373a9971a8f01117a6a') in 0.005654 seconds
+  Import took 0.008706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.100855 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-crate02.png
+  artifactKey: Guid(adcb4bf9cb4ca5241841245de8ca2dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-crate02.png using Guid(adcb4bf9cb4ca5241841245de8ca2dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e2ff0351a202946420820cebfc5ee3') in 0.015135 seconds
+  Import took 0.018335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate02.png
+  artifactKey: Guid(d996123d2414a354bad8767b95ae700d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate02.png using Guid(d996123d2414a354bad8767b95ae700d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a399a83a76b3d1ec4307d7ec9a215af') in 0.005430 seconds
+  Import took 0.008178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-complete.png
+  artifactKey: Guid(15022243ff8a37442927a75e9a3f90f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-complete.png using Guid(15022243ff8a37442927a75e9a3f90f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dbb9ff1838e7c8fd84af88b96047046') in 0.017802 seconds
+  Import took 0.020695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw01.png
+  artifactKey: Guid(ebb7572555c6b024dbe6b4ef1c039de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw01.png using Guid(ebb7572555c6b024dbe6b4ef1c039de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c34640c9fc8275609f83fcfc4dfd2444') in 0.015310 seconds
+  Import took 0.018145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-complete.png
+  artifactKey: Guid(9d571513f47f6aa49a6115b1d3c83c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-complete.png using Guid(9d571513f47f6aa49a6115b1d3c83c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e11792b3b64ed63c09192bbf2cb7160') in 0.010969 seconds
+  Import took 0.014019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-crate03.png
+  artifactKey: Guid(18c7991957e0108488da6aa4ba12c415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-crate03.png using Guid(18c7991957e0108488da6aa4ba12c415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebfbb3caf5e0811a27145ffeb1728033') in 0.016096 seconds
+  Import took 0.019110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate03.png
+  artifactKey: Guid(84e5bcc7839ffdc4e91fd4a12ed3b115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-crate03.png using Guid(84e5bcc7839ffdc4e91fd4a12ed3b115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1f2fb5241a5f5f6ca991273c309593') in 0.006116 seconds
+  Import took 0.009126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.607811 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw01.png
+  artifactKey: Guid(24d28a97b562ce441935dc34b5b0927c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw01.png using Guid(24d28a97b562ce441935dc34b5b0927c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99141f216ccb98f4a4f47c0f22d4ee62') in 0.005217 seconds
+  Import took 0.008346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw04.png
+  artifactKey: Guid(d122b49e00cc4f24583f151f693381d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw04.png using Guid(d122b49e00cc4f24583f151f693381d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dba983789514e775e7189d3fbf76b65') in 0.015430 seconds
+  Import took 0.018185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw02.png
+  artifactKey: Guid(cb7ed0b5da11dab45bbd25d0f9e0711f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw02.png using Guid(cb7ed0b5da11dab45bbd25d0f9e0711f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cabd8b47a9816b8ae0a5f905cc7320e') in 0.016845 seconds
+  Import took 0.019499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw04.png
+  artifactKey: Guid(1012c768675442549aff344f9dc67058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw04.png using Guid(1012c768675442549aff344f9dc67058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a24e864c4dfc4133545f77bea570e24') in 0.006725 seconds
+  Import took 0.009432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw03.png
+  artifactKey: Guid(f2bc41ef1fc075d44b54b9174876d5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw03.png using Guid(f2bc41ef1fc075d44b54b9174876d5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc79e0062f6c0ddc32358f20f1fc37f') in 0.015317 seconds
+  Import took 0.018417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw03.png
+  artifactKey: Guid(e032de464afe90e439f8a250a8155c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw03.png using Guid(e032de464afe90e439f8a250a8155c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8778a0b0f9dc96b5bc96d4f39ebbad') in 0.005490 seconds
+  Import took 0.008688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw02.png
+  artifactKey: Guid(f7279b292c57e7a4eb321bdd16fbde2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw02.png using Guid(f7279b292c57e7a4eb321bdd16fbde2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb2b01b133f965502c452eaf7e574b79') in 0.005928 seconds
+  Import took 0.008919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.133275 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw05.png
+  artifactKey: Guid(4ecfe2b4b833dd344a9a36b553f92775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw05.png using Guid(4ecfe2b4b833dd344a9a36b553f92775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcfa369743f5247530ed3a8f8063d977') in 0.015027 seconds
+  Import took 0.018184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw06.png
+  artifactKey: Guid(6490d76c88e95ff4f965579c312bde83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw06.png using Guid(6490d76c88e95ff4f965579c312bde83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c1ea3929ae16bd653bfdd9f2474a64') in 0.014506 seconds
+  Import took 0.017571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw08.png
+  artifactKey: Guid(d20281760aed26b4cab44a461c405eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw08.png using Guid(d20281760aed26b4cab44a461c405eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d408bb9507ef68e6538bab72cc1a81') in 0.016066 seconds
+  Import took 0.018791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw07.png
+  artifactKey: Guid(e14e546b5e3c5a447887b1cbc54c7738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw07.png using Guid(e14e546b5e3c5a447887b1cbc54c7738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd130e23636199e1b504a9285a40d083c') in 0.015999 seconds
+  Import took 0.019202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw07.png
+  artifactKey: Guid(a51f49e7b1ff12b4db5eab29713351e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw07.png using Guid(a51f49e7b1ff12b4db5eab29713351e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e971b276655f6849c1f213cf3335d43') in 0.006299 seconds
+  Import took 0.009618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw05.png
+  artifactKey: Guid(98433ebcb5d23194ab41268500741798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw05.png using Guid(98433ebcb5d23194ab41268500741798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64eb82b2dad977a5cc9b59deaea7624b') in 0.005396 seconds
+  Import took 0.008433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw06.png
+  artifactKey: Guid(00f72618d93bd2b4a8f30161aff2121f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw06.png using Guid(00f72618d93bd2b4a8f30161aff2121f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24c9684c9026e8f0bc0219e577fa724') in 0.005516 seconds
+  Import took 0.008562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.602760 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw08.png
+  artifactKey: Guid(5d45d5c7959590c498e7daaca22ecb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw08.png using Guid(5d45d5c7959590c498e7daaca22ecb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db76a52a8a8d7e0645e4eeb1864cba9c') in 0.005456 seconds
+  Import took 0.008576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw11.png
+  artifactKey: Guid(3bd9e71d629f2844d9595b8a15a31e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw11.png using Guid(3bd9e71d629f2844d9595b8a15a31e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a901ef51121e48d7e96671c080689a6') in 0.015875 seconds
+  Import took 0.018625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw09.png
+  artifactKey: Guid(90581386306515b4cab3e08f3382e645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw09.png using Guid(90581386306515b4cab3e08f3382e645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c438759a8bbf3c4dd196d4d98ec4af9f') in 0.015343 seconds
+  Import took 0.018116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw10.png
+  artifactKey: Guid(bf66f1793ac19ee49977735e22c54eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw10.png using Guid(bf66f1793ac19ee49977735e22c54eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67df960fb43677f719893049152ecb49') in 0.015914 seconds
+  Import took 0.018586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw11.png
+  artifactKey: Guid(6a36e0ac47abee6408a5cb84b5e70309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw11.png using Guid(6a36e0ac47abee6408a5cb84b5e70309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c64e4c182091f1fa540ed896a74edb') in 0.005938 seconds
+  Import took 0.008622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw10.png
+  artifactKey: Guid(88f1e7b4ed6ba8441b5e12d0312e251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw10.png using Guid(88f1e7b4ed6ba8441b5e12d0312e251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a886a750ae8a7a7acf8df035e221c8') in 0.005648 seconds
+  Import took 0.008310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw09.png
+  artifactKey: Guid(89f1e076d5f8bf0468db903ffc57a272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw09.png using Guid(89f1e076d5f8bf0468db903ffc57a272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294ec8112b796c09894be1ba3c3c03be') in 0.005390 seconds
+  Import took 0.008017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.184573 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw12.png
+  artifactKey: Guid(cca08300c55f4b44691d94ff962ad17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw12.png using Guid(cca08300c55f4b44691d94ff962ad17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12b582ead3c6af6c87bd146b1dd476a') in 0.014179 seconds
+  Import took 0.017248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw13.png
+  artifactKey: Guid(b835a1010326c59488147b0eea200ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw13.png using Guid(b835a1010326c59488147b0eea200ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e1fbc42b588204bc684cb9048cdbfc') in 0.014506 seconds
+  Import took 0.017141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw14.png
+  artifactKey: Guid(2e628e930628e034b84bc5d4d94e81d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw14.png using Guid(2e628e930628e034b84bc5d4d94e81d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a261625fc66741e2bfd09a8bcef7cd13') in 0.015900 seconds
+  Import took 0.018684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw15.png
+  artifactKey: Guid(efb67f3da7b3d1241aac9367e4c8c7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw15.png using Guid(efb67f3da7b3d1241aac9367e4c8c7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2bd2b529ecf19899f3258d5fbaa364') in 0.015975 seconds
+  Import took 0.019269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw12.png
+  artifactKey: Guid(11608a8100d174d489c1728d1e5acf92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw12.png using Guid(11608a8100d174d489c1728d1e5acf92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8921002e4f3ffda88947b1e1e8dc8d4d') in 0.006897 seconds
+  Import took 0.009531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw13.png
+  artifactKey: Guid(636e9b0001ca40f4394de62b361cf8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw13.png using Guid(636e9b0001ca40f4394de62b361cf8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '219f4ba9cc7db23b9ee14d140b66b6de') in 0.006006 seconds
+  Import took 0.009168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw14.png
+  artifactKey: Guid(fe8a548ee21d3f344b8b766c75c3eb45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw14.png using Guid(fe8a548ee21d3f344b8b766c75c3eb45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5428678ffb2c3192455312c9ae71ca81') in 0.005664 seconds
+  Import took 0.008740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.399052 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw15.png
+  artifactKey: Guid(7ae5afdcb2c88d44eb70f19c2caf85b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw15.png using Guid(7ae5afdcb2c88d44eb70f19c2caf85b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0924806c810d6e0c826ed4c202c26f71') in 0.005262 seconds
+  Import took 0.008344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw16.png
+  artifactKey: Guid(5bbe8795193674f4e929379633ed2585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw16.png using Guid(5bbe8795193674f4e929379633ed2585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c694a1904fac1dd8a6ffe3c0068b51') in 0.015088 seconds
+  Import took 0.017810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw17.png
+  artifactKey: Guid(615e7421e9988724f985a1cb9f0b5694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw17.png using Guid(615e7421e9988724f985a1cb9f0b5694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3375d9fcf645182250ceb3bbcbbe852') in 0.015467 seconds
+  Import took 0.018265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw18.png
+  artifactKey: Guid(674de46cdfbb5bb4180d8ea94feeccaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw18.png using Guid(674de46cdfbb5bb4180d8ea94feeccaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '908cc770674235021e9c0e5a26c0c96e') in 0.016601 seconds
+  Import took 0.019354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw17.png
+  artifactKey: Guid(41d7aff560f400d44970f89d3d782965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw17.png using Guid(41d7aff560f400d44970f89d3d782965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c2075ac4a623856d7e904f0f675f82') in 0.005509 seconds
+  Import took 0.008183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw16.png
+  artifactKey: Guid(ec3c908bb79721b469f0e7e8991cd5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw16.png using Guid(ec3c908bb79721b469f0e7e8991cd5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c421226913b383e76e3ff6202b88b63') in 0.006713 seconds
+  Import took 0.009550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw18.png
+  artifactKey: Guid(bdb23f75fb127434fa88bef4291fe058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw18.png using Guid(bdb23f75fb127434fa88bef4291fe058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779cefdb63c8b802e22bb9083c40cbd1') in 0.006403 seconds
+  Import took 0.009099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw17.png
+  artifactKey: Guid(41d7aff560f400d44970f89d3d782965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw17.png using Guid(41d7aff560f400d44970f89d3d782965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c2075ac4a623856d7e904f0f675f82') in 0.007382 seconds
+  Import took 0.010319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.446882 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw19.png
+  artifactKey: Guid(035712a3b6bcb4742890362ab4d3f09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw19.png using Guid(035712a3b6bcb4742890362ab4d3f09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b746916e200d48e424256e92caccbe5') in 0.015336 seconds
+  Import took 0.018455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw22.png
+  artifactKey: Guid(971dd1adf90e5aa41872d2abb3f49f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw22.png using Guid(971dd1adf90e5aa41872d2abb3f49f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '940e290556db9a0ce54f0a192311145f') in 0.016626 seconds
+  Import took 0.019283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw20.png
+  artifactKey: Guid(40671e43ddc26454cb14149ba37c1d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw20.png using Guid(40671e43ddc26454cb14149ba37c1d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c70d0d0237c3fec91192a646a0d177') in 0.015908 seconds
+  Import took 0.018624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw19.png
+  artifactKey: Guid(b1b222c445708b743b4616d444aec6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw19.png using Guid(b1b222c445708b743b4616d444aec6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c14f960c6bd657de75325edda5f8cb') in 0.005963 seconds
+  Import took 0.008898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw21.png
+  artifactKey: Guid(53da2df3cd56c0a4fb9d33c6b1af5839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw21.png using Guid(53da2df3cd56c0a4fb9d33c6b1af5839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32335061eac7471b3b52b5b07d18a6d0') in 0.014770 seconds
+  Import took 0.017861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw20.png
+  artifactKey: Guid(40671e43ddc26454cb14149ba37c1d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw20.png using Guid(40671e43ddc26454cb14149ba37c1d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c70d0d0237c3fec91192a646a0d177') in 0.006347 seconds
+  Import took 0.009127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw21.png
+  artifactKey: Guid(2cfd708bebf5c0f4ea58475324f75b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw21.png using Guid(2cfd708bebf5c0f4ea58475324f75b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef8ae94a97690b225405e9f265a40eb') in 0.005104 seconds
+  Import took 0.007753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw20.png
+  artifactKey: Guid(e5ca494064d42234f8ed639d857179e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw20.png using Guid(e5ca494064d42234f8ed639d857179e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec356bdfe5f5f00aaf86806026ddbf26') in 0.006245 seconds
+  Import took 0.009347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019981 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw21.png
+  artifactKey: Guid(2cfd708bebf5c0f4ea58475324f75b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw21.png using Guid(2cfd708bebf5c0f4ea58475324f75b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef8ae94a97690b225405e9f265a40eb') in 0.005602 seconds
+  Import took 0.008701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.217774 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw22.png
+  artifactKey: Guid(88e47d5f02ad7604cb025f335ec35690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw22.png using Guid(88e47d5f02ad7604cb025f335ec35690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04245c68af159e46f0e36957aa31a04e') in 0.005285 seconds
+  Import took 0.008335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw23.png
+  artifactKey: Guid(a5766b6d00eb0ff4f9c915c79c7d898e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw23.png using Guid(a5766b6d00eb0ff4f9c915c79c7d898e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea123264fea82b7402c19d798a552a9') in 0.015720 seconds
+  Import took 0.018379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw23.png
+  artifactKey: Guid(46479b9bbbac12c498474872d4730427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw23.png using Guid(46479b9bbbac12c498474872d4730427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290e647b4c8513ecd284edd540a54ce3') in 0.005725 seconds
+  Import took 0.008761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw25.png
+  artifactKey: Guid(81df1701b672ebe41838e91111d54e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw25.png using Guid(81df1701b672ebe41838e91111d54e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7bce45fcf4d45e84bb349d2e69f031') in 0.017381 seconds
+  Import took 0.020086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw24.png
+  artifactKey: Guid(51354b18c2d732445a80929bdde36a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw24.png using Guid(51354b18c2d732445a80929bdde36a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214a7e9d611bb6a4a7023b7957bc335c') in 0.018152 seconds
+  Import took 0.021332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw25.png
+  artifactKey: Guid(49877da7e05d9f645b7a2ed2b539ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence-raw25.png using Guid(49877da7e05d9f645b7a2ed2b539ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f414b8906adab67ddc9fb23d0de23c') in 0.007675 seconds
+  Import took 0.010466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw24.png
+  artifactKey: Guid(8e95a0ca12e98244a96558e97c31d9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence-raw24.png using Guid(8e95a0ca12e98244a96558e97c31d9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a19facc69671ca7face804d25449167') in 0.006651 seconds
+  Import took 0.009853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.593838 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence01.png
+  artifactKey: Guid(62183765164841042b0e1885775742eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence01.png using Guid(62183765164841042b0e1885775742eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c461e5951958a30ccf7e13d675821d17') in 0.018259 seconds
+  Import took 0.021344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence03.png
+  artifactKey: Guid(0af5758d7b2435648992fd630b757e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence03.png using Guid(0af5758d7b2435648992fd630b757e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458f80473a356dbb6f6d49eb0fcedb76') in 0.015596 seconds
+  Import took 0.018310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence02.png
+  artifactKey: Guid(ec29b4733ebe5a84a8ce0c6318e30990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence02.png using Guid(ec29b4733ebe5a84a8ce0c6318e30990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee967590a1c031293ffdb5019296f7a') in 0.016264 seconds
+  Import took 0.019392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence03.png
+  artifactKey: Guid(3d90490387e3bd8438dea12f82d9e3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence03.png using Guid(3d90490387e3bd8438dea12f82d9e3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694775256ae3b045755d9c5442332254') in 0.008266 seconds
+  Import took 0.011400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence02.png
+  artifactKey: Guid(5012d924548473d43b8fcdc3d4305b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence02.png using Guid(5012d924548473d43b8fcdc3d4305b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcbb402dd17a1a5dbedb9930246a4c6') in 0.005720 seconds
+  Import took 0.008417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence04.png
+  artifactKey: Guid(1fdf44f5ffd82364d9f85c7d27b1cc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence04.png using Guid(1fdf44f5ffd82364d9f85c7d27b1cc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb78c993e1b163ac2ef016474eebd63') in 0.016552 seconds
+  Import took 0.019488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence01.png
+  artifactKey: Guid(c046398e62ec7f74494e9816ff061ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence01.png using Guid(c046398e62ec7f74494e9816ff061ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc11b80f08bde650becaf5c347cdb27') in 0.006356 seconds
+  Import took 0.009330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.110258 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence04.png
+  artifactKey: Guid(63c407d5be86678459c65ad8c08e4f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence04.png using Guid(63c407d5be86678459c65ad8c08e4f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556ce0ea69b94d20c38e727bc13d9ce3') in 0.005587 seconds
+  Import took 0.008592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence06.png
+  artifactKey: Guid(5b56780224ba8334d81cb75964d61790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence06.png using Guid(5b56780224ba8334d81cb75964d61790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd66c5c28f405a2c5d9070c649a473e2') in 0.016645 seconds
+  Import took 0.019367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence07.png
+  artifactKey: Guid(c38d169d7c2906f4ba0d67f3dbeac606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence07.png using Guid(c38d169d7c2906f4ba0d67f3dbeac606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a069b0cdf48045910a63d7d9f618a59e') in 0.016501 seconds
+  Import took 0.019480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence05.png
+  artifactKey: Guid(e2de83d5673ae51489157969e9510a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-fence05.png using Guid(e2de83d5673ae51489157969e9510a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc88e0df2e9c4716baf1ef02de92748') in 0.016013 seconds
+  Import took 0.018766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence07.png
+  artifactKey: Guid(aa78655b174da79439ad6f2fcb3df957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence07.png using Guid(aa78655b174da79439ad6f2fcb3df957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726a96e8726261740ee26b86f5543149') in 0.006382 seconds
+  Import took 0.009416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence06.png
+  artifactKey: Guid(197c670375231c84188acf89e2f5145a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence06.png using Guid(197c670375231c84188acf89e2f5145a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd632dbae750041294479ca7a19f71f36') in 0.005964 seconds
+  Import took 0.008724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence05.png
+  artifactKey: Guid(e1ef5f89473d0fd448180229e2a1da0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-fence05.png using Guid(e1ef5f89473d0fd448180229e2a1da0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ae6b69f17b4ec7b7f9a8b82d2cce8a') in 0.007480 seconds
+  Import took 0.010865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.994704 seconds.
+  path: Assets/Art/PixelFont.fontsettings
+  artifactKey: Guid(f29acfd90bdcb5343af8288432357821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/PixelFont.fontsettings using Guid(f29acfd90bdcb5343af8288432357821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e602ed2bebc1cccb81493e38df82c98') in 0.002517 seconds
+  Import took 0.005686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Art/PixelFont.fontsettings
+  artifactKey: Guid(f29acfd90bdcb5343af8288432357821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/PixelFont.fontsettings using Guid(f29acfd90bdcb5343af8288432357821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e602ed2bebc1cccb81493e38df82c98') in 0.002220 seconds
+  Import took 0.005169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1540.620371 seconds.
+  path: Assets/Art/Pixelfont-Regular.ttf
+  artifactKey: Guid(66efc238af8518f4c9daa63c0c1a00a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Pixelfont-Regular.ttf using Guid(66efc238af8518f4c9daa63c0c1a00a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be269d6b80e6b32dfaf386ec83109e63') in 0.060925 seconds
+  Import took 0.064290 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000836 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.1 MB.
+System memory in use after: 91.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2438.
+Total: 2.084100 ms (FindLiveObjects: 0.214800 ms CreateObjectMapping: 0.043600 ms MarkObjects: 1.707600 ms  DeleteObjects: 0.117100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000839 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.883 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.2 MB.
+System memory in use after: 91.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2441.
+Total: 2.285700 ms (FindLiveObjects: 0.250800 ms CreateObjectMapping: 0.047400 ms MarkObjects: 1.853200 ms  DeleteObjects: 0.132500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000942 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.883 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.2 MB.
+System memory in use after: 91.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2444.
+Total: 2.131000 ms (FindLiveObjects: 0.214800 ms CreateObjectMapping: 0.047000 ms MarkObjects: 1.745200 ms  DeleteObjects: 0.123000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000865 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.884 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.2 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2447.
+Total: 2.159400 ms (FindLiveObjects: 0.223800 ms CreateObjectMapping: 0.044100 ms MarkObjects: 1.766500 ms  DeleteObjects: 0.123800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000887 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.875 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.2 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2450.
+Total: 2.074900 ms (FindLiveObjects: 0.225500 ms CreateObjectMapping: 0.046700 ms MarkObjects: 1.676900 ms  DeleteObjects: 0.124700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000894 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.884 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.2 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2453.
+Total: 2.176500 ms (FindLiveObjects: 0.219500 ms CreateObjectMapping: 0.043800 ms MarkObjects: 1.791000 ms  DeleteObjects: 0.120000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000985 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.2 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2456.
+Total: 2.519700 ms (FindLiveObjects: 0.243000 ms CreateObjectMapping: 0.047000 ms MarkObjects: 2.082500 ms  DeleteObjects: 0.145800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1002.250279 seconds.
+  path: Assets/Art/Fonts
+  artifactKey: Guid(caabdfda6e8dd2748b4f1b9f260526c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Fonts using Guid(caabdfda6e8dd2748b4f1b9f260526c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a6fb8b225fc2a7e76f978f3083ec1b') in 0.009398 seconds
+  Import took 0.012632 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000831 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.883 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.2 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2459.
+Total: 2.286400 ms (FindLiveObjects: 0.228900 ms CreateObjectMapping: 0.043700 ms MarkObjects: 1.878400 ms  DeleteObjects: 0.133900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000859 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.875 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.2 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2462.
+Total: 2.174100 ms (FindLiveObjects: 0.230700 ms CreateObjectMapping: 0.044200 ms MarkObjects: 1.768400 ms  DeleteObjects: 0.129700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 172.252610 seconds.
+  path: Assets/Art/Sprites/UI_UX
+  artifactKey: Guid(a7a4c1b1a8fc6a14f8293f8e813fdcc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX using Guid(a7a4c1b1a8fc6a14f8293f8e813fdcc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eeeecae643b9ac41f7ea1fa91789bf4') in 0.010049 seconds
+  Import took 0.013061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.725768 seconds.
+  path: Assets/Art/Sprites/UI_UX/MainMenu
+  artifactKey: Guid(97f1a0d75831ead4494f12f4f4f80d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/MainMenu using Guid(97f1a0d75831ead4494f12f4f4f80d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778ca8851a48a27d830c890c50d46cd6') in 0.006166 seconds
+  Import took 0.009065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065795 seconds.
+  path: Assets/Art/Sprites/UI_UX/MainMenu/PlayBtn.png
+  artifactKey: Guid(58b186d52acd4d14181b9bbe3e62a566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/MainMenu/PlayBtn.png using Guid(58b186d52acd4d14181b9bbe3e62a566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf2c0acfac1a208954bcd8525e5b7477') in 0.057754 seconds
+  Import took 0.060843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.407090 seconds.
+  path: Assets/Art/Sprites/UI_UX/LevelSelectonMenu
+  artifactKey: Guid(f945a56c8bf2dd044a32b1e64c30fc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/LevelSelectonMenu using Guid(f945a56c8bf2dd044a32b1e64c30fc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001106be7e5176f5f56dd536c4251bb9') in 0.005944 seconds
+  Import took 0.008866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069014 seconds.
+  path: Assets/Art/Sprites/UI_UX/LevelSelectonMenu/Level1Button.png
+  artifactKey: Guid(59d18714d387d784caeff99ab1bff177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/LevelSelectonMenu/Level1Button.png using Guid(59d18714d387d784caeff99ab1bff177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a563e18b676bb820dadcd5222bf43c61') in 0.019000 seconds
+  Import took 0.022139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.277899 seconds.
+  path: Assets/Art/Sprites/UI_UX/GameHUD
+  artifactKey: Guid(6ca18246e3a2eaf418f61c033c94333a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/GameHUD using Guid(6ca18246e3a2eaf418f61c033c94333a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd704e551adcd6ff12791ea993b373c42') in 0.005929 seconds
+  Import took 0.008970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073925 seconds.
+  path: Assets/Art/Sprites/UI_UX/GameHUD/NextWave Button.png
+  artifactKey: Guid(4615952884a28af498e3f98ffd0061b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/GameHUD/NextWave Button.png using Guid(4615952884a28af498e3f98ffd0061b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8f2adcb936656e73ccee70c1b1621f5') in 0.013160 seconds
+  Import took 0.016341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Art/Sprites/UI_UX/GameHUD/Win Display.png
+  artifactKey: Guid(f1ebd3f21b51910409d8aea0c247ecbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/GameHUD/Win Display.png using Guid(f1ebd3f21b51910409d8aea0c247ecbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a7b25e066e5af49f54c142c6c23cf92') in 0.011415 seconds
+  Import took 0.014497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Art/Sprites/UI_UX/GameHUD/ProgressBarBase.png
+  artifactKey: Guid(c89366df0c9f1c448aa4096cb58f3efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/GameHUD/ProgressBarBase.png using Guid(c89366df0c9f1c448aa4096cb58f3efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35789811b74b3cd5da5d0433db0615c8') in 0.012546 seconds
+  Import took 0.015318 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000840 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.869 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.3 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2476.
+Total: 2.101300 ms (FindLiveObjects: 0.214800 ms CreateObjectMapping: 0.044300 ms MarkObjects: 1.719300 ms  DeleteObjects: 0.122100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.453934 seconds.
+  path: Assets/Art/Sprites/UI_UX/GameHUD/ProgressBarBase (1).png
+  artifactKey: Guid(91eaaa2a7a97d6440b662df8222636d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/GameHUD/ProgressBarBase (1).png using Guid(91eaaa2a7a97d6440b662df8222636d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3b227214cad4c49ff719b8dd5d7823') in 0.053829 seconds
+  Import took 0.056999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.163844 seconds.
+  path: Assets/Art/Sprites/UI_UX/GameHUD/LongButtonBase.png
+  artifactKey: Guid(91eaaa2a7a97d6440b662df8222636d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/GameHUD/LongButtonBase.png using Guid(91eaaa2a7a97d6440b662df8222636d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7079579d3b036d94c36db5aba14e09d7') in 0.012527 seconds
+  Import took 0.015590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.377380 seconds.
+  path: Assets/Art/Sprites/UI_UX/GameHUD/LongButtonBase.png
+  artifactKey: Guid(91eaaa2a7a97d6440b662df8222636d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/GameHUD/LongButtonBase.png using Guid(91eaaa2a7a97d6440b662df8222636d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '031bb62613dd221b648b700d5f6bc7f0') in 0.009424 seconds
+  Import took 0.012482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.100471 seconds.
+  path: Assets/Art/Sprites/UI_UX/GameHUD/LongButtonBase.png
+  artifactKey: Guid(91eaaa2a7a97d6440b662df8222636d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI_UX/GameHUD/LongButtonBase.png using Guid(91eaaa2a7a97d6440b662df8222636d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d67c9f51b50c70524951afa8ac00bf') in 0.013387 seconds
+  Import took 0.016524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.906138 seconds.
+  path: Assets/Art/Sprites/Characters/Enemies/kobold-idle.png
+  artifactKey: Guid(6ef55d11532ba794aafdcc27ce2a24c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Enemies/kobold-idle.png using Guid(6ef55d11532ba794aafdcc27ce2a24c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa8d0668cd2390a360b5ed5623bb150') in 0.017965 seconds
+  Import took 0.021229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Art/Sprites/Characters/Units/mani/mani-idle-run.png
+  artifactKey: Guid(16fee13234981ad469fef34834d5c991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Units/mani/mani-idle-run.png using Guid(16fee13234981ad469fef34834d5c991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa367d2a879844cc39b8e15633588820') in 0.017945 seconds
+  Import took 0.020847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Art/Sprites/Characters/Enemies/kobold-idle.png
+  artifactKey: Guid(6ef55d11532ba794aafdcc27ce2a24c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Enemies/kobold-idle.png using Guid(6ef55d11532ba794aafdcc27ce2a24c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa8d0668cd2390a360b5ed5623bb150') in 0.005894 seconds
+  Import took 0.008898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/kobold-idle.png
+  artifactKey: Guid(68de9bd840d56d345900b811d8a32e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/mobs/kobold-idle.png using Guid(68de9bd840d56d345900b811d8a32e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e4dd91f3579a41161fee4c0e48b3e18') in 0.005391 seconds
+  Import took 0.008212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.788880 seconds.
+  path: Assets/Art/Sprites/Characters/Units/hat-guy/hat-guy.png
+  artifactKey: Guid(12329c5806179f641a807bc3491f8506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Units/hat-guy/hat-guy.png using Guid(12329c5806179f641a807bc3491f8506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c610fb10235c063feec99d394375cd77') in 0.017567 seconds
+  Import took 0.020743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000530 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-text-box.png
+  artifactKey: Guid(92d3030ab7ef70d4aa2125641a0da9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-text-box.png using Guid(92d3030ab7ef70d4aa2125641a0da9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186fe5d459bf55a36568b57d75de7e4b') in 0.017255 seconds
+  Import took 0.020077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario04.png
+  artifactKey: Guid(6ada0a2cb5f20a34dbfac63ffa235e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario04.png using Guid(6ada0a2cb5f20a34dbfac63ffa235e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba36aceabca4c45904e2f1511095f58b') in 0.017089 seconds
+  Import took 0.019809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario02.png
+  artifactKey: Guid(910b6d783dbcf9246bd5cb0948cb241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario02.png using Guid(910b6d783dbcf9246bd5cb0948cb241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd2faef49a4a14b573896906bf25e52') in 0.016173 seconds
+  Import took 0.019027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-tree02.png
+  artifactKey: Guid(5d2b4dd6387293140ad3a3b58aeeef6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-tree02.png using Guid(5d2b4dd6387293140ad3a3b58aeeef6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130c0fa928f696d0b372b4516162b840') in 0.018252 seconds
+  Import took 0.021225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Art/Sprites/Characters/Enemies/GreenBlob.png
+  artifactKey: Guid(6b8b2480eeb1bff43b82602a6129d482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Enemies/GreenBlob.png using Guid(6b8b2480eeb1bff43b82602a6129d482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de86bd33d9a91073e5491083c9255124') in 0.013563 seconds
+  Import took 0.016972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree02.png
+  artifactKey: Guid(3efde3a649a8a1e4bb717bba20b97efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree02.png using Guid(3efde3a649a8a1e4bb717bba20b97efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4605c86aed3936dcb8a3ea56495d35') in 0.011329 seconds
+  Import took 0.014050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario01.png
+  artifactKey: Guid(cb7eb1bf8a2b60d48b6e16e232988a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario01.png using Guid(cb7eb1bf8a2b60d48b6e16e232988a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78bbc72e3d13c50898d4c511535f4209') in 0.015776 seconds
+  Import took 0.018852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Art/Sprites/Characters/Units/vendor/generic-rpg-vendor.png
+  artifactKey: Guid(d40867c054cad3a4ebeebaf0c457dd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Characters/Units/vendor/generic-rpg-vendor.png using Guid(d40867c054cad3a4ebeebaf0c457dd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb223e3d1b0f63ad1c8d55020f8f2236') in 0.017420 seconds
+  Import took 0.020350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario.png
+  artifactKey: Guid(81d9ffe06bdf0bf4bb5b615d865bd209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario.png using Guid(81d9ffe06bdf0bf4bb5b615d865bd209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7687a79b660f1b32f47dd2d2cbec4dc8') in 0.018364 seconds
+  Import took 0.021087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario03.png
+  artifactKey: Guid(c58038cab499b0541b5b3e85ffd12cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-inventario03.png using Guid(c58038cab499b0541b5b3e85ffd12cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26632bf07a5bc9b10decb16420853bc3') in 0.016480 seconds
+  Import took 0.019119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.121993 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile71.png
+  artifactKey: Guid(060b7bfdb299ec24f8b1cfd3c38506ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile71.png using Guid(060b7bfdb299ec24f8b1cfd3c38506ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0e925c9a82e70db61b55b8fea0a5b8') in 0.015533 seconds
+  Import took 0.018596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile68.png
+  artifactKey: Guid(b795e8572e34cdc4e909749f157a04e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile68.png using Guid(b795e8572e34cdc4e909749f157a04e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a90b73147139fcf86561141c1382c8d9') in 0.015053 seconds
+  Import took 0.017739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-trasure-open.png
+  artifactKey: Guid(b27531a6777ef5144876c137df5ab0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-trasure-open.png using Guid(b27531a6777ef5144876c137df5ab0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389824dd808d5633fc9506e9caa1774f') in 0.020236 seconds
+  Import took 0.022928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-treasure-closed.png
+  artifactKey: Guid(0d3e4b4ed4399f34aa3170c45f6f426e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-treasure-closed.png using Guid(0d3e4b4ed4399f34aa3170c45f6f426e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01a345c078a2373ae7e99794d48378b') in 0.017819 seconds
+  Import took 0.020834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile51.png
+  artifactKey: Guid(7e52f0af57199014da2956f0f3f5b826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile51.png using Guid(7e52f0af57199014da2956f0f3f5b826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc4cdf5a2e31e58e66c8f4f86933b50') in 0.016953 seconds
+  Import took 0.019888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile55.png
+  artifactKey: Guid(c481f2e8ad978984da4508cb97b9f76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile55.png using Guid(c481f2e8ad978984da4508cb97b9f76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d1a4fdf358ad9e086de11e0c874a12') in 0.015324 seconds
+  Import took 0.018001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile50.png
+  artifactKey: Guid(13181c0158093954396955a8e869e1e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile50.png using Guid(13181c0158093954396955a8e869e1e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb0dd9b1c73e242e2182c1b6b4c0281') in 0.015132 seconds
+  Import took 0.017982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile63.png
+  artifactKey: Guid(fe08bd123dc627e468ac346a9efae744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile63.png using Guid(fe08bd123dc627e468ac346a9efae744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '606821de99fb58d693d6c9f41297eaa9') in 0.016487 seconds
+  Import took 0.019367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile59.png
+  artifactKey: Guid(fec43449f0d76dc41866adc63c46fb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile59.png using Guid(fec43449f0d76dc41866adc63c46fb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5c182025a143c8dbb60a3faf5aca99') in 0.015951 seconds
+  Import took 0.018633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile61.png
+  artifactKey: Guid(5bb75f06c182a4245ae33845d0de3287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile61.png using Guid(5bb75f06c182a4245ae33845d0de3287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef92cf672dd8fbd59eaf32faec5b02e') in 0.016851 seconds
+  Import took 0.019562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile60.png
+  artifactKey: Guid(95ee3d643bf88ec408c34145a22ffc4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile60.png using Guid(95ee3d643bf88ec408c34145a22ffc4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67414c56c55460e1846de46b25f673d5') in 0.016017 seconds
+  Import took 0.019044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile53.png
+  artifactKey: Guid(dfc72603a405bae448eeb29b17361562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile53.png using Guid(dfc72603a405bae448eeb29b17361562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de98378a1f5a7049c61008cf83e4524c') in 0.015160 seconds
+  Import took 0.018022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile67.png
+  artifactKey: Guid(3b3826967b57f054fa58db5f70243f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile67.png using Guid(3b3826967b57f054fa58db5f70243f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd782b9db0010018fbd0a8b857eabdcf5') in 0.015506 seconds
+  Import took 0.018272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree01.png
+  artifactKey: Guid(7e49984f3fe69f24e93a37ca3220deca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree01.png using Guid(7e49984f3fe69f24e93a37ca3220deca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18959167e91edd882ec72c6f5e251e6b') in 0.016678 seconds
+  Import took 0.019510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile56.png
+  artifactKey: Guid(8c9c55103e7eb4d408f430deaaed4f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile56.png using Guid(8c9c55103e7eb4d408f430deaaed4f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc4e7bfceb4e593893bd744bdcb02c02') in 0.015326 seconds
+  Import took 0.018250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile57.png
+  artifactKey: Guid(f4eec880a1e58724d8c7d7a9778046ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile57.png using Guid(f4eec880a1e58724d8c7d7a9778046ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ec8bad1e7c2a85a58cfa20292a55a6') in 0.015496 seconds
+  Import took 0.018571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile47.png
+  artifactKey: Guid(3ab727338e07e3b44a5eae64095a5800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile47.png using Guid(3ab727338e07e3b44a5eae64095a5800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8ddcfb1d0f950dc9d2688a915630ef') in 0.015883 seconds
+  Import took 0.018637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile40.png
+  artifactKey: Guid(76d0cd49a3c10c44a9949cb066b1e77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile40.png using Guid(76d0cd49a3c10c44a9949cb066b1e77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37c690f98436d98816294710036eb6f') in 0.015942 seconds
+  Import took 0.019277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile22.png
+  artifactKey: Guid(66766eccfb66d954ba49f7ac3ef78881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile22.png using Guid(66766eccfb66d954ba49f7ac3ef78881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5614c841510097b9d767230bd298c092') in 0.014818 seconds
+  Import took 0.017986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile30.png
+  artifactKey: Guid(95f7f03abd2dbb240828a1bfff933092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile30.png using Guid(95f7f03abd2dbb240828a1bfff933092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a289f0375d334225bc2a59e74898746b') in 0.015786 seconds
+  Import took 0.018909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile38.png
+  artifactKey: Guid(6189c72bac1b9d74aad4664b5522539b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile38.png using Guid(6189c72bac1b9d74aad4664b5522539b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f762976d3a2459a1b36cde73aa9642f') in 0.015901 seconds
+  Import took 0.018778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile41.png
+  artifactKey: Guid(085b16684ccbd59428488508bf46bc6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile41.png using Guid(085b16684ccbd59428488508bf46bc6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efb45d54e51e76f95d8a50e5d29de88') in 0.016220 seconds
+  Import took 0.018978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile27.png
+  artifactKey: Guid(c475eb95f9a69dd4dacb2ed2961b8e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile27.png using Guid(c475eb95f9a69dd4dacb2ed2961b8e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d2c851208dd3e423c04bfd94571391') in 0.015412 seconds
+  Import took 0.018197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile33.png
+  artifactKey: Guid(92117d9a09f1b1a4a9da46981952275b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile33.png using Guid(92117d9a09f1b1a4a9da46981952275b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26caf2aa6daf59e968bdd36fc921bbc') in 0.016258 seconds
+  Import took 0.018922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile35.png
+  artifactKey: Guid(70ba4158fd904fd4cbf59b795cbbe4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile35.png using Guid(70ba4158fd904fd4cbf59b795cbbe4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc3d92e1608a893617b808d27b5cdf8') in 0.016588 seconds
+  Import took 0.019607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile29.png
+  artifactKey: Guid(c0aea617aab3b454a9141e883465053d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile29.png using Guid(c0aea617aab3b454a9141e883465053d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0afcc18d5820c803820f73431a558580') in 0.015318 seconds
+  Import took 0.018291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile42.png
+  artifactKey: Guid(3126e419dc3381e49a2e1bcdd0e4fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile42.png using Guid(3126e419dc3381e49a2e1bcdd0e4fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1248371dd69e2bd6df98e5a14b949b') in 0.016108 seconds
+  Import took 0.018935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile31.png
+  artifactKey: Guid(eeaa949e13bcff24da35485782482c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile31.png using Guid(eeaa949e13bcff24da35485782482c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24dd57a204a69e36e2c123b88fe8250') in 0.016759 seconds
+  Import took 0.019856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile25.png
+  artifactKey: Guid(1071a3ae6ee2aac48bd4eca5084de686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile25.png using Guid(1071a3ae6ee2aac48bd4eca5084de686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563b806e75a4759e999fd5e33d3f52a7') in 0.015969 seconds
+  Import took 0.019496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile46.png
+  artifactKey: Guid(13a67898571484440b227034f21257ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile46.png using Guid(13a67898571484440b227034f21257ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9348a21ee40d549032611ed342251b83') in 0.015458 seconds
+  Import took 0.018415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile34.png
+  artifactKey: Guid(e25ac5e8ce201574890695b349aca102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile34.png using Guid(e25ac5e8ce201574890695b349aca102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b489acd275ce46a73c8eb6582904c7') in 0.016544 seconds
+  Import took 0.019328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile08.png
+  artifactKey: Guid(dc6c2c402ab421f43ac07c933aa2e799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile08.png using Guid(dc6c2c402ab421f43ac07c933aa2e799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba9ce51edfe9d0dd0619ba6ddf19d1a6') in 0.015584 seconds
+  Import took 0.018295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile12.png
+  artifactKey: Guid(3f01492289129a14c9ec680480800400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile12.png using Guid(3f01492289129a14c9ec680480800400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fcf120f89ceb963b6f3cdabe89bdf74') in 0.016505 seconds
+  Import took 0.019308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall07.png
+  artifactKey: Guid(54f57563b19f6584293672e58244f825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall07.png using Guid(54f57563b19f6584293672e58244f825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7212143d2fdf9b2073763cebd53277d') in 0.015426 seconds
+  Import took 0.018163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile05.png
+  artifactKey: Guid(f2615257cdf3ff446aecd4be080ae8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile05.png using Guid(f2615257cdf3ff446aecd4be080ae8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf802752df29ce9249c7a95fc9917448') in 0.015363 seconds
+  Import took 0.018054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile20.png
+  artifactKey: Guid(442ea187a9b58dd479db5c342bf435f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile20.png using Guid(442ea187a9b58dd479db5c342bf435f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd09b404717ebfab2a062118861e55c') in 0.016785 seconds
+  Import took 0.019816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile19.png
+  artifactKey: Guid(84d79c4d1e7a5ef4282940ca0c9dc86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile19.png using Guid(84d79c4d1e7a5ef4282940ca0c9dc86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '569bf8ced16b4e232b98c9daff797869') in 0.014893 seconds
+  Import took 0.017956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile09.png
+  artifactKey: Guid(1ef314bd9fb6e764096d741f2dcde6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile09.png using Guid(1ef314bd9fb6e764096d741f2dcde6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e6ae31c1ab47544ab995ad279a93af') in 0.015376 seconds
+  Import took 0.018258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile01.png
+  artifactKey: Guid(19f8580525a50c44db0caabd95967de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile01.png using Guid(19f8580525a50c44db0caabd95967de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3212c0cb0c45f12a373d1ae813935ae7') in 0.016076 seconds
+  Import took 0.019046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile02.png
+  artifactKey: Guid(75e493c20a97b5a44b05ea67861e34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile02.png using Guid(75e493c20a97b5a44b05ea67861e34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bbb10e6e0139a18c916ce4559836774') in 0.016146 seconds
+  Import took 0.019351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile07.png
+  artifactKey: Guid(62cffb987961eb24ebe5001696e813ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile07.png using Guid(62cffb987961eb24ebe5001696e813ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3092576fdd565d4705d28f5ae7613368') in 0.015041 seconds
+  Import took 0.017700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile13.png
+  artifactKey: Guid(270a57e70ffd73d428da64b46fc5cbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile13.png using Guid(270a57e70ffd73d428da64b46fc5cbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a883c019cc9ebcac38f3d47ff787b9f9') in 0.017523 seconds
+  Import took 0.020622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-tree01.png
+  artifactKey: Guid(6e8eca2ed81c39a49a366a27d3f9b6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-tree01.png using Guid(6e8eca2ed81c39a49a366a27d3f9b6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7588d589c59b8667f27fa8c76bed1db') in 0.007377 seconds
+  Import took 0.010049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile21.png
+  artifactKey: Guid(adc3667c2eed19949aa96642f50d7a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile21.png using Guid(adc3667c2eed19949aa96642f50d7a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781288ab152c04f8aa5122fd70330505') in 0.016510 seconds
+  Import took 0.019230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile10.png
+  artifactKey: Guid(601a903f8ac543640bc7e8b78c3d5496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile10.png using Guid(601a903f8ac543640bc7e8b78c3d5496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f1943e2a69d371116753a5894b12f7') in 0.016741 seconds
+  Import took 0.019402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall01.png
+  artifactKey: Guid(1330d9f832ec69746ac4f0fdea2b2760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall01.png using Guid(1330d9f832ec69746ac4f0fdea2b2760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae81880b1c4ac46f826f70b53b8e224') in 0.016624 seconds
+  Import took 0.019439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile70.png
+  artifactKey: Guid(9b6967e73c07bb045affc956146de2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile70.png using Guid(9b6967e73c07bb045affc956146de2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff8b9f502d5fc4f3c4b5bdc80f21aabd') in 0.015831 seconds
+  Import took 0.018580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile28.png
+  artifactKey: Guid(d6e9cef8462178d41b933f5472b2775f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile28.png using Guid(d6e9cef8462178d41b933f5472b2775f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a375ffe2b063f2417b1a3d5caa14bf9') in 0.015376 seconds
+  Import took 0.018321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall04.png
+  artifactKey: Guid(9f4730a4070c9b3458ebccb9cc8ea01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall04.png using Guid(9f4730a4070c9b3458ebccb9cc8ea01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e6728394eb1dc35fd055d059b512ae') in 0.017121 seconds
+  Import took 0.019923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall02.png
+  artifactKey: Guid(8586381b291f7ed40802b8c07758d3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall02.png using Guid(8586381b291f7ed40802b8c07758d3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0189957b647d4f3dfef8d5eb91aa5ab3') in 0.015567 seconds
+  Import took 0.018913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile06.png
+  artifactKey: Guid(980b1383256354847b360a3da1de06a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile06.png using Guid(980b1383256354847b360a3da1de06a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3adab5576089bb7ec08dcfa2a87534') in 0.016276 seconds
+  Import took 0.019009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile03.png
+  artifactKey: Guid(8b56bf4cbc716a349aee3e73a79c70eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile03.png using Guid(8b56bf4cbc716a349aee3e73a79c70eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e9f42242fea01c5f9ad760c8d7f07b') in 0.015676 seconds
+  Import took 0.018415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile43.png
+  artifactKey: Guid(7f25599de4b786f498d988ec9b629fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile43.png using Guid(7f25599de4b786f498d988ec9b629fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c1202e4df9e9118472707d770ea2d0') in 0.016611 seconds
+  Import took 0.019512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile24.png
+  artifactKey: Guid(697fa941e47c91a4185e55048f1beb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile24.png using Guid(697fa941e47c91a4185e55048f1beb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8bdc59ace6fe7f7b12ce20bcf65228b') in 0.015239 seconds
+  Import took 0.018467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall06.png
+  artifactKey: Guid(7e6c442339c47ee43a2a014672bb2d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall06.png using Guid(7e6c442339c47ee43a2a014672bb2d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b1720574d2bfe275fabaac8a789a15') in 0.016380 seconds
+  Import took 0.019621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile14.png
+  artifactKey: Guid(ae2b0e08e6306674a932544df217dd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile14.png using Guid(ae2b0e08e6306674a932544df217dd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f7d41393b2419905308d5450e3d021') in 0.017048 seconds
+  Import took 0.020026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile49.png
+  artifactKey: Guid(3ad1fa474ace09349b11031c3eed201d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile49.png using Guid(3ad1fa474ace09349b11031c3eed201d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77550847bf37be340dc654f4ebe09d4c') in 0.015411 seconds
+  Import took 0.018218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile17.png
+  artifactKey: Guid(0f2f9fd7b7791b14bbf3cb476cf37c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile17.png using Guid(0f2f9fd7b7791b14bbf3cb476cf37c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e7822bb64b6ee51fd6be41c64e261e') in 0.016414 seconds
+  Import took 0.019100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile18.png
+  artifactKey: Guid(d93f9390ea4185349bc5ee4d6244e95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile18.png using Guid(d93f9390ea4185349bc5ee4d6244e95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b95e50555e6bd3df60b79c82aecc217') in 0.016466 seconds
+  Import took 0.019204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-Slice.png
+  artifactKey: Guid(30158a9039f4de947949bc9bfe930db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-Slice.png using Guid(30158a9039f4de947949bc9bfe930db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51bd826f90fe46781e56747d8fb98b04') in 0.017550 seconds
+  Import took 0.020413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile39.png
+  artifactKey: Guid(f4ad031a864e63843ba212db27c6d455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile39.png using Guid(f4ad031a864e63843ba212db27c6d455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89278d20e396ba38a1f5d12058b89911') in 0.016040 seconds
+  Import took 0.018978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile04.png
+  artifactKey: Guid(552bde62526ff9143a4f74a0244941de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile04.png using Guid(552bde62526ff9143a4f74a0244941de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7eac70712fdf8e146c169072a94db2') in 0.016268 seconds
+  Import took 0.019373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile15.png
+  artifactKey: Guid(fb9140df682b61049b4ceafd8ac62bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile15.png using Guid(fb9140df682b61049b4ceafd8ac62bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b74f842db28ed1a6883d626d7341f64f') in 0.017647 seconds
+  Import took 0.020840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall05.png
+  artifactKey: Guid(9f46c91092670f445b67baf56f7b3d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall05.png using Guid(9f46c91092670f445b67baf56f7b3d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8608ed88c244e84fc3fd77762313a1e') in 0.015799 seconds
+  Import took 0.018632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile37.png
+  artifactKey: Guid(15717f1a3c0c9f7408e3f93bc594ee33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile37.png using Guid(15717f1a3c0c9f7408e3f93bc594ee33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db190eb51e15b8305225842882a564e') in 0.015694 seconds
+  Import took 0.018634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile16.png
+  artifactKey: Guid(bf18310d1835a6c4ba9f711199780a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile16.png using Guid(bf18310d1835a6c4ba9f711199780a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8566098f00b226ea6ce2bf8eaab6eb0') in 0.016198 seconds
+  Import took 0.019148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall03.png
+  artifactKey: Guid(1ef2f712aaea4414eb03e2d23cbb91b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile-waterfall03.png using Guid(1ef2f712aaea4414eb03e2d23cbb91b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f41a78219abf379137f164bf879c257') in 0.016733 seconds
+  Import took 0.019603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile52.png
+  artifactKey: Guid(c596ad96ed571c3469172a9c348579de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile52.png using Guid(c596ad96ed571c3469172a9c348579de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9418b729368257ad578191f773bdd101') in 0.016395 seconds
+  Import took 0.019377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile11.png
+  artifactKey: Guid(38ce5c9f8b7c5c6449414c75ce75dcd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile11.png using Guid(38ce5c9f8b7c5c6449414c75ce75dcd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0ecd2d1c55aab5a38581bed98914e7') in 0.016644 seconds
+  Import took 0.019478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-trasure-open.png
+  artifactKey: Guid(0adc7d334c450c542afd566442ae104a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-trasure-open.png using Guid(0adc7d334c450c542afd566442ae104a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63855509117f90e14f75c9c4a110a2d3') in 0.006627 seconds
+  Import took 0.009478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile64.png
+  artifactKey: Guid(f53aa7f44a2d28042a7bacda56582e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile64.png using Guid(f53aa7f44a2d28042a7bacda56582e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b55c6d83ceb36019ae643f0e7e097339') in 0.016258 seconds
+  Import took 0.019053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile66.png
+  artifactKey: Guid(baeccd2a8e71a994ab75e4d75b1e0ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile66.png using Guid(baeccd2a8e71a994ab75e4d75b1e0ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b359c0419a18caadb358fb2a0adcc18b') in 0.016243 seconds
+  Import took 0.019054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile62.png
+  artifactKey: Guid(f81c01e71bf2b3941b3a45249edd44dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile62.png using Guid(f81c01e71bf2b3941b3a45249edd44dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e0ca795ac652a8a8852b0633757c2eb') in 0.015354 seconds
+  Import took 0.018451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile58.png
+  artifactKey: Guid(a1906ed5e0b0a0447ab8e7501096d8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile58.png using Guid(a1906ed5e0b0a0447ab8e7501096d8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76e8cf9303b6263e421fb102facb5a60') in 0.017383 seconds
+  Import took 0.020440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile44.png
+  artifactKey: Guid(be12a9f0e9b3dfb47a8370592e330a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile44.png using Guid(be12a9f0e9b3dfb47a8370592e330a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e45d3789347c981585d7f29942fedc00') in 0.016435 seconds
+  Import took 0.019679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile54.png
+  artifactKey: Guid(75d0d7a2fef289842bbcfdd34d3c04a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile54.png using Guid(75d0d7a2fef289842bbcfdd34d3c04a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf57c5e7ef17588039ecac0ffcf8f51f') in 0.015681 seconds
+  Import took 0.018341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile32.png
+  artifactKey: Guid(5a4b41494e1c76041981b194ad6eab81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile32.png using Guid(5a4b41494e1c76041981b194ad6eab81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fff884348418e576bb931288b92f333') in 0.016225 seconds
+  Import took 0.019008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile45.png
+  artifactKey: Guid(d09c4ab92e3230244bbe3c6ce9cecbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile45.png using Guid(d09c4ab92e3230244bbe3c6ce9cecbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e6cf6831f82f3251415373f6b55227') in 0.016452 seconds
+  Import took 0.019181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile48.png
+  artifactKey: Guid(99632a65e68cf4f4a8f7adc6f896f83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile48.png using Guid(99632a65e68cf4f4a8f7adc6f896f83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '842ed712c386177232b398ff7b1906e4') in 0.015933 seconds
+  Import took 0.018822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile65.png
+  artifactKey: Guid(0373639c26d8638478d24c999713bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile65.png using Guid(0373639c26d8638478d24c999713bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9355729d2702075d7bf6d87c2cd25fc1') in 0.015179 seconds
+  Import took 0.018073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile69.png
+  artifactKey: Guid(37c14f1a02e8e8d49b0053a2d40a2a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile69.png using Guid(37c14f1a02e8e8d49b0053a2d40a2a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa71c9cecc4650e3463272cfe51409c') in 0.016049 seconds
+  Import took 0.020069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile23.png
+  artifactKey: Guid(3e73d93085beadf4fba6571ede87d769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile23.png using Guid(3e73d93085beadf4fba6571ede87d769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb2eb52b1c23a032d811668658bf572') in 0.016455 seconds
+  Import took 0.019474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Art/Sprites/Objects/Decoration/generic-rpg-treasure-closed.png
+  artifactKey: Guid(af78a2d61629c044caf03fac9c4f9e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Objects/Decoration/generic-rpg-treasure-closed.png using Guid(af78a2d61629c044caf03fac9c4f9e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4896f3022c36afeab1c3041605fefaaf') in 0.005710 seconds
+  Import took 0.008458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile26.png
+  artifactKey: Guid(7714622091919be44aa3e06da0d1140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/Textures/tiles/Scenery/generic-rpg-tile26.png using Guid(7714622091919be44aa3e06da0d1140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4fc5ff1d4ba15390cc0e03c9fb18f9a') in 0.015803 seconds
+  Import took 0.018585 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000906 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.916 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.4 MB.
+System memory in use after: 91.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2507.
+Total: 2.238000 ms (FindLiveObjects: 0.268100 ms CreateObjectMapping: 0.044600 ms MarkObjects: 1.800600 ms  DeleteObjects: 0.123600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001049 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.960 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.4 MB.
+System memory in use after: 91.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2510.
+Total: 3.121300 ms (FindLiveObjects: 0.299300 ms CreateObjectMapping: 0.066300 ms MarkObjects: 2.602900 ms  DeleteObjects: 0.151100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000937 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.897 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.5 MB.
+System memory in use after: 91.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2513.
+Total: 2.095800 ms (FindLiveObjects: 0.236200 ms CreateObjectMapping: 0.044500 ms MarkObjects: 1.687300 ms  DeleteObjects: 0.126900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001467 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.963 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.5 MB.
+System memory in use after: 91.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2516.
+Total: 2.900500 ms (FindLiveObjects: 0.629700 ms CreateObjectMapping: 0.226300 ms MarkObjects: 1.902600 ms  DeleteObjects: 0.140100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000965 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.923 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.5 MB.
+System memory in use after: 91.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2519.
+Total: 2.612700 ms (FindLiveObjects: 0.302000 ms CreateObjectMapping: 0.044700 ms MarkObjects: 2.127800 ms  DeleteObjects: 0.136700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000933 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.5 MB.
+System memory in use after: 91.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2522.
+Total: 2.616900 ms (FindLiveObjects: 0.303100 ms CreateObjectMapping: 0.051700 ms MarkObjects: 2.115600 ms  DeleteObjects: 0.144500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000977 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.922 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.5 MB.
+System memory in use after: 91.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2525.
+Total: 2.478100 ms (FindLiveObjects: 0.395700 ms CreateObjectMapping: 0.055200 ms MarkObjects: 1.888900 ms  DeleteObjects: 0.136900 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

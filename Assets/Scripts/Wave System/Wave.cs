@@ -15,9 +15,6 @@ public class Wave : MonoBehaviour
     private GameObject addedGameObject;
     private GameObject spawnedEnemy;
 
-    //Default to true when initialized. Set to false when the wave has no more enemies left.
-    bool isActive;
-
     //Controlls how often each enemy spawns.
     float spawnTimer;
 
@@ -64,13 +61,10 @@ public class Wave : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            if (OnFileNotFound != null)
-                OnFileNotFound();
-        }
 
+        //Subscribe to events from enemies.
         BaseEnemy.OnDie += OnEnemyDeath;
+        BaseEnemy.OnReachedEnd += OnReachedEnd;
     }
 
     // Start is called before the first frame update
@@ -106,17 +100,48 @@ public class Wave : MonoBehaviour
     }
 
     //Called when an enemy dies.
+    //Remove the enemy from the enemies list and end the wave if applicable.
     public void OnEnemyDeath(GameObject deadEnemy)
     {
         if (this != null)
         {
-            enemiesAlive.RemoveAt(enemiesAlive.IndexOf(deadEnemy) + 1);
+            enemiesAlive.Remove(deadEnemy);
 
             if (enemiesAlive.Count == 0 && enemiesToSpawn.Count == 0)
             {
-                if (OnWaveFinished != null)
-                    OnWaveFinished();
+                EndWave();
             }
+        }
+    }
+
+    //Called when an enemy reaches the end of the level.
+    //Remove the enemy from the enemies list and end the wave if applicable.
+    public void OnReachedEnd(GameObject enemy)
+    {
+        enemiesAlive.Remove(enemy);
+
+        if (enemiesAlive.Count == 0 && enemiesToSpawn.Count == 0)
+        {
+            EndWave();
+        }
+    }
+
+    //Clears the enemies lists and raises event that tells the wave manager that this wave is finished.
+    //Also tells the WaveManager if there are no more waves, allowing it to end the level.
+    public void EndWave()
+    {
+        enemiesAlive.Clear();
+        enemiesToSpawn.Clear();
+
+        if (!File.Exists("G:/UNITY/Projects/TowerDefence/Assets/Scripts/Wave System/Waves/wave" + levelNum + "-" + (waveNum + 1) + ".txt"))
+        {
+            if (OnFileNotFound != null)
+                OnFileNotFound();
+        }
+        else
+        {
+            if (OnWaveFinished != null)
+                OnWaveFinished();
         }
     }
 }

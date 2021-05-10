@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
@@ -17,7 +18,13 @@ public class WaveManager : MonoBehaviour
     //Enemies that can be spawned. Insert prefabs in editor.
     public GameObject blueBlob, greenBlob, orangeBlob;
 
-    //Set action events and other default variables. Then start the first wave.
+    //This canvas holds all pre-wave UI. Activated when no wave is active.
+    [SerializeField] Canvas preWaveCanvas;
+
+    //Event that gets called when the level is completed. Used in HUD manager to show the end level UI.
+    public static Action OnLevelEnd;
+
+    //Set action events and other default variables.
     void Start()
     {
         Wave.OnWaveFinished += EndWave;
@@ -25,35 +32,36 @@ public class WaveManager : MonoBehaviour
 
         currentLevelNum = 1;
         currentWaveNum = 1;
-        StartWave(currentLevelNum, currentWaveNum);
     }
 
-    //Start a new wave by setting currentWave's level and wave data, the instantiating it.
-    void StartWave(int levelToStartNum, int waveToStartNum)
+    //Start a new wave by setting currentWave's level and wave data, then instantiating it.
+    public void StartWave()
     {
+        preWaveCanvas.enabled = false;
+
         currentWave = wavePrefab.GetComponent<Wave>();
 
-        currentWave.levelNum = levelToStartNum;
-        currentWave.waveNum = waveToStartNum;
+        currentWave.levelNum = currentLevelNum;
+        currentWave.waveNum = currentWaveNum;
         wave_ = Instantiate(wavePrefab);
     }
 
     //End current wave.
     void EndWave()
     {
+        preWaveCanvas.enabled = true;
+
         Debug.Log("Wave " + currentWaveNum + " completed!");
 
         currentWaveNum += 1;
 
         Destroy(wave_);
-
-        StartWave(currentLevelNum, currentWaveNum);
     }
 
-    //Called when the wave does not exist.
+    //Called when the wave does not exist. This should mean the level is completed. If not, the txt file path was not proper.
     private void OnNoMoreWaves()
     {
-        Debug.Log("No more waves. You Win!");
-        Application.Quit();
+        if(OnLevelEnd != null)
+            OnLevelEnd();
     }
 }

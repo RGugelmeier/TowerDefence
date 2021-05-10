@@ -9,10 +9,4 @@ public class UPuncher : UnitBase
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

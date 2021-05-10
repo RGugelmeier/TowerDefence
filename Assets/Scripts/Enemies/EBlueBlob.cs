@@ -8,9 +8,9 @@ public class EBlueBlob : BaseEnemy, IEnemy
         //Deal damage to player's health.
         gameMan.health -= damage;
 
-        //Raise OnReachedEnd event. This checks if  the player's health in the game manager is <= zero.
+        //Raise OnReachedEnd event. This checks if the player's health in the game manager is <= zero. It also updates the health bar in ProgressBar
         if(OnReachedEnd != null)
-            OnReachedEnd();
+            OnReachedEnd(gameObject);
 
         //Destroy self.
         Destroy(gameObject);

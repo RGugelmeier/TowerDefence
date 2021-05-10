@@ -6,8 +6,10 @@ public class EGreenBlob : BaseEnemy, IEnemy
     {
         //Deal damage to player's health.
         gameMan.health -= damage;
-        //Check if health is <= zero.
-        gameMan.CheckDeath();
+
+        //Raise OnReachedEnd event. This checks if the player's health in the game manager is <= zero. It also updates the health bar in ProgressBar
+        if (OnReachedEnd != null)
+            OnReachedEnd(gameObject);
 
         //Destroy self.
         Destroy(gameObject);

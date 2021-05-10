@@ -9,6 +9,10 @@ public abstract class AttackBase : MonoBehaviour
     protected bool hitEnemy = false; //True if the attack hits an enemy.
     public Transform target; //The target location.
 
+    //Reference the attack's collision box.
+    [SerializeField] BoxCollider2D ignoreCollision;
+    BoxCollider2D collision;
+
     public static Action<BaseEnemy> onEnemyHit_;
     public static Action onDamageRecieved_;
 
@@ -18,17 +22,23 @@ public abstract class AttackBase : MonoBehaviour
     //Look at the target and set timeAlive so it can be used properly in update.
     private void Awake()
     {
+        //Set the box to ignore.
+        collision = GetComponent<BoxCollider2D>();
+        ignoreCollision = GameObject.Find("Spot Holder(Clone)").GetComponent<BoxCollider2D>();
+        Physics2D.IgnoreCollision(collision, ignoreCollision, true);
         transform.up = -target.position + transform.position;
     }
 
     //Move towards the target at a speed determined by the attack's speed. Then check if it has reached it's destination and self destruct if true.
     private void FixedUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-
-        if(transform.position == target.transform.position)
+        if(target)
         {
-            Destroy(this);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
