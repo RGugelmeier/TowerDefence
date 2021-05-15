@@ -13,6 +13,8 @@ public abstract class UnitBase : MonoBehaviour
 
     //The attack prefab that the unit will perform.
     [SerializeField] protected AttackBase attack;
+    //The attack object that will be instantiated.
+    protected AttackBase attackObj;
 
     //Tiomer handle that determines when I can attack.
     private float attackTimer;
@@ -83,16 +85,16 @@ public abstract class UnitBase : MonoBehaviour
         if(attackTimer < attackInterval)
         {
             attackTimer += Time.deltaTime;
-            Debug.Log("Test");
         }
     }
 
     //Instantiate the attack, then reset the attack timer to start counting to another attack being prepared.
-    void LaunchAttack()
+    void LaunchAttack(BaseEnemy target_)
     {
         if(attack != null)
         {
-            Instantiate(attack, transform.position, transform.rotation);
+            attackObj = Instantiate(attack, transform.position, transform.rotation);
+            attackObj.target = target_;
         }
         else
         {
@@ -110,7 +112,7 @@ public abstract class UnitBase : MonoBehaviour
             if (collision.gameObject.GetComponent<BaseEnemy>() != null)
             {
                 //Set the attack's target.
-                attack.target = collision.transform;
+                attack.target = collision.GetComponent<BaseEnemy>();
                 //Attack if the attack timer allows it, then reset the attack timer.
                 if (attackTimer >= attackInterval)
                 {
@@ -152,8 +154,7 @@ public abstract class UnitBase : MonoBehaviour
                         anim.SetBool("isUp", false);
                         anim.SetBool("isDown", true);
                     }
-                    Debug.Log(angleToEnemy);
-                    LaunchAttack();
+                    LaunchAttack(collision.GetComponent<BaseEnemy>());
                 }
             }
         }

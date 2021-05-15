@@ -13,7 +13,7 @@ public class EBlueBlob : BaseEnemy, IEnemy
             OnReachedEnd(gameObject);
 
         //Destroy self.
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     //Collision checking.

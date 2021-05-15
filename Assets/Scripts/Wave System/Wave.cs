@@ -10,7 +10,8 @@ public class Wave : MonoBehaviour
 
     //List of enemies to spawn, and list of enemies that have spawned and are still alive.
     public List<GameObject> enemiesToSpawn;// = new List<GameObject>();
-    public List<GameObject> enemiesAlive;// = new List<GameObject>();
+    //public List<BaseEnemy> enemiesAlive;// = new List<GameObject>();
+    public int enemiesAlive;
 
     private GameObject addedGameObject;
     private GameObject spawnedEnemy;
@@ -21,12 +22,18 @@ public class Wave : MonoBehaviour
     //The level this wave is a part of, and what wave number it is. Used in reading in the txt file.
     public int levelNum, waveNum;
 
+    //The object pool that will hold all of the level's enemies.
+    private EnemyPool pool;
+
     public static Action OnFileNotFound;
     public static Action OnWaveFinished;
 
     //Awake is performed as soon as the object becomes valid.
     void Awake()
     {
+        //Get reference to the enemy pool.
+        pool = FindObjectOfType<EnemyPool>();
+
         //Get reference to the wave manager.
         waveMan = FindObjectOfType<WaveManager>();
 
@@ -41,24 +48,19 @@ public class Wave : MonoBehaviour
                 //Blue blob
                 if (line.Equals("BB"))
                 {
-                    addedGameObject = Instantiate<GameObject>(waveMan.blueBlob);
-                    addedGameObject.SetActive(false);
-                    enemiesToSpawn.Add(addedGameObject);
+                    addedGameObject = waveMan.blueBlob;
                 }
                 //Green blob
                 else if (line.Equals("GB"))
                 {
-                    addedGameObject = Instantiate<GameObject>(waveMan.greenBlob);
-                    addedGameObject.SetActive(false);
-                    enemiesToSpawn.Add(addedGameObject);
+                    addedGameObject = waveMan.greenBlob;
                 }
                 //Orange blob
                 else if (line.Equals("OB"))
                 {
-                    addedGameObject = Instantiate<GameObject>(waveMan.orangeBlob);
-                    addedGameObject.SetActive(false);
-                    enemiesToSpawn.Add(addedGameObject);
+                    addedGameObject = waveMan.orangeBlob;
                 }
+                enemiesToSpawn.Add(addedGameObject);
             }
         }
 
@@ -82,14 +84,15 @@ public class Wave : MonoBehaviour
             //Countdown spawn timer.
             spawnTimer -= Time.deltaTime;
 
-            //When spawn timer hits zero, spawn the next enemy in line, add it to the alive enemies list, and clear it from enemiesToSpawn. Reset spawn timer.
+            //When spawn timer hits zero, tell the obj pool to create the next enemy in line, add it to the alive enemies list, and clear it from enemiesToSpawn. Reset spawn timer.
             if(spawnTimer <= 0.0f)
             {
                 if(enemiesToSpawn.Count != 0)
                 {
                     spawnedEnemy = enemiesToSpawn[0];
-                    spawnedEnemy.SetActive(true);
-                    enemiesAlive.Add(spawnedEnemy);
+                    pool.CreateNew(spawnedEnemy);
+                    //enemiesAlive.Add(spawnedEnemy.GetComponent<BaseEnemy>());
+                    enemiesAlive++;
                     enemiesToSpawn.Remove(spawnedEnemy);
                     Debug.Log("Enemy spawned. Enemies left to spawn: " + enemiesToSpawn.Count);
 
@@ -105,9 +108,13 @@ public class Wave : MonoBehaviour
     {
         if (this != null)
         {
-            enemiesAlive.Remove(deadEnemy);
-
-            if (enemiesAlive.Count == 0 && enemiesToSpawn.Count == 0)
+            //enemiesAlive.Remove(deadEnemy.GetComponent<BaseEnemy>());
+            if(deadEnemy.activeInHierarchy)
+            {
+                enemiesAlive--;
+            }
+            pool.Return(deadEnemy);
+            if (enemiesAlive <= 0 && enemiesToSpawn.Count == 0)
             {
                 EndWave();
             }
@@ -118,9 +125,9 @@ public class Wave : MonoBehaviour
     //Remove the enemy from the enemies list and end the wave if applicable.
     public void OnReachedEnd(GameObject enemy)
     {
-        enemiesAlive.Remove(enemy);
-
-        if (enemiesAlive.Count == 0 && enemiesToSpawn.Count == 0)
+        //enemiesAlive.Remove(enemy.GetComponent<BaseEnemy>());
+        enemiesAlive--;
+        if (enemiesAlive <= 0 && enemiesToSpawn.Count == 0)
         {
             EndWave();
         }
@@ -130,7 +137,7 @@ public class Wave : MonoBehaviour
     //Also tells the WaveManager if there are no more waves, allowing it to end the level.
     public void EndWave()
     {
-        enemiesAlive.Clear();
+        //enemiesAlive.Clear();
         enemiesToSpawn.Clear();
 
         if (!File.Exists("G:/UNITY/Projects/TowerDefence/Assets/Scripts/Wave System/Waves/wave" + levelNum + "-" + (waveNum + 1) + ".txt"))

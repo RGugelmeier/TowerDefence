@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 66efc238af8518f4c9daa63c0c1a00a7
+guid: 2c8b4b85d73ea464e83a1ec6383e7e49
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -10,12 +10,13 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Pixelfont
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 66efc238af8518f4c9daa63c0c1a00a7, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
-  shouldRoundAdvanceValue: 1
+  shouldRoundAdvanceValue: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

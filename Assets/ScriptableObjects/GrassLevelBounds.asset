@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35cd0730cc035684abcd0136d8d16624, type: 3}
   m_Name: GrassLevelBounds
   m_EditorClassIdentifier: 
-  minX: 1.7
+  minX: 3.5
   minY: -19.5
   maxX: 12.5
-  maxY: -10.7
+  maxY: -4.5

@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  attackInterval: 2
+  attackInterval: 0.5
   attackRange: 0.3
   cost: 10
   attack: {fileID: 8413026303142771688, guid: f7582ccbb410e9041821a0993f3a2599, type: 3}

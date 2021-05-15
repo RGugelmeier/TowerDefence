@@ -1,13 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Punch : AttackBase, IAttack
+﻿public class Punch : AttackBase, IAttack
 {
-    //Deal damage to the enemy.
+    //Deal damage to the enemy if it is the target.
     public void OnHit(BaseEnemy enemyHit)
     {
-        enemyHit.health -= damage;
+        if(enemyHit == target)
+        {
+            if (this != null)
+            {
+                enemyHit.health -= damage;
+                Destroy(gameObject);
+            }
+        }
     }
 
     //Add OnHit to listen for an enemy hit event.

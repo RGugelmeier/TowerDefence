@@ -12,7 +12,7 @@ public class EOrangeBlob : BaseEnemy, IEnemy
             OnReachedEnd(gameObject);
 
         //Destroy self.
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     //Collision checking.

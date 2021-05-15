@@ -37,7 +37,10 @@ public class GameManager : MonoBehaviour
     //Add money to the player's balance.
     private void IncreaseMoney(GameObject enemy)
     {
-        balance += enemy.GetComponent<BaseEnemy>().worth;
+        if(enemy.activeInHierarchy)
+        {
+            balance += enemy.GetComponent<BaseEnemy>().worth;
+        }
 
         if (OnUpdateBal != null)
             OnUpdateBal();
