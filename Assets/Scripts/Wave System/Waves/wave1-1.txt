@@ -1,7 +1,10 @@
 BB
-BB
+OB
 GB
 BB
-GB
-GB
+OB
+GG
+OB
+OB
+BB
 GB

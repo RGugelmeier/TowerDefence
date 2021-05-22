@@ -91,7 +91,6 @@ public class Wave : MonoBehaviour
                 {
                     spawnedEnemy = enemiesToSpawn[0];
                     pool.CreateNew(spawnedEnemy);
-                    //enemiesAlive.Add(spawnedEnemy.GetComponent<BaseEnemy>());
                     enemiesAlive++;
                     enemiesToSpawn.Remove(spawnedEnemy);
                     Debug.Log("Enemy spawned. Enemies left to spawn: " + enemiesToSpawn.Count);
@@ -137,7 +136,6 @@ public class Wave : MonoBehaviour
     //Also tells the WaveManager if there are no more waves, allowing it to end the level.
     public void EndWave()
     {
-        //enemiesAlive.Clear();
         enemiesToSpawn.Clear();
 
         if (!File.Exists("G:/UNITY/Projects/TowerDefence/Assets/Scripts/Wave System/Waves/wave" + levelNum + "-" + (waveNum + 1) + ".txt"))

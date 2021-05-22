@@ -8,14 +8,16 @@
             if (this != null)
             {
                 enemyHit.health -= damage;
-                Destroy(gameObject);
+                pool.Return(gameObject);
             }
         }
     }
 
     //Add OnHit to listen for an enemy hit event.
-    void Start()
+    private void Awake()
     {
+        transform.localScale /= 3;
+        pool = FindObjectOfType<AttackPool>();
         onEnemyHit_ += OnHit;
     }
 }

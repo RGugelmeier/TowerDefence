@@ -70,7 +70,7 @@ public abstract class BaseEnemy : MonoBehaviour
     {
         if(health <= 0.0f)
         {
-            if(this != null)
+            if(this != null && gameObject.activeInHierarchy)
             {
                 if (OnDie != null)
                 {

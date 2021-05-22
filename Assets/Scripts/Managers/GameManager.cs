@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         //Set default values.
         maxHealth = 100.0f;
         health = maxHealth;
-        balance = 10.0f;
+        balance = 20.0f;
     }
 
     //Checks if the player's heal;th has dropped to or below zero. If it has, end the game.

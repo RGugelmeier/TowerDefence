@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1996786807870891253}
   - component: {fileID: 4591376952016386268}
   - component: {fileID: 8694077917230067310}
+  - component: {fileID: 7813367657849335716}
   m_Layer: 0
   m_Name: UPuncher
   m_TagString: Untagged
@@ -167,7 +168,7 @@ MonoBehaviour:
   attackInterval: 0.5
   attackRange: 0.3
   cost: 10
-  attack: {fileID: 8413026303142771688, guid: f7582ccbb410e9041821a0993f3a2599, type: 3}
+  attack: {fileID: 5000351789686884319, guid: f7582ccbb410e9041821a0993f3a2599, type: 3}
   isActive: 0
 --- !u!95 &8694077917230067310
 Animator:
@@ -188,3 +189,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7813367657849335716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672462014045453693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d0b540450ad8724a9c286b72882df51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pool: []
+  objects:
+  - {fileID: 5000351789686884319, guid: f7582ccbb410e9041821a0993f3a2599, type: 3}

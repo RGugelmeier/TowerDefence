@@ -12,7 +12,9 @@ public abstract class UnitBase : MonoBehaviour
     public float cost;
 
     //The attack prefab that the unit will perform.
-    [SerializeField] protected AttackBase attack;
+    [SerializeField] protected GameObject attack;
+    private GameObject createdAttack;
+
     //The attack object that will be instantiated.
     protected AttackBase attackObj;
 
@@ -34,6 +36,9 @@ public abstract class UnitBase : MonoBehaviour
     //Reference to the game managaer. This is so I can add myself to the alive units list.
     private GameManager gameMan;
 
+    //Reference to the attack pool.
+    protected AttackPool attackPool;
+
     //Event raised when I am created by the player.
     public static Action<GameObject> OnCreation;
 
@@ -48,6 +53,7 @@ public abstract class UnitBase : MonoBehaviour
         enemyDetection = GetComponent<CircleCollider2D>();
         anim = GetComponent<Animator>();
         gameMan = FindObjectOfType<GameManager>();
+        attackPool = GetComponent<AttackPool>();
 
         gameMan.aliveUnits.Add(this);
 
@@ -93,7 +99,8 @@ public abstract class UnitBase : MonoBehaviour
     {
         if(attack != null)
         {
-            attackObj = Instantiate(attack, transform.position, transform.rotation);
+            createdAttack = attackPool.CreateNew(attack, transform.position, gameObject);
+            attackObj = createdAttack.GetComponent<AttackBase>();
             attackObj.target = target_;
         }
         else
@@ -112,7 +119,10 @@ public abstract class UnitBase : MonoBehaviour
             if (collision.gameObject.GetComponent<BaseEnemy>() != null)
             {
                 //Set the attack's target.
-                attack.target = collision.GetComponent<BaseEnemy>();
+                if(attackObj)
+                {
+                    attackObj.target = collision.GetComponent<BaseEnemy>();
+                }
                 //Attack if the attack timer allows it, then reset the attack timer.
                 if (attackTimer >= attackInterval)
                 {

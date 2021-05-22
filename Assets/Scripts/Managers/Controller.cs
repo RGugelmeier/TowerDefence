@@ -19,6 +19,7 @@ public class Controller : MonoBehaviour
     //Unit instantiating.
     private GameObject selectedUnit;
     private UnitBase selectedUnitObject;
+    private UnitPool unitPool;
     private UnitBase newUnitObject;
 
     private int mouseUpCheck;
@@ -37,6 +38,7 @@ public class Controller : MonoBehaviour
         camera = FindObjectOfType<Camera>();
         gameMan = FindObjectOfType<GameManager>();
         gridCollider = FindObjectOfType<TilemapCollider2D>();
+        unitPool = FindObjectOfType<UnitPool>();
 
         selectedUnit = null;
         mouseUpCheck = 0;
@@ -149,29 +151,34 @@ public class Controller : MonoBehaviour
 
     public void PlaceUnit(GameObject newUnit)
     {
+        //Create spotholder.
         //Spotholder is instantiated on top of the unit so another unit cannot be placed there. This is because the unit itself has a circle collider that takes up more space than wanted for raycast detection.
         GameObject spotHolder = new GameObject("Spot Holder");
         spotHolder.AddComponent<BoxCollider2D>();
         spotHolder.GetComponent<BoxCollider2D>().size = newUnit.GetComponent<BoxCollider2D>().size;
         spotHolder.layer = 0;
-        //Instantiate new unit at mouse position.
-        GameObject createdUnit = Instantiate(newUnit, new Vector3(camera.ScreenToWorldPoint(Input.mousePosition).x, camera.ScreenToWorldPoint(Input.mousePosition).y, 0.0f), Quaternion.identity);
+
+        //Instantiate a spotholder at mouse position.
+        //GameObject createdUnit = new GameObject(newUnit, new Vector3(camera.ScreenToWorldPoint(Input.mousePosition).x, camera.ScreenToWorldPoint(Input.mousePosition).y, 0.0f), Quaternion.identity);
+        //GameObject createdUnit = newUnit;
+        GameObject createdUnit = unitPool.CreateNew(newUnit, camera.ScreenToWorldPoint(Input.mousePosition));
         Instantiate(spotHolder, createdUnit.transform);
-        newUnitObject = newUnit.GetComponent<UnitBase>();
+        //Get the unitpool to create a new unit.
+        newUnitObject = createdUnit.GetComponent<UnitBase>();
 
         //Get the centre of the cell the unit was created in and move it there.
         Vector3Int cellPosition = grid.WorldToCell(createdUnit.transform.position);
         createdUnit.transform.position = grid.GetCellCenterWorld(cellPosition);
-
+        
         //Set the unit to active so it can attack.
-        createdUnit.GetComponent<UnitBase>().isActive = true;
+        newUnitObject.isActive = true;
 
         //Add the unit to ignore raycast layer.
         createdUnit.layer = 2;
 
         //Raise the unit's OnCreation event to take money from the player.
         if(UnitBase.OnCreation != null)
-            UnitBase.OnCreation(newUnit);
+            UnitBase.OnCreation(createdUnit);
     }
 
     //Destroys the selected unit. Can only be called if there is a selected unit currently and the player right clicks.
