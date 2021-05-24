@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 //* ABSTRACT ENEMY CLASS *//
@@ -8,7 +9,7 @@ using UnityEngine;
 public abstract class BaseEnemy : MonoBehaviour
 {
     [SerializeField]
-    protected float moveSpeed, damage;    //The unit's stats.
+    protected float maxMoveSpeed, moveSpeed, damage;    //The unit's stats.
     public float maxHealth, health, worth;
 
     //The enemy's id. This is used by the pool to keep track of which enemy to reactivate when reactivate is called. Otherwise it resets each enemy,
@@ -25,6 +26,8 @@ public abstract class BaseEnemy : MonoBehaviour
 
     void Awake()
     {
+        moveSpeed = maxMoveSpeed;
+
         //Get all positions that the enemies will need to move to.
         moveToNodes = GameObject.FindGameObjectsWithTag("RotateNode");
         //Set initial position.
@@ -36,6 +39,7 @@ public abstract class BaseEnemy : MonoBehaviour
 
         AttackBase.onDamageRecieved_ += HealthCheck;
         ObjectPool.OnActivate += OnReactivate;
+        StatusEffectManager.OnStun += OnStun;
     }
 
     //This function will be called whenever the enemy is reactivated to be used again by the EnemyPool.
@@ -43,8 +47,9 @@ public abstract class BaseEnemy : MonoBehaviour
     {
         if(obj.GetInstanceID() == gameObject.GetInstanceID())
         {
-            //Reset the health to be full.
+            //Reset the health and move speed to be full.
             health = maxHealth;
+            moveSpeed = maxMoveSpeed;
             //Set initial position.
             transform.position = moveToNodes[0].transform.position;
             //Set the first node to start the enemy moving.
@@ -56,13 +61,19 @@ public abstract class BaseEnemy : MonoBehaviour
     void FixedUpdate()
     {
         //Move to the next node.
-        MoveToNode(moveToNodes[nextNode]);
+        if(moveSpeed > 0.0f)
+        {
+            MoveToNode(moveToNodes[nextNode]);
+        }
     }
 
     //Move toward the next node. Speed is determined by moveSpeed variable.
     void MoveToNode(GameObject node)
     {
-        transform.position = Vector3.MoveTowards(transform.position, node.transform.position, moveSpeed * Time.deltaTime);
+        if(moveSpeed > 0.0f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, node.transform.position, moveSpeed * Time.deltaTime);
+        }
     }
 
     //Called when hit by an attack. Check shealth and dies if health dropped below zero.
@@ -76,6 +87,26 @@ public abstract class BaseEnemy : MonoBehaviour
                 {
                     OnDie(gameObject);
                 }
+            }
+        }
+    }
+    
+    
+
+    //This function stuns the enemy for a time dictated by the time_ variable passed in.
+    private void OnStun(float time_, int enemyID)
+    {
+        if(enemyID == GetInstanceID())
+        {
+            StartCoroutine(Stunned(time_));
+
+            //Stunned coroutine. This actually stuns the enemy and unstuns on a timer.
+            IEnumerator Stunned(float time_)
+            {
+            moveSpeed = 0.0f;
+            
+            yield return new WaitForSeconds(time_);
+            moveSpeed = maxMoveSpeed;
             }
         }
     }

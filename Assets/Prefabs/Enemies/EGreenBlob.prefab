@@ -146,11 +146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ccf0562b44c9b4199271223b9b2d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  maxMoveSpeed: 1
+  moveSpeed: 0
   damage: 7.5
   maxHealth: 30
   health: 30
   worth: 1
+  id: 0
 --- !u!95 &4812523168800966000
 Animator:
   serializedVersion: 3
