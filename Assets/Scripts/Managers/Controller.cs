@@ -13,6 +13,7 @@ public class Controller : MonoBehaviour
     float yAxisValue;
 
     public static Action<string> OnPlayerError;
+    public static Action<int> OnUnitPlacement;
 
     private GameManager gameMan;
 
@@ -28,8 +29,6 @@ public class Controller : MonoBehaviour
     Grid grid;
     //The bounds scriptable object that holds how far the camera can move left, right, up, and down.
     [SerializeField] LevelBounds bounds;
-    //Collider that holds tilemap collisions.
-    TilemapCollider2D gridCollider;
 
     //Init
     void Start()
@@ -37,7 +36,6 @@ public class Controller : MonoBehaviour
         grid = FindObjectOfType<Grid>();
         camera = FindObjectOfType<Camera>();
         gameMan = FindObjectOfType<GameManager>();
-        gridCollider = FindObjectOfType<TilemapCollider2D>();
         unitPool = FindObjectOfType<UnitPool>();
 
         selectedUnit = null;
@@ -169,7 +167,7 @@ public class Controller : MonoBehaviour
         //Get the centre of the cell the unit was created in and move it there.
         Vector3Int cellPosition = grid.WorldToCell(createdUnit.transform.position);
         createdUnit.transform.position = grid.GetCellCenterWorld(cellPosition);
-        
+
         //Set the unit to active so it can attack.
         newUnitObject.isActive = true;
 
@@ -179,6 +177,9 @@ public class Controller : MonoBehaviour
         //Raise the unit's OnCreation event to take money from the player.
         if(UnitBase.OnCreation != null)
             UnitBase.OnCreation(createdUnit);
+
+        if (OnUnitPlacement != null)
+            OnUnitPlacement(createdUnit.GetInstanceID());
     }
 
     //Destroys the selected unit. Can only be called if there is a selected unit currently and the player right clicks.

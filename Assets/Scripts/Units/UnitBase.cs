@@ -42,6 +42,10 @@ public abstract class UnitBase : MonoBehaviour
     //Event raised when I am created by the player.
     public static Action<GameObject> OnCreation;
 
+    //This boolean is false by default. Each unit that can patrol will be set to true in their start.
+    //This determines if the player will have to place down two patrol nodes after placing down the unit so the unit can patrol those spots.
+    public bool canPatrol;
+
     //Get circle collider reference.
     private void Awake()
     {
@@ -58,7 +62,7 @@ public abstract class UnitBase : MonoBehaviour
         gameMan.aliveUnits.Add(this);
 
         //Set isActive to false. This will be set to true when the player places one down.
-        isActive = false;
+        //isActive = false;
 
         //Initialize attack timer.
         attackTimer = attackInterval;

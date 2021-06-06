@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 3672462014045453689}
   - component: {fileID: 3672462014045453690}
   - component: {fileID: 1996786807870891253}
+  - component: {fileID: 4591376952016386268}
   - component: {fileID: 8694077917230067310}
   - component: {fileID: 7813367657849335716}
-  - component: {fileID: 751793063635504236}
   m_Layer: 0
-  m_Name: Guard
-  m_TagString: Guard
+  m_Name: Archer
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,13 +77,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6786124111271952067, guid: 61f19fbbc6942ff478588d53052a6097,
+  m_Sprite: {fileID: -7132172409892320828, guid: 5907534eb61449d498d2a04711e11373,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.6875, y: 0.96875}
+  m_Size: {x: 0.15, y: 0.21}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -123,18 +123,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: -0.06}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.33870968}
-    oldSize: {x: 0.6875, y: 0.96875}
-    newSize: {x: 0.6875, y: 0.96875}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.59375, y: 0.65625}
+    newSize: {x: 0.15, y: 0.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.53}
+  m_Size: {x: 0.4, y: 0.6}
   m_EdgeRadius: 0
 --- !u!58 &1996786807870891253
 CircleCollider2D:
@@ -149,9 +149,28 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: -0.06}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.0001
+--- !u!114 &4591376952016386268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672462014045453693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f569f687262bf4f95c8c5ac1d46c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  attackInterval: 0.4
+  attackRange: 2
+  cost: 0
+  attack: {fileID: 6763950206947093007, guid: 46ac2985f2bf8754d808476fdd469b8f, type: 3}
+  isActive: 0
+  canPatrol: 0
 --- !u!95 &8694077917230067310
 Animator:
   serializedVersion: 3
@@ -162,7 +181,7 @@ Animator:
   m_GameObject: {fileID: 3672462014045453693}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 67d88b3b290cb14439809f962526dee4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 44ff05b804031754a8b372443a4016ad, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -185,23 +204,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pool: []
   objects:
-  - {fileID: 6763950206947093007, guid: d47869def33c5f14499ca13decc906a8, type: 3}
---- !u!114 &751793063635504236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3672462014045453693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ca4b00835c22d243b5db4e8eacd44b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0.8
-  attackInterval: 2
-  attackRange: 0.8
-  cost: 15
-  attack: {fileID: 6763950206947093007, guid: d47869def33c5f14499ca13decc906a8, type: 3}
-  isActive: 0
-  canPatrol: 0
+  - {fileID: 6763950206947093007, guid: 46ac2985f2bf8754d808476fdd469b8f, type: 3}

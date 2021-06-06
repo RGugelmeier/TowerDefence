@@ -124,6 +124,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   speed: 10
-  liveTime: 1
+  maxLiveTime: 2
   target: {fileID: 0}
   ignoreCollision: {fileID: 0}

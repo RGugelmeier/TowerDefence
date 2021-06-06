@@ -5,7 +5,8 @@ public abstract class AttackBase : MonoBehaviour
 {
     //Amount of damage to deal.
     //How fast the attack will travel.
-    [SerializeField] protected float damage, speed, liveTime;
+    [SerializeField] protected float damage, speed, maxLiveTime;
+    private float liveTime;
     protected bool hitEnemy = false; //True if the attack hits an enemy.
     public BaseEnemy target; //The target location.
 
@@ -26,6 +27,7 @@ public abstract class AttackBase : MonoBehaviour
     //Look at the target and set timeAlive so it can be used properly in update.
     void Start()
     {
+        liveTime = maxLiveTime;
         parent = transform.parent.gameObject;
         //Set the box to ignore.
         collision = GetComponent<BoxCollider2D>();
@@ -42,6 +44,7 @@ public abstract class AttackBase : MonoBehaviour
     {
         if (obj.GetInstanceID() == gameObject.GetInstanceID())
         {
+            liveTime = maxLiveTime;
             transform.position = parent.transform.position;
             transform.up = -target.transform.position + transform.position;
         }
@@ -59,8 +62,9 @@ public abstract class AttackBase : MonoBehaviour
         }
         else if(target)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-            transform.up = -target.transform.position + transform.position;
+            //transform.position = Vector3.MoveTowards(transform.position, moveTo, speed * Time.deltaTime);
+            transform.position += -transform.up * speed * Time.deltaTime;
+            //transform.up = -target.transform.position + transform.position;
         }
     }
 
