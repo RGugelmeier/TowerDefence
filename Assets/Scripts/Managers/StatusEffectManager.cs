@@ -6,4 +6,5 @@ public class StatusEffectManager
 {
     public static Action<float, int> OnStun;
     public static Action<float, int> OnSlow;
+    public static Action<float, int> OnShield;
 }

@@ -8,7 +8,7 @@ public abstract class AttackBase : MonoBehaviour
     [SerializeField] protected float damage, speed, maxLiveTime;
     private float liveTime;
     protected bool hitEnemy = false; //True if the attack hits an enemy.
-    public BaseEnemy target; //The target location.
+    public BaseCreature target; //The target location.
 
     //Reference the attack's collision box.
     [SerializeField] BoxCollider2D ignoreCollision;
@@ -21,7 +21,7 @@ public abstract class AttackBase : MonoBehaviour
     protected AttackPool pool;
 
     //Events that the attack will raise when it hits an enemy.
-    public static Action<BaseEnemy> onEnemyHit_;
+    public static Action<BaseCreature> onCreatureHit_;
     public static Action onDamageRecieved_;
 
     //Look at the target and set timeAlive so it can be used properly in update.
@@ -42,11 +42,14 @@ public abstract class AttackBase : MonoBehaviour
     //Reset the position to be back at the unit, and rotate it to look at the target.
     public void OnReactivate(GameObject obj)
     {
-        if (obj.GetInstanceID() == gameObject.GetInstanceID())
+        if(this != null)
         {
-            liveTime = maxLiveTime;
-            transform.position = parent.transform.position;
-            transform.up = -target.transform.position + transform.position;
+            if (obj.GetInstanceID() == gameObject.GetInstanceID())
+            {
+                liveTime = maxLiveTime;
+                transform.position = parent.transform.position;
+                transform.up = -target.transform.position + transform.position;
+            }
         }
     }
 
@@ -71,16 +74,18 @@ public abstract class AttackBase : MonoBehaviour
     //Collision
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        BaseEnemy enemyCheck = collision.GetComponent<BaseEnemy>();
+        BaseCreature creatureCheck = collision.GetComponent<BaseCreature>();
+        //BaseEnemy enemyCheck = collision.GetComponent<BaseEnemy>();
 
-        //If I collide with an enemy, set hitEnemy to true. In the attack's class, OnHit will be run when hitEnemy is true.
-        if (enemyCheck == target)
+        //If I collide with an enemy, raise flag for onCreatureHit. In the attack's class, OnHit will be run when this flag is raised.
+        if (creatureCheck == target && creatureCheck.canTakeDamage)
         {
             if (collision.gameObject.activeInHierarchy)
             {
-                if (onEnemyHit_ != null)
+                Debug.Log("Enemy hit!");
+                if (onCreatureHit_ != null)
                 {
-                    onEnemyHit_(enemyCheck);
+                    onCreatureHit_(creatureCheck);
                 }
                 if(onDamageRecieved_ != null)
                 {

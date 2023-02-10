@@ -1,12 +1,12 @@
 public class Arrow : AttackBase, IAttack
 {
-    public void OnHit(BaseEnemy enemyHit)
+    public void OnHit(BaseCreature creatureHit)
     {
-        if(enemyHit == target)
+        if(creatureHit == target)
         {
             if(this != null)
             {
-                enemyHit.health -= damage;
+                creatureHit.health -= damage;
                 pool.Return(gameObject);
             }
         }
@@ -16,6 +16,6 @@ public class Arrow : AttackBase, IAttack
     void Awake()
     {
         pool = FindObjectOfType<AttackPool>();
-        onEnemyHit_ += OnHit;
+        onCreatureHit_ += OnHit;
     }
 }

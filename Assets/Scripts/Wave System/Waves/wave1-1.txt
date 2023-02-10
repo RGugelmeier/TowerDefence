@@ -1,10 +1,7 @@
-BB
-OB
-GB
-BB
-OB
-GG
-OB
-OB
-BB
-GB
+F
+TT
+TT
+TT
+TT
+TT
+TT

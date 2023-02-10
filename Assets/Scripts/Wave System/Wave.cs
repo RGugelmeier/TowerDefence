@@ -7,6 +7,11 @@ public class Wave : MonoBehaviour
 {
     //Reference to the wave manager.
     WaveManager waveMan;
+    //Reference to the game manager.
+    private GameManager gameMan;
+
+    //The amound of upgrade points to give when the player beats this wave.
+    public int pointsToGive;
 
     //List of enemies to spawn, and list of enemies that have spawned and are still alive.
     public List<GameObject> enemiesToSpawn;// = new List<GameObject>();
@@ -15,6 +20,7 @@ public class Wave : MonoBehaviour
 
     private GameObject addedGameObject;
     private GameObject spawnedEnemy;
+    private BaseEnemy spawnedEnemyObject;
 
     //Controlls how often each enemy spawns.
     float spawnTimer;
@@ -31,6 +37,8 @@ public class Wave : MonoBehaviour
     //Awake is performed as soon as the object becomes valid.
     void Awake()
     {
+        gameMan = FindObjectOfType<GameManager>();
+
         //Get reference to the enemy pool.
         pool = FindObjectOfType<EnemyPool>();
 
@@ -42,7 +50,17 @@ public class Wave : MonoBehaviour
             //Read the wave file.
             string[] lines = File.ReadAllLines("G:/UNITY/Projects/TowerDefence/Assets/Scripts/Wave System/Waves/wave" + levelNum + "-" + waveNum + ".txt");
 
-            //Add each unit type to the list. This wave only has "N" (Normal enemies).
+            //Get the amount of upgrade points that this wave is worth from the text file. WIP
+            if(lines[0].Contains("points worth:"))
+            {
+                pointsToGive = Int32.Parse(lines[1]);
+            }
+            else
+            {
+                Debug.LogWarning("Wave: " + waveNum + " does not have a point worth! Make sure the text file says how many points to give for this wave.");
+            }
+
+            //Add each unit type to the list.
             foreach (string line in lines)
             {
                 //Blue blob
@@ -59,6 +77,22 @@ public class Wave : MonoBehaviour
                 else if (line.Equals("OB"))
                 {
                     addedGameObject = waveMan.orangeBlob;
+                }
+                else if (line.Equals("MM"))
+                {
+                    addedGameObject = waveMan.mushMan;
+                }
+                else if (line.Equals("TT"))
+                {
+                    addedGameObject = waveMan.treant;
+                }
+                else if (line.Equals("W"))
+                {
+                    addedGameObject = waveMan.wisp;
+                }
+                else if (line.Equals("F"))
+                {
+                    addedGameObject = waveMan.fairy;
                 }
                 enemiesToSpawn.Add(addedGameObject);
             }
@@ -90,7 +124,8 @@ public class Wave : MonoBehaviour
                 if(enemiesToSpawn.Count != 0)
                 {
                     spawnedEnemy = enemiesToSpawn[0];
-                    pool.CreateNew(spawnedEnemy);
+                    spawnedEnemyObject = pool.CreateNew(spawnedEnemy).GetComponent<BaseEnemy>();
+                    gameMan.aliveEnemies.Add(spawnedEnemyObject);
                     enemiesAlive++;
                     enemiesToSpawn.Remove(spawnedEnemy);
                     Debug.Log("Enemy spawned. Enemies left to spawn: " + enemiesToSpawn.Count);
@@ -113,6 +148,7 @@ public class Wave : MonoBehaviour
                 enemiesAlive--;
             }
             pool.Return(deadEnemy);
+            gameMan.aliveEnemies.Remove(deadEnemy.GetComponent<BaseEnemy>());
             if (enemiesAlive <= 0 && enemiesToSpawn.Count == 0)
             {
                 EndWave();
@@ -137,6 +173,9 @@ public class Wave : MonoBehaviour
     public void EndWave()
     {
         enemiesToSpawn.Clear();
+
+        gameMan.upgradePoints += pointsToGive;
+        Debug.Log(pointsToGive + " points given.");
 
         if (!File.Exists("G:/UNITY/Projects/TowerDefence/Assets/Scripts/Wave System/Waves/wave" + levelNum + "-" + (waveNum + 1) + ".txt"))
         {

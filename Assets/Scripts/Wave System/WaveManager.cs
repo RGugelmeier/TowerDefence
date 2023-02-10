@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
-    //Holds the current wave number.
-    int currentWaveNum, currentLevelNum;
+    //Holds the current level and wave number.
+    [SerializeField] private int currentLevelNum;
+    private int currentWaveNum;
 
     //holds the current wave object.
     Wave currentWave;
@@ -16,13 +17,13 @@ public class WaveManager : MonoBehaviour
     GameObject wave_;
 
     //Enemies that can be spawned. Insert prefabs in editor.
-    public GameObject blueBlob, greenBlob, orangeBlob;
+    public GameObject blueBlob, greenBlob, orangeBlob, mushMan, treant, wisp, fairy;
 
     //This canvas holds all pre-wave UI. Activated when no wave is active.
     [SerializeField] Canvas preWaveCanvas;
 
     //Event that gets called when the level is completed. Used in HUD manager to show the end level UI.
-    public static Action OnLevelEnd;
+    public static Action<int> OnLevelEnd;
 
     //Set action events and other default variables.
     void Start()
@@ -30,7 +31,6 @@ public class WaveManager : MonoBehaviour
         Wave.OnWaveFinished += EndWave;
         Wave.OnFileNotFound += OnNoMoreWaves;
 
-        currentLevelNum = 1;
         currentWaveNum = 1;
     }
 
@@ -49,7 +49,10 @@ public class WaveManager : MonoBehaviour
     //End current wave.
     void EndWave()
     {
-        preWaveCanvas.enabled = true;
+        if(preWaveCanvas != null)
+        {
+            preWaveCanvas.enabled = true;
+        }
 
         Debug.Log("Wave " + currentWaveNum + " completed!");
 
@@ -62,6 +65,12 @@ public class WaveManager : MonoBehaviour
     private void OnNoMoreWaves()
     {
         if(OnLevelEnd != null)
-            OnLevelEnd();
+            OnLevelEnd(currentLevelNum);
+    }
+
+    //Level num getter.
+    public int GetCurrentLevel()
+    {
+        return currentLevelNum;
     }
 }

@@ -159,7 +159,7 @@ TextureImporter:
       213: 7078068747487742896
     second: G
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -180,6 +180,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -189,8 +190,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -218,6 +219,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -245,6 +247,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1360,6 +1386,59 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      y: 7526671300271645754
+      l: 1527230989947028209
+      b: -4350177152937817738
+      P: 3623958768482617474
+      H: -6277773218580878863
+      c: 8575779969977892497
+      w: 1105160748334022914
+      L: 9052740109103983042
+      Y: -1465821529190792364
+      S: 2261781726074053692
+      g: 5702571266315112258
+      n: 5891515467037262119
+      r: 8321023403222963270
+      z: 5918150625452994393
+      x: -8604681912862921683
+      R: 613452145849277685
+      D: 4188611149104091532
+      j: 2317275140032801678
+      Z: -8835834080502744653
+      K: -3967707724522640639
+      d: 7304724254083687340
+      M: 3511320066245282635
+      F: -7123721504873154671
+      W: -3860768701051750063
+      h: -6006327315202356388
+      a: -3104936443796103597
+      i: 5263444857420525361
+      o: 5377246778966564283
+      v: 9057846871219275927
+      C: 3338136481335580707
+      Q: 8650881836854460018
+      J: -5566473358236568846
+      G: 7078068747487742896
+      E: 3539293522908892243
+      X: -8676048124659871319
+      B: -2609820985240267085
+      U: 7904687990431785244
+      I: 3655999960219209647
+      O: 1402022807098140423
+      k: -1582327076334142806
+      s: -535525047290033620
+      T: -1024661038509557153
+      A: 8443133735742707440
+      V: -8625895457432839237
+      u: -1028863992734510784
+      f: -2772113711044353389
+      q: 1471668879005817839
+      p: -9095004511926026874
+      N: 2681318402694423768
+      t: 5405880594269831883
+      m: 3586471250776097018
+      e: -6878532299023695292
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

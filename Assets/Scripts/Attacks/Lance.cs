@@ -5,14 +5,14 @@ public class Lance : AttackBase, IAttack
     static float STUN_TIME = 2.0F;
 
     //Deal damage to the enemy if it is the target, then raise the stun flag.
-    public void OnHit(BaseEnemy enemyHit)
+    public void OnHit(BaseCreature creatureHit)
     {
-        if(enemyHit == target)
+        if(creatureHit == target)
         {
             if(this != null)
             {
-                StatusEffectManager.OnStun(STUN_TIME, enemyHit.GetInstanceID());
-                enemyHit.health -= damage;
+                StatusEffectManager.OnStun(STUN_TIME, creatureHit.GetInstanceID());
+                creatureHit.health -= damage;
                 pool.Return(gameObject);
             }
         }
@@ -22,6 +22,6 @@ public class Lance : AttackBase, IAttack
     void Awake()
     {
         pool = FindObjectOfType<AttackPool>();
-        onEnemyHit_ += OnHit;
+        onCreatureHit_ += OnHit;
     }
 }

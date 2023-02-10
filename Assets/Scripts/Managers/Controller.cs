@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.Advertisements;
 
 public class Controller : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Controller : MonoBehaviour
     new Camera camera;
     float xAxisValue;
     float yAxisValue;
+    float zAxisValue;
 
     public static Action<string> OnPlayerError;
     public static Action<int> OnUnitPlacement;
@@ -44,11 +46,14 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
+        //ShowAd();
+
         //**--CAMERA MOVEMENT--**//
         //If w, a, s, or d are being pressed. Move camera. Arrow keys also work.
         {
             if (Input.GetAxis("Horizontal") > 0.0f || Input.GetAxis("Vertical") > 0.0f ||
-                Input.GetAxis("Horizontal") < 0.0f || Input.GetAxis("Vertical") < 0.0f)
+                Input.GetAxis("Horizontal") < 0.0f || Input.GetAxis("Vertical") < 0.0f ||
+                Input.mouseScrollDelta.y > 0.0f || Input.mouseScrollDelta.y < 0.0f)
             {
                 CameraMovement();
             }
@@ -103,6 +108,11 @@ public class Controller : MonoBehaviour
         }
     }
 
+    //public void ShowAd()
+    //{
+    //    
+    //}
+
     //FUNCTION//
     //CAMERAMOVEMENT: Called when Horizontal or Vertical axis > 0.0.
     //Translates the camera's position.
@@ -111,6 +121,7 @@ public class Controller : MonoBehaviour
         //Camera movement axis.
         xAxisValue = Input.GetAxis("Horizontal") / 10;
         yAxisValue = Input.GetAxis("Vertical") / 10;
+        zAxisValue = Input.mouseScrollDelta.y * 10;
 
         //Check if the camera can move in whatever direction it is trying to move in. If it can't, return out of the function.
         if (camera.transform.position.x >= bounds.maxX && Input.GetAxis("Horizontal") > 0.0f)
@@ -133,6 +144,7 @@ public class Controller : MonoBehaviour
         //Move camera on input.
         camera.transform.Translate(xAxisValue, 0.0f, 0.0f);
         camera.transform.Translate(0.0f, yAxisValue, 0.0f);
+        //camera.orthographicSize -= zAxisValue * 0.05f;
     }
 
     //FUNCTION//
@@ -161,8 +173,9 @@ public class Controller : MonoBehaviour
         //GameObject createdUnit = newUnit;
         GameObject createdUnit = unitPool.CreateNew(newUnit, camera.ScreenToWorldPoint(Input.mousePosition));
         Instantiate(spotHolder, createdUnit.transform);
-        //Get the unitpool to create a new unit.
+        //Get the unitpool to create a new unit and add it to the alive units list in the game manager.
         newUnitObject = createdUnit.GetComponent<UnitBase>();
+        gameMan.aliveUnits.Add(newUnitObject);
 
         //Get the centre of the cell the unit was created in and move it there.
         Vector3Int cellPosition = grid.WorldToCell(createdUnit.transform.position);
@@ -180,6 +193,7 @@ public class Controller : MonoBehaviour
 
         if (OnUnitPlacement != null)
             OnUnitPlacement(createdUnit.GetInstanceID());
+
     }
 
     //Destroys the selected unit. Can only be called if there is a selected unit currently and the player right clicks.

@@ -4,8 +4,9 @@ using UnityEngine;
 public class HUDManager : MonoBehaviour
 {
     //The text that holds the player's current balance.
-    [SerializeField] private Text balanceVal, errorText;
+    [SerializeField] private Text errorText;
     [SerializeField] private Canvas endLevelUI;
+    private Text balanceVal;
 
     //The game manager.
     private GameManager gameMan;
@@ -24,6 +25,7 @@ public class HUDManager : MonoBehaviour
         gameMan = FindObjectOfType<GameManager>();
 
         //Set the initial player balance.
+        balanceVal = GameObject.Find("BalanceVal").GetComponent<Text>();
         balanceVal.text = gameMan.balance.ToString();
         endLevelUI.enabled = false;
     }
@@ -33,7 +35,10 @@ public class HUDManager : MonoBehaviour
         //If an error message is displayed, start ticking timer to turn it off.
         if (errorMsgTime <= 0.0f)
         {
-            errorText.gameObject.SetActive(false);
+            if(errorText != null)
+            {
+                errorText.gameObject.SetActive(false);
+            }
         }
         else
         {
@@ -44,20 +49,29 @@ public class HUDManager : MonoBehaviour
     //Shows the player's proper balance. Updates when the player's balance changes.
     void UpdateBalance()
     {
-        balanceVal.text = gameMan.balance.ToString();
+        if(balanceVal != null)
+        {
+            balanceVal.text = gameMan.balance.ToString();
+        }
     }
 
     //Change and activate error message.
     void DisplayErrorMessage(string errorMsg)
     {
         errorMsgTime = 3.0f;
-        errorText.text = errorMsg;
-        errorText.gameObject.SetActive(true);
+        if(errorText != null)
+        {
+            errorText.text = errorMsg;
+            errorText.gameObject.SetActive(true);
+        }
     }
 
     //Enables the end level UI.
-    void ShowLevelEnd()
+    void ShowLevelEnd(int currentLevel)
     {
-        endLevelUI.enabled = true;
+        if(this != null)
+        {
+            endLevelUI.enabled = true;
+        }
     }
 }

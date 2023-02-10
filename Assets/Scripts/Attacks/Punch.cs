@@ -1,13 +1,16 @@
-﻿public class Punch : AttackBase, IAttack
+﻿using UnityEngine;
+
+public class Punch : AttackBase, IAttack
 {
     //Deal damage to the enemy if it is the target.
-    public void OnHit(BaseEnemy enemyHit)
+    public void OnHit(BaseCreature creatureHit)
     {
-        if(enemyHit == target)
+        if(creatureHit == target)
         {
             if (this != null)
             {
-                enemyHit.health -= damage;
+                Debug.Log(creatureHit.name + "was hit");
+                creatureHit.health -= damage;
                 pool.Return(gameObject);
             }
         }
@@ -18,6 +21,6 @@
     {
         transform.localScale /= 3;
         pool = FindObjectOfType<AttackPool>();
-        onEnemyHit_ += OnHit;
+        onCreatureHit_ += OnHit;
     }
 }
