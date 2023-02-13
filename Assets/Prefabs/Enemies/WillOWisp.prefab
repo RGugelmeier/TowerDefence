@@ -223,6 +223,8 @@ MonoBehaviour:
   moveSpeed: 2.25
   canAttack: 0
   canTakeDamage: 1
+  FXAnimManager: {fileID: 6456598628426963385, guid: f08b635af8c16174a88881d5cbdbd456,
+    type: 3}
   damage: 30
   worth: 0
   id: 0

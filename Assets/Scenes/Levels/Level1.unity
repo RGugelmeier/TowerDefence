@@ -14512,6 +14512,7 @@ MonoBehaviour:
   balance: 0
   upgradePoints: 0
   aliveUnits: []
+  aliveEnemies: []
 --- !u!114 &1907220227
 MonoBehaviour:
   m_ObjectHideFlags: 0

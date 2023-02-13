@@ -1,9 +1,12 @@
+using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
 public class EWisp : BaseEnemy, IEnemy
 {
     static float CURSE_TIME_TO_KILL = 3.0f;
+
+    
 
     //Do more stuff when a fairy reaches the end.
     public override void ReachedEnd()
@@ -25,14 +28,21 @@ public class EWisp : BaseEnemy, IEnemy
 
     IEnumerator Cursed(float time_)
     {
-        yield return new WaitForSeconds(time_);
+        List<BaseCreature> curseList = new List<BaseCreature>();
+
         //If there are more than three units created, pick 3 random ones and kill them (Return them to unitPool.
         if (gameMan.aliveUnits.Count > 3)
         {
             for (int i = 0; i < 3; i++)
             {
-                unitPool.Return(gameMan.aliveUnits[Random.Range(0, gameMan.aliveUnits.Count)].gameObject);
+                curseList.Add(gameMan.aliveUnits[Random.Range(0, gameMan.aliveUnits.Count)]);
+                //unitPool.Return(gameMan.aliveUnits[Random.Range(0, gameMan.aliveUnits.Count)].gameObject);
                 //gameMan.aliveUnits[Random.Range(0, gameMan.aliveUnits.Count)].health = 0;
+            }
+
+            foreach (BaseCreature unit in gameMan.aliveUnits)
+            {
+                unit.FXAnimator.SetBool("IsCursed", true);
             }
         }
         //If there are less than or equal to 3 units created, kill 'em all.
@@ -41,8 +51,19 @@ public class EWisp : BaseEnemy, IEnemy
             foreach (BaseCreature unit in gameMan.aliveUnits)
             {
                 //unit.health = 0;
-                unitPool.Return(unit.gameObject);
+                //unitPool.Return(unit.gameObject);
+                curseList.Add(unit);
+                unit.FXAnimator.SetBool("IsCursed", true);
             }
+        }
+
+        yield return new WaitForSeconds(time_);
+        
+        //Return all cursed game objects to obj pool
+        foreach (BaseCreature unit in curseList)
+        {
+            unit.FXAnimator.SetBool("IsCursed", false);
+            unitPool.Return(unit.gameObject);
         }
 
         //Destroy self.

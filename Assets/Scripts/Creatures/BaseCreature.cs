@@ -27,6 +27,11 @@ public abstract class BaseCreature : MonoBehaviour
 
     protected CircleCollider2D enemyDetection;  //Enemy collision detection.
 
+    [SerializeField]
+    private GameObject FXAnimManager;
+    private GameObject FXAnimObj;
+    public Animator FXAnimator;
+
     protected void Awake()
     {
         //Set what functions run when a status effect is applied via StatusEffectManager.
@@ -39,6 +44,10 @@ public abstract class BaseCreature : MonoBehaviour
 
         //Initialize attack timer.
         attackTimer = attackInterval;
+
+
+        FXAnimObj = Instantiate(FXAnimManager, transform);
+        FXAnimator = FXAnimObj.GetComponent<Animator>();
 
         //If the enemy can attack, get it's circle collider component to use as their detection radius.
         if(canAttack)
@@ -60,11 +69,14 @@ public abstract class BaseCreature : MonoBehaviour
     //This function stuns the enemy for a time dictated by the time_ variable passed in.
     protected void OnStun(float time_, int enemyID)
     {
+        
         //This keeps track of if the character being stunned has ther ability to attack. If so, This will prevent them from attacking until the stun is done.
         bool attackStopped = false;
 
         if (enemyID == GetInstanceID())
         {
+            FXAnimator.SetBool("IsStunned", true);
+
             StartCoroutine(Stunned(time_));
 
             //Stunned coroutine. This actually stuns the enemy and unstuns on a timer.
@@ -86,6 +98,8 @@ public abstract class BaseCreature : MonoBehaviour
                     canAttack = true;
                 }
                 moveSpeed = maxMoveSpeed;
+
+                FXAnimator.SetBool("IsStunned", false);
             }
         }
     }
@@ -95,6 +109,7 @@ public abstract class BaseCreature : MonoBehaviour
     {
         if(enemyID == GetInstanceID())
         {
+            FXAnimator.SetBool("IsShielded", true);
             StartCoroutine(Shielded(time_));
 
             IEnumerator Shielded(float time_)
@@ -102,6 +117,7 @@ public abstract class BaseCreature : MonoBehaviour
                 canTakeDamage = false;
                 yield return new WaitForSeconds(time_);
                 canTakeDamage = true;
+                FXAnimator.SetBool("IsShielded", false);
             }
         }
     }

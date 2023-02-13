@@ -209,6 +209,9 @@ MonoBehaviour:
   maxMoveSpeed: 0
   moveSpeed: 0.8
   canAttack: 1
+  canTakeDamage: 0
+  FXAnimManager: {fileID: 6456598628426963385, guid: f08b635af8c16174a88881d5cbdbd456,
+    type: 3}
   level: 0
   damageMod: 0
   cost: 15

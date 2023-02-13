@@ -11,6 +11,8 @@ public class EFairy : BaseEnemy, IEnemy
         //Heal each enemy by HEAL_AMOUNT.
         foreach(BaseCreature enemy in gameMan.aliveEnemies)
         {
+            enemy.FXAnimator.SetTrigger("IsHealed");
+
             enemy.health += HEAL_AMOUNT;
 
             //If the enemy is overhealed, set it's hp back to it's max hp.
