@@ -152,8 +152,17 @@ public class Controller : MonoBehaviour
     //Set which unit is supposed to be selected. Called when a unit button is clicked.
     public void SelectUnit(GameObject unitToSelect)
     {
-        selectedUnit = unitToSelect;
         selectedUnitObject = unitToSelect.GetComponent<UnitBase>();
+        if(unitToSelect.GetComponent<UArcher>() && gameMan.archerLevel == 0)
+        {
+            return;
+        }
+        if (unitToSelect.GetComponent<UGuard>() && gameMan.guardLevel == 0)
+        {
+            return;
+        }
+        selectedUnit = unitToSelect;
+
         selectedUnit = Instantiate(selectedUnit, new Vector3(Input.mousePosition.x, Input.mousePosition.y), Quaternion.identity);
         selectedUnit.layer = 2;
         mouseUpCheck++;

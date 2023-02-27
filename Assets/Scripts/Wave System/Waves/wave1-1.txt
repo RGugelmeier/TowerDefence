@@ -1,5 +1,3 @@
-F
-TT
-TT
-TT
-TT
+points worth:
+500
+W

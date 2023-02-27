@@ -45,18 +45,21 @@ public class Wave : MonoBehaviour
         //Get reference to the wave manager.
         waveMan = FindObjectOfType<WaveManager>();
 
+        //Make sure the wave file can be found before running the code
         if(File.Exists("G:/UNITY/Projects/TowerDefence/Assets/Scripts/Wave System/Waves/wave" + levelNum + "-" + waveNum + ".txt"))
         {
             //Read the wave file.
             string[] lines = File.ReadAllLines("G:/UNITY/Projects/TowerDefence/Assets/Scripts/Wave System/Waves/wave" + levelNum + "-" + waveNum + ".txt");
 
-            //Get the amount of upgrade points that this wave is worth from the text file. WIP
+            //Get the amount of upgrade points that this wave is worth from the text file...
+            //If there is no points worth for ther wave, print a debug warning and set the pointsToGive to 0;
             if(lines[0].Contains("points worth:"))
             {
                 pointsToGive = Int32.Parse(lines[1]);
             }
             else
             {
+                pointsToGive = 0;
                 Debug.LogWarning("Wave: " + waveNum + " does not have a point worth! Make sure the text file says how many points to give for this wave.");
             }
 
@@ -94,7 +97,12 @@ public class Wave : MonoBehaviour
                 {
                     addedGameObject = waveMan.fairy;
                 }
-                enemiesToSpawn.Add(addedGameObject);
+
+                //Add the objecy to the enemy objects to spawn if the line read is an enemy.
+                if(addedGameObject != null)
+                {
+                    enemiesToSpawn.Add(addedGameObject);
+                }
             }
         }
 
@@ -187,5 +195,7 @@ public class Wave : MonoBehaviour
             if (OnWaveFinished != null)
                 OnWaveFinished();
         }
+
+        Destroy(this);
     }
 }

@@ -8,8 +8,7 @@ using UnityEngine;
 public abstract class UnitBase : BaseCreature
 {
     //Unit stats.
-    [HideInInspector] public int level;
-    [SerializeField] protected float damageMod;
+    [SerializeField] protected float damageMod, attackSpeedMod, rangeMod;
     [HideInInspector] public float cost;
 
     private float animResetTimer;
@@ -25,15 +24,6 @@ public abstract class UnitBase : BaseCreature
     //Event raised when I am created by the player.
     public static Action<GameObject> OnCreation;
 
-    //Create a hitbox on the unit. Set it's position and size.
-    new protected void Start()
-    {
-        if(isActive)
-        {
-            
-        }
-    }
-
     //Get circle collider reference.
     new private void Awake()
     {
@@ -44,13 +34,9 @@ public abstract class UnitBase : BaseCreature
         lowerQuadrant.x = 125.01f; lowerQuadrant.y = 215.0f;
         leftQuadrant.x = 215.01f; leftQuadrant.y = 305.0f;
 
-        
         anim = GetComponent<Animator>();
 
-        //TESTING
-        level = 0;
-
-        //END TESTING
+        damageMod = attackSpeedMod = rangeMod = 1f;
 
         //Set isActive to false. This will be set to true when the player places one down.
         //isActive = false;
@@ -59,14 +45,7 @@ public abstract class UnitBase : BaseCreature
         animResetTimer = 0.5f;
     }
 
-    //Apply modifiers from the unit type's level to it's stats.
-    private void ApplyLevel()
-    {
-        if(level != 1)
-        {
-            attackInterval += (attackInterval *= level / 2);
-        }
-    }
+    
 
     void Update()
     {

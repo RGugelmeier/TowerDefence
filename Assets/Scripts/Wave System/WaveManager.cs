@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveManager : MonoBehaviour
 {
@@ -28,10 +29,21 @@ public class WaveManager : MonoBehaviour
     //Set action events and other default variables.
     void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
+
         Wave.OnWaveFinished += EndWave;
         Wave.OnFileNotFound += OnNoMoreWaves;
+        SceneManager.sceneLoaded += OnSceneLoaded;
 
         currentWaveNum = 1;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.name.Contains("Level"))
+        {
+            preWaveCanvas = GameObject.Find("PrewaveUI").GetComponent<Canvas>();
+        }
     }
 
     //Start a new wave by setting currentWave's level and wave data, then instantiating it.
@@ -66,6 +78,8 @@ public class WaveManager : MonoBehaviour
     {
         if(OnLevelEnd != null)
             OnLevelEnd(currentLevelNum);
+
+        //currentLevelNum++;
     }
 
     //Level num getter.

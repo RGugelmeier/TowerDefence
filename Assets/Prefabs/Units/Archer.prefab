@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3672462014045453689}
   - component: {fileID: 3672462014045453690}
   - component: {fileID: 1996786807870891253}
-  - component: {fileID: 4591376952016386268}
   - component: {fileID: 8694077917230067310}
   - component: {fileID: 7813367657849335716}
+  - component: {fileID: 5501138146300918383}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Untagged
@@ -154,33 +154,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.0001
---- !u!114 &4591376952016386268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3672462014045453693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f569f687262bf4f95c8c5ac1d46c57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackInterval: 0.4
-  attackRange: 2
-  maxHealth: 75
-  health: 0
-  attack: {fileID: 6763950206947093007, guid: 46ac2985f2bf8754d808476fdd469b8f, type: 3}
-  maxMoveSpeed: 0
-  moveSpeed: 0
-  canAttack: 1
-  canTakeDamage: 0
-  FXAnimManager: {fileID: 6456598628426963385, guid: f08b635af8c16174a88881d5cbdbd456,
-    type: 3}
-  level: 0
-  damageMod: 0
-  cost: 0
-  isActive: 0
 --- !u!95 &8694077917230067310
 Animator:
   serializedVersion: 4
@@ -216,3 +189,31 @@ MonoBehaviour:
   pool: []
   objects:
   - {fileID: 6763950206947093007, guid: 46ac2985f2bf8754d808476fdd469b8f, type: 3}
+--- !u!114 &5501138146300918383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672462014045453693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 645b72d31968935489ac9658d5a7fca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackInterval: 0.4
+  attackRange: 2
+  maxHealth: 75
+  health: 0
+  attack: {fileID: 6763950206947093007, guid: 46ac2985f2bf8754d808476fdd469b8f, type: 3}
+  maxMoveSpeed: 0
+  moveSpeed: 0
+  canAttack: 1
+  canTakeDamage: 0
+  FXAnimManager: {fileID: 6456598628426963385, guid: f08b635af8c16174a88881d5cbdbd456,
+    type: 3}
+  FXAnimator: {fileID: 0}
+  level: 0
+  damageMod: 0
+  cost: 0
+  isActive: 0

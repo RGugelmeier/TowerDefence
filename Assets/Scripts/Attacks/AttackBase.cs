@@ -5,7 +5,8 @@ public abstract class AttackBase : MonoBehaviour
 {
     //Amount of damage to deal.
     //How fast the attack will travel.
-    [SerializeField] protected float damage, speed, maxLiveTime;
+    public float damage;
+    [SerializeField] protected float speed, maxLiveTime;
     private float liveTime;
     protected bool hitEnemy = false; //True if the attack hits an enemy.
     public BaseCreature target; //The target location.
