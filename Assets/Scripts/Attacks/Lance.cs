@@ -13,6 +13,7 @@ public class Lance : AttackBase, IAttack
             {
                 StatusEffectManager.OnStun(STUN_TIME, creatureHit.GetInstanceID());
                 creatureHit.health -= damage;
+                AudioManager.audioManInstance.Play("GuardLance");
                 pool.Return(gameObject);
             }
         }

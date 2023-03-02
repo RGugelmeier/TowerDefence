@@ -22,6 +22,8 @@ public class EFairy : BaseEnemy, IEnemy
             }
         }
 
+        AudioManager.audioManInstance.Play("Heal");
+
         base.ReachedEnd();
     }
 }

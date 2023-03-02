@@ -26,9 +26,23 @@ public class WaveManager : MonoBehaviour
     //Event that gets called when the level is completed. Used in HUD manager to show the end level UI.
     public static Action<int> OnLevelEnd;
 
+    //Static wave manager instance makes it so only one instance of a wave manager can exist at a time, making it a singleton.
+    public static WaveManager waveManInstance;
+
     //Set action events and other default variables.
     void Start()
     {
+        //Singleton setting. This makes it so only one game manager can exist at a time.
+        if (waveManInstance == null)
+        {
+            waveManInstance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         DontDestroyOnLoad(this.gameObject);
 
         Wave.OnWaveFinished += EndWave;
@@ -43,6 +57,8 @@ public class WaveManager : MonoBehaviour
         if(scene.name.Contains("Level"))
         {
             preWaveCanvas = GameObject.Find("PrewaveUI").GetComponent<Canvas>();
+            AudioManager.audioManInstance.Stop("MenuMusic");
+            AudioManager.audioManInstance.Play("PreWaveAmbient");
         }
     }
 
@@ -56,6 +72,9 @@ public class WaveManager : MonoBehaviour
         currentWave.levelNum = currentLevelNum;
         currentWave.waveNum = currentWaveNum;
         wave_ = Instantiate(wavePrefab);
+
+        //AudioManager.audioManInstance.Play("WaveSongIntro");
+        AudioManager.audioManInstance.Play("WaveSongLoop");
     }
 
     //End current wave.
@@ -70,6 +89,10 @@ public class WaveManager : MonoBehaviour
 
         currentWaveNum += 1;
 
+        //AudioManager.audioManInstance.Stop("WaveSongIntro");
+        AudioManager.audioManInstance.Stop("WaveSongLoop");
+
+        AudioManager.audioManInstance.Play("PreWaveAmbient");
         Destroy(wave_);
     }
 
@@ -79,7 +102,8 @@ public class WaveManager : MonoBehaviour
         if(OnLevelEnd != null)
             OnLevelEnd(currentLevelNum);
 
-        //currentLevelNum++;
+        currentWaveNum = 1;
+        currentLevelNum++;
     }
 
     //Level num getter.

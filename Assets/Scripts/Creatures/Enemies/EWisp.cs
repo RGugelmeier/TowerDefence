@@ -22,6 +22,8 @@ public class EWisp : BaseEnemy, IEnemy
         GetComponent<Renderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
 
+        AudioManager.audioManInstance.Play("Curse");
+
         //Start coroutine that delays unit killing by an amount of time determined by CURSE_TIME_TO_KILL.
         StartCoroutine(Cursed(CURSE_TIME_TO_KILL));
     }

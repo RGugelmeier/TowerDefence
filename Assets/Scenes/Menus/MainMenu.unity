@@ -605,8 +605,11 @@ MonoBehaviour:
   balance: 0
   upgradePoints: 0
   puncherUpgradeCost: 0
-  gaurdUpgradeCost: 0
+  guardUpgradeCost: 0
   archerUpgradeCost: 0
+  puncherLevel: 0
+  archerLevel: 0
+  guardLevel: 0
   nextLevelNumber: 0
   aliveUnits: []
   aliveEnemies: []
@@ -624,6 +627,116 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1140250756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1140250758}
+  - component: {fileID: 1140250757}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1140250757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140250756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a8403459a35c046b9e96a3a854b27d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - clip: {fileID: 8300000, guid: ddbc878d0fc9cb74b8aee819c45a02b5, type: 3}
+    name: MenuMusic
+    loop: 1
+    volume: 0.15
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 4111b72ba979d774494cc3a088faeafd, type: 3}
+    name: PreWaveAmbient
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 712abc1379038994ab88b54cd6630157, type: 3}
+    name: WaveSongIntro
+    loop: 0
+    volume: 0.15
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 033766cc31c97904bae4404b8a079544, type: 3}
+    name: WaveSongLoop
+    loop: 1
+    volume: 0.15
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 40cda279da2faea43ad6582184440a70, type: 3}
+    name: PuncherPunch
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 67dd73a8fb8b99e4d8c8d793c86c4324, type: 3}
+    name: GuardLance
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: ceede7a829d41470a86526620500b878, type: 3}
+    name: Shield
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: a2ae90e42daaf4723a539c25867d37fd, type: 3}
+    name: Heal
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 7743889c22ea9472a895ecd63b2bb221, type: 3}
+    name: Curse
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 00deaf9f13e7abf4e8adfba5723819b5, type: 3}
+    name: Error
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: cad11a4481c77fe4aabeb5563cb0bd6c, type: 3}
+    name: ButtonPress
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 644c5b1dfcfdf534caaa5a2b9e2c71da, type: 3}
+    name: Purchase
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 6b50bafaa2ac38c43a8bd2a002b7cfe0, type: 3}
+    name: BowShot
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+--- !u!4 &1140250758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140250756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 688.3259, y: 336.437, z: -7.6918945}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1308913658
 GameObject:

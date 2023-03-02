@@ -22,19 +22,23 @@ public class GameManager : MonoBehaviour
     //Reference to the unit manager.
     private UnitManager unitMan;
 
+    //Static gameManager instance makes it so only one instance of a game manager can exist at a time, making it a singleton.
+    public static GameManager gameManInstance;
+
     private void Awake()
     {
-        //Find all game objects with GameMan as a tag. The only game opbj that has this tag is the game manager. This is to prevent more than  one game manager to exist at a time.
-        GameObject[] findGameManagers = GameObject.FindGameObjectsWithTag("GameMan");
-
-        if (findGameManagers.Length > 1)
+        //Singleton setting. This makes it so only one game manager can exist at a time.
+        if(gameManInstance == null)
         {
-            Destroy(this.gameObject);
+            gameManInstance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
         }
 
         DontDestroyOnLoad(this.gameObject);
-
-        Advertisement.Initialize("4632015", true);
 
         //Get a reference to the unit manager.
         unitMan = FindObjectOfType<UnitManager>();

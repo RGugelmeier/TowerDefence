@@ -11,6 +11,7 @@ public class Punch : AttackBase, IAttack
             {
                 Debug.Log(creatureHit.name + "was hit");
                 creatureHit.health -= damage;
+                AudioManager.audioManInstance.Play("PuncherPunch");
                 pool.Return(gameObject);
             }
         }

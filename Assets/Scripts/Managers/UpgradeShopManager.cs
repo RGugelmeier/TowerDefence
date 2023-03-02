@@ -15,6 +15,10 @@ public class UpgradeShopManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Stop all audio.
+        AudioManager.audioManInstance.Stop();
+        AudioManager.audioManInstance.Play("MenuMusic");
+
         //Try to find a game manager.
         if(FindObjectOfType<GameManager>())
         {
@@ -41,32 +45,42 @@ public class UpgradeShopManager : MonoBehaviour
     //Levels up a unit
     public void levelUp(string unitType)
     {
+        AudioManager.audioManInstance.Play("ButtonPress");
         //Check what button was pressed and make sure there are enough upgrade points to afford the upgrade...
         //...if there are enough points. Upgrade the unit by leveling up up. It's stats are changed in it's own class. For ex. UPuncher contains what happens when it levels up...
         //...Lastly, update the text to properly display the amopunt of upgrade points left after the upgrade.
-        if(unitType == "Puncher" && gameMan.upgradePoints >= gameMan.puncherUpgradeCost)
+        if (unitType == "Puncher" && gameMan.upgradePoints >= gameMan.puncherUpgradeCost)
         {
             gameMan.puncherLevel++;
             gameMan.upgradePoints -= gameMan.puncherUpgradeCost;
             CurrentPointsText.text = gameMan.upgradePoints.ToString();
+            AudioManager.audioManInstance.Play("Purchase");
+            return;
         }
         else if (unitType == "Guard" && gameMan.upgradePoints >= gameMan.guardUpgradeCost)
         {
             gameMan.guardLevel++;
             gameMan.upgradePoints -= gameMan.guardUpgradeCost;
             CurrentPointsText.text = gameMan.upgradePoints.ToString();
+            AudioManager.audioManInstance.Play("Purchase");
+            return;
         }
         else if (unitType == "Archer" && gameMan.upgradePoints >= gameMan.archerUpgradeCost)
         {
             gameMan.archerLevel++;
             gameMan.upgradePoints -= gameMan.archerUpgradeCost;
             CurrentPointsText.text = gameMan.upgradePoints.ToString();
+            AudioManager.audioManInstance.Play("Purchase");
+            return;
         }
+
+        AudioManager.audioManInstance.Play("Error");
     }
 
     //Continue out of the upgrade shop. Loads the next level.
     public void Continue()
     {
+        AudioManager.audioManInstance.Play("ButtonPress");
         SceneManager.LoadScene("Level" + gameMan.nextLevelNumber);
     }
 }

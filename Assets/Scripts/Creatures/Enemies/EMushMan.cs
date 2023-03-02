@@ -14,6 +14,9 @@ public class EMushMan : BaseEnemy, IEnemy
             Debug.Log(unit.GetInstanceID() + "was stunned by " + name);
         }
 
+        //TODO: Get a sound to play when the muchroom stuns enemies. Find a sound to use first.
+        //AudioManager.audioManInstance.Play()
+
         //Stun all units for 2 seconds.
         base.ReachedEnd();
     }

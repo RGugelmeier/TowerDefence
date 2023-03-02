@@ -90,13 +90,19 @@ public class Controller : MonoBehaviour
                     else if(hit.collider != null)
                     {
                         if (OnPlayerError != null)
+                        {
+                            AudioManager.audioManInstance.Play("Error");
                             OnPlayerError("Cannot place a unit there!");
+                        }
                     }
                     else
                     {
                         //Tell the player they do not have enough funds to buy this unit.
                         if (OnPlayerError != null)
+                        {
+                            AudioManager.audioManInstance.Play("Error");
                             OnPlayerError("Insufficent Funds!");
+                        }
                     }   
                 }
                 else

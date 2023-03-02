@@ -13,6 +13,8 @@ public class ETreant : BaseEnemy, IEnemy
             StatusEffectManager.OnShield(SHIELD_TIME, enemy.GetInstanceID());
         }
 
+        AudioManager.audioManInstance.Play("Shield");
+
         base.ReachedEnd();
     }
 }
