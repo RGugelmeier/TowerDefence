@@ -17,7 +17,5 @@ public class Arrow : AttackBase, IAttack
     {
         pool = FindObjectOfType<AttackPool>();
         onCreatureHit_ += OnHit;
-
-        AudioManager.audioManInstance.Play("BowShot");
     }
 }

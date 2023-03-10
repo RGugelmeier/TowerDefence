@@ -1,18 +1,28 @@
 using UnityEngine;
+using System.Xml.Serialization;
 
 public class GameData : MonoBehaviour
 {
     //public int highestLevelCompleted;
-    public int levelUpPoints;
     //Each unit's level. If the player does not have the unit unlocked, their level is 0.
     public int guardLevel, monkLevel, archerLevel;
 
-    //Set all game data by getting it from wherever holds it.
-    public GameData(GameManager gameMan, UnitManager unitMan)
+    [XmlRoot("SaveData")]
+    public struct SaveData
     {
-        levelUpPoints = gameMan.upgradePoints;
-        guardLevel = unitMan.guardLvl;
-        monkLevel = unitMan.monkLvl;
-        archerLevel = unitMan.archerLvl;
+        [XmlElement("levelUpPoints")]
+        public int levelUpPoints;
+
+        [XmlElement("highestLevelCompleted")]
+        public int highestLevelCompleted;
+
+        [XmlElement("guardLevel")]
+        public int guardLevel;
+
+        [XmlElement("puncherLevel")]
+        public int puncherLevel;
+
+        [XmlElement("archerLevel")]
+        public int archerLevel;
     }
 }

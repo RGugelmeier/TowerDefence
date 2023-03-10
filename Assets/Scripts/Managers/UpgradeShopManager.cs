@@ -80,6 +80,7 @@ public class UpgradeShopManager : MonoBehaviour
     //Continue out of the upgrade shop. Loads the next level.
     public void Continue()
     {
+        SaveOrLoad.SaveGame(gameMan);
         AudioManager.audioManInstance.Play("ButtonPress");
         SceneManager.LoadScene("Level" + gameMan.nextLevelNumber);
     }

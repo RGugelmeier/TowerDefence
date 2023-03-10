@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 using UnityEngine.Advertisements;
 
@@ -18,12 +19,15 @@ public class Controller : MonoBehaviour
     public static Action<int> OnUnitPlacement;
 
     private GameManager gameMan;
+    private HUDManager hudMan;
 
     //Unit instantiating.
     private GameObject selectedUnit;
     private UnitBase selectedUnitObject;
     private UnitPool unitPool;
     private UnitBase newUnitObject;
+
+    private bool isGamePaused;
 
     private int mouseUpCheck;
 
@@ -38,6 +42,7 @@ public class Controller : MonoBehaviour
         grid = FindObjectOfType<Grid>();
         camera = FindObjectOfType<Camera>();
         gameMan = FindObjectOfType<GameManager>();
+        hudMan = FindObjectOfType<HUDManager>();
         unitPool = FindObjectOfType<UnitPool>();
 
         selectedUnit = null;
@@ -59,6 +64,12 @@ public class Controller : MonoBehaviour
             }
         }
         //**--END CAMERA MOVEMENT--**//
+
+        //**--PAUSE GAME--**//
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            TogglePause();
+        }
 
         //**--UNIT SELECTION AND PLACEMENT--**//
         //If a unit is selected...
@@ -114,10 +125,30 @@ public class Controller : MonoBehaviour
         }
     }
 
-    //public void ShowAd()
-    //{
-    //    
-    //}
+    public void TogglePause()
+    {//TODO Clean up all of this mess. HUD stuff should not be happening here. Have trhis functions raise an action and HUDManager will listen fore it, then show/hide UI as needed.
+        if(isGamePaused)
+        {
+            isGamePaused = false;
+            hudMan.pauseGameUI.enabled = false;
+            hudMan.inGameHUD.enabled = true;
+            hudMan.preWaveUI.enabled = true;
+            Time.timeScale = 1.0f;
+        }
+        else
+        {
+            isGamePaused = true;
+            hudMan.pauseGameUI.enabled = true;
+            hudMan.inGameHUD.enabled = false;
+            hudMan.preWaveUI.enabled = false;
+            Time.timeScale = 0.0f;
+        }
+    }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     //FUNCTION//
     //CAMERAMOVEMENT: Called when Horizontal or Vertical axis > 0.0.

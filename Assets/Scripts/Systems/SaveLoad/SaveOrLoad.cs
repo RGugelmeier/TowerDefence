@@ -1,56 +1,57 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public static class SaveOrLoad
 {
     //This saves the game data to a file after being serialized.
-    public static void SaveGame(GameManager gameMan, UnitManager unitMan)
+    public static void SaveGame(GameManager gameMan)
     {
-        //Create a new binary formatter to serialize the save game data.
-        BinaryFormatter formatter = new BinaryFormatter();
+        GameData.SaveData data = new GameData.SaveData()
+        {
+            levelUpPoints = gameMan.upgradePoints,
+            highestLevelCompleted = gameMan.highestLevelCompleted,
+            guardLevel = gameMan.guardLevel,
+            puncherLevel = gameMan.puncherLevel,
+            archerLevel = gameMan.archerLevel
+        };
 
-        //Set the save data path to someone where unity chooses. Persistent data path creates a path and makes sure the data path does not change.
-        string path = Application.persistentDataPath + "/gameData.data";
-        //Creates a file at the previously created path.
-        FileStream fileStream = new FileStream(path, FileMode.Create);
+        string path = Application.persistentDataPath + "/gameData.xml";
 
-        //Create a new object of GameData type to get the data to be saved.
-        GameData gameData = new GameData(gameMan, unitMan);
+        XmlSerializer serializer = new XmlSerializer(typeof(GameData.SaveData));
+        StreamWriter writer = new StreamWriter(path);
+        serializer.Serialize(writer.BaseStream, data);
+        writer.Close();
 
-        //Serialize the data from the fileStream.
-        formatter.Serialize(fileStream, gameData);
-
-        //Close the file stream.
-        fileStream.Close();
+        Debug.Log("Game saved to " + path);
     }
 
-    public static GameData LoadGame()
+    public static void LoadGame()
     {
         //Get the save data path from the same place as where we saved it. Persistent data path creates a path and makes sure the data path does not change.
-        string path = Application.persistentDataPath + "/gameData.data";
+        string path = Application.persistentDataPath + "/gameData.xml";
 
-        //Check if the file exists at the p[lace we tried to load from...
+        //Check if the file exists at the place we tried to load from...
         if(File.Exists(path))
         {
-            //Then create a new formatter and file stream...
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream fileStream = new FileStream(path, FileMode.Open);
+            XmlSerializer serializer = new XmlSerializer(typeof(GameData.SaveData));
+            StreamReader reader = new StreamReader(path);
+            GameData.SaveData deserialized = (GameData.SaveData)serializer.Deserialize(reader.BaseStream);
+            reader.Close();
 
-            //then create a new GameData variable and store the deserialized data from the file to it.
-            GameData data = formatter.Deserialize(fileStream) as GameData;
+            GameManager.gameManInstance.upgradePoints = deserialized.levelUpPoints;
+            GameManager.gameManInstance.highestLevelCompleted = deserialized.highestLevelCompleted;
+            GameManager.gameManInstance.guardLevel = deserialized.guardLevel;
+            GameManager.gameManInstance.puncherLevel = deserialized.puncherLevel;
+            GameManager.gameManInstance.archerLevel = deserialized.archerLevel;
 
-            //Then close the file...
-            fileStream.Close();
-
-            //and return the data.
-            return data;
+            //SceneManager.LoadScene("Level" + (GameManager.gameManInstance.highestLevelCompleted + 1));
         }
         else
         {
-            //Print a debug message and break the game.
-            Debug.LogError("Save file not found in: " + path);
-            return null;
+            
         }
     }
 }

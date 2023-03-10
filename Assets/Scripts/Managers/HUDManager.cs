@@ -5,7 +5,10 @@ public class HUDManager : MonoBehaviour
 {
     //The text that holds the player's current balance.
     [SerializeField] private Text errorText;
-    [SerializeField] private Canvas endLevelUI;
+    [SerializeField] public Canvas endLevelUI;
+    [SerializeField] public Canvas pauseGameUI;
+    [SerializeField] public Canvas inGameHUD;
+    [SerializeField] public Canvas preWaveUI;
     private Text balanceVal;
 
     //Reference to thge button that starts the next wave.
@@ -43,6 +46,7 @@ public class HUDManager : MonoBehaviour
         balanceVal = GameObject.Find("BalanceVal").GetComponent<Text>();
         balanceVal.text = gameMan.balance.ToString();
         endLevelUI.enabled = false;
+        pauseGameUI.enabled = false;
 
         startWaveButton.onClick.AddListener(waveMan.StartWave);
     }

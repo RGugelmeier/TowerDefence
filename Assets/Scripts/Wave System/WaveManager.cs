@@ -54,7 +54,7 @@ public class WaveManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if(scene.name.Contains("Level"))
+        if(scene.name.Contains("Level") &! scene.name.Contains("Selection"))
         {
             preWaveCanvas = GameObject.Find("PrewaveUI").GetComponent<Canvas>();
             AudioManager.audioManInstance.Stop("MenuMusic");

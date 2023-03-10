@@ -33,4 +33,9 @@ public class UArcher : UnitBase
             attackInterval = BASE_ATTACK_INTERVAL / attackSpeedMod;
         }
     }
+
+    private void LaunchAttack()
+    {
+
+    }
 }

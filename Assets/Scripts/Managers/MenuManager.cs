@@ -36,7 +36,8 @@ public class MenuManager : MonoBehaviour
     public void LoadGame()
     {
         AudioManager.audioManInstance.Play("ButtonPress");
-        //Load game code idk.
+        SaveOrLoad.LoadGame();
+        SceneManager.LoadScene("LevelSelection");
     }
 
     public void NewGame()

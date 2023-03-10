@@ -15,7 +15,7 @@ G:/UNITY/Projects/TowerDefence
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-52237
+63669
 Successfully changed project path to: G:/UNITY/Projects/TowerDefence
 G:/UNITY/Projects/TowerDefence
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ G:/UNITY/Projects/TowerDefence
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 62.89 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 340.39 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -63,168 +63,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015224 seconds.
+Registered in 0.325259 seconds.
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 57.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 57.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.785 seconds
+- Completed reload, in  6.257 seconds
 Domain Reload Profiling:
-	ReloadAssembly (785ms)
-		BeginReloadAssembly (92ms)
+	ReloadAssembly (6257ms)
+		BeginReloadAssembly (4012ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (554ms)
-			LoadAssemblies (89ms)
+		EndReloadAssembly (1543ms)
+			LoadAssemblies (4014ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (117ms)
+			SetupTypeCache (1006ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (343ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (436ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (67ms)
+				InitializePlatformSupportModulesInManaged (186ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (58ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (163ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006043 seconds.
+Registered in 0.809230 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 60.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.332 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1333ms)
-		BeginReloadAssembly (150ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1029ms)
-			LoadAssemblies (125ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (256ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (527ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (37ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (61ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (258ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2757 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (57.4 KB). Loaded Objects now: 3200.
-Memory consumption went from 119.7 MB to 119.7 MB.
-Total: 3.516900 ms (FindLiveObjects: 0.264700 ms CreateObjectMapping: 0.072800 ms MarkObjects: 3.078800 ms  DeleteObjects: 0.099300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 36750.380844 seconds.
-  path: Assets/IdiaSoftware/Blades&Bludgeonings-Free/Documentation-Free.txt
-  artifactKey: Guid(924b9db3c98954f42aa9d3ec0782294f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IdiaSoftware/Blades&Bludgeonings-Free/Documentation-Free.txt using Guid(924b9db3c98954f42aa9d3ec0782294f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2070c3d0cdca1ab45b15ea2fa33523') in 0.043419 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 107.484363 seconds.
-  path: Assets/IdiaSoftware/Blades&Bludgeonings-Free/GuardLance.ogg
-  artifactKey: Guid(67dd73a8fb8b99e4d8c8d793c86c4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IdiaSoftware/Blades&Bludgeonings-Free/GuardLance.ogg using Guid(67dd73a8fb8b99e4d8c8d793c86c4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8730f8873a1b5114252ae7042747d7ae') in 0.119203 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.901744 seconds.
-  path: Assets/IdiaSoftware/Blades&Bludgeonings-Free/PuncherPunch.ogg
-  artifactKey: Guid(40cda279da2faea43ad6582184440a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IdiaSoftware/Blades&Bludgeonings-Free/PuncherPunch.ogg using Guid(40cda279da2faea43ad6582184440a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7dc048a65d709d6626fbb6e88f5258') in 0.012060 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 201.402269 seconds.
-  path: Assets/Fantasy Sfx/Mp3
-  artifactKey: Guid(0735edc9613287144969ac79b8ecab79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Sfx/Mp3 using Guid(0735edc9613287144969ac79b8ecab79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4306f03ef27a5847fa1ddcee8ce186a9') in 0.006200 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.046854 seconds.
-  path: Assets/Fantasy Sfx/Mp3/Goblin_00.mp3
-  artifactKey: Guid(0d3def65994b84d04b8791e02beb2391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Sfx/Mp3/Goblin_00.mp3 using Guid(0d3def65994b84d04b8791e02beb2391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ffdb574da96cc8a416db3d819bd138') in 0.019684 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Fantasy Sfx/Mp3/Spell_02.mp3
-  artifactKey: Guid(7743889c22ea9472a895ecd63b2bb221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Sfx/Mp3/Spell_02.mp3 using Guid(7743889c22ea9472a895ecd63b2bb221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1f7dd74b7a01179c043ec642a68077') in 0.014982 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Fantasy Sfx/Mp3/Spell_04.mp3
-  artifactKey: Guid(4253ea676060e49dd9488f73d692ea2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Sfx/Mp3/Spell_04.mp3 using Guid(4253ea676060e49dd9488f73d692ea2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee173d09a3bcdb3e26ec1e4ff135f15c') in 0.016401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Fantasy Sfx/Mp3/Jingle_Lose_00.mp3
-  artifactKey: Guid(2f07c3b7706a64f489133201c2342886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Sfx/Mp3/Jingle_Lose_00.mp3 using Guid(2f07c3b7706a64f489133201c2342886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88d00ec3ac227dc0f72bc9a9f2a6ac01') in 0.012855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Fantasy Sfx/Mp3/Jingle_Win_00.mp3
-  artifactKey: Guid(14e15f75ff87846e18aa9ba0845c8a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Sfx/Mp3/Jingle_Win_00.mp3 using Guid(14e15f75ff87846e18aa9ba0845c8a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e4f7d343d4d6b0e6cb4ea9e70d0611') in 0.013365 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Fantasy Sfx/Mp3/Spell_01.mp3
-  artifactKey: Guid(ceede7a829d41470a86526620500b878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Sfx/Mp3/Spell_01.mp3 using Guid(ceede7a829d41470a86526620500b878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee0691a9dd4fe9db8b88b51f4f9fcaa') in 0.018761 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

@@ -718,7 +718,7 @@ MonoBehaviour:
     loop: 0
     volume: 0.3
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 6b50bafaa2ac38c43a8bd2a002b7cfe0, type: 3}
+  - clip: {fileID: 8300000, guid: 83ffb5b9fca90084581d28bfdaa533e9, type: 3}
     name: BowShot
     loop: 0
     volume: 0.3

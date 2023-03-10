@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public float health, maxHealth, balance;
     [HideInInspector] public int upgradePoints, puncherUpgradeCost, guardUpgradeCost, archerUpgradeCost;
     [HideInInspector] public int puncherLevel, archerLevel, guardLevel;
+    //The hioghest level the player has completed.
+    [HideInInspector] public int highestLevelCompleted;
     //The number of the next level.
     public int nextLevelNumber;
     //Holds all of the units a player has currently created.
@@ -54,6 +56,7 @@ public class GameManager : MonoBehaviour
         archerUpgradeCost = 200;
 
         //Set the initial next level to be 1. This changes when the level is finished, before it loads the next level.
+        highestLevelCompleted = 0;
         nextLevelNumber = 1;
 
         //Subscribe events.
@@ -116,12 +119,11 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
 
+        highestLevelCompleted = currentLevel;
         nextLevelNumber++;
 
         if (currentLevel != 0)
         {
-            //SceneManager.LoadScene("Level" + (currentLevel + 1));
-            
             SceneManager.LoadScene("UnitUpgradeShop");
 
             if (Advertisement.IsReady("Press_E"))
@@ -138,7 +140,7 @@ public class GameManager : MonoBehaviour
     //Runs the save game function from the SaveOrLoad system.
     public void SaveGame()
     {
-        SaveOrLoad.SaveGame(this, unitMan);
+        SaveOrLoad.SaveGame(gameManInstance);
     }
 
     //Calls the load game function from the SaveOrLoad system and stopres them into a variable called data.
@@ -146,14 +148,14 @@ public class GameManager : MonoBehaviour
     public void LoadGame()
     {
         //Get game data.
-        GameData data = SaveOrLoad.LoadGame();
-
-        //Load data into manager's variables.
-        upgradePoints = data.levelUpPoints;
-
-        //Unit level data.
-        unitMan.monkLvl = data.monkLevel;
-        unitMan.guardLvl = data.guardLevel;
-        unitMan.archerLvl = data.archerLevel;
+        //GameData.SaveData data = SaveOrLoad.LoadGame();
+        //
+        ////Load data into manager's variables.
+        //upgradePoints = data.levelUpPoints;
+        //
+        ////Unit level data.
+        //unitMan.monkLvl = data.puncherLevel;
+        //unitMan.guardLvl = data.guardLevel;
+        //unitMan.archerLvl = data.archerLevel;
     }
 }

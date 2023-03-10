@@ -74,6 +74,10 @@ public abstract class UnitBase : BaseCreature
             createdAttack = attackPool.CreateNew(attack, transform.position, gameObject);
             attackObj = createdAttack.GetComponent<AttackBase>();
             attackObj.target = target_;
+            if(GetComponent<UArcher>()) //Play archer's attack sound when they attack.
+            {
+                AudioManager.audioManInstance.Play("BowShot");
+            }
         }
         else
         {
