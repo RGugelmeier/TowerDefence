@@ -144,106 +144,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Puncher_Idle
+      name: Puncher_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 135
+        x: 8
+        y: 8
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7146f933d01d7e746b34ee81dcdc451b
+      internalID: -930642123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puncher_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 8
         width: 12
-        height: 19
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20ba4fe7e9e6ba8f0800000000000000
-      internalID: -528206904272049406
+      spriteID: 31bfdc23b128935428afc937f67084b7
+      internalID: -1078971511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puncher_Down
+      name: Puncher_2
       rect:
         serializedVersion: 2
-        x: 10
-        y: 103
-        width: 12
-        height: 19
+        x: 73
+        y: 8
+        width: 14
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2874c94582d6b140800000000000000
-      internalID: 4735203528136751151
+      spriteID: fbac5a2ede46ca54bb3a12026f7422e2
+      internalID: -1302948177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puncher_Up
+      name: Puncher_3
       rect:
         serializedVersion: 2
-        x: 10
-        y: 71
-        width: 12
-        height: 19
+        x: 103
+        y: 8
+        width: 18
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08329177428a95a30800000000000000
-      internalID: 4204576601697493888
+      spriteID: 1eaa772a60ac2194ba058a77c9ac1be3
+      internalID: -690051736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puncher_Right
+      name: Puncher_4
       rect:
         serializedVersion: 2
-        x: 10
-        y: 39
-        width: 16
-        height: 19
+        x: 135
+        y: 8
+        width: 18
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e65b787c2213dbca0800000000000000
-      internalID: -5999585103141423762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puncher_Left
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 7
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 730aa0a6b723825a0800000000000000
-      internalID: -6545926552741568457
+      spriteID: a79ce0f8a794c024f8a646b4aa9a3d1b
+      internalID: 546986449
       vertices: []
       indices: 
       edges: []
@@ -259,11 +259,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Puncher_Idle: -528206904272049406
-      Puncher_Down: 4735203528136751151
-      Puncher_Up: 4204576601697493888
-      Puncher_Right: -5999585103141423762
-      Puncher_Left: -6545926552741568457
+      Puncher_2: -1302948177
+      Puncher_0: -930642123
+      Puncher_3: -690051736
+      Puncher_1: -1078971511
+      Puncher_4: 546986449
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

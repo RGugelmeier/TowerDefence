@@ -4,36 +4,14 @@ using UnityEngine;
 
 public class UPuncher : UnitBase
 {
-    static float BASE_ATTACK_INTERVAL = 0.5f;
+    public static int MAX_LEVEL = 5;
 
     private void Start()
     {
-        //If the unit has been upgraded, apply modifications to it's stats.
+        //If the unit has been upgraded, apply modifications to it's stats. The attack's script handles applying the modifier.
         if (gameMan.puncherLevel > 1)
         {
-            damageMod = gameMan.puncherLevel * 1.25f;
-            attackSpeedMod = gameMan.puncherLevel * 1.10f;
-
-            ApplyLevel();
-        }
-        else if(gameMan.puncherLevel == 10)
-        {
-            MaxLevel();
-        }
-    }
-
-    protected void MaxLevel()
-    {
-
-    }
-
-    //Apply modifiers from the unit type's level to it's stats.
-    private void ApplyLevel()
-    {
-        if (gameMan.puncherLevel > 1)
-        {
-            attack.GetComponent<Punch>().damage *= damageMod;
-            attackInterval = BASE_ATTACK_INTERVAL * attackSpeedMod;
+            damageMod = gameMan.puncherLevel * 0.6f;
         }
     }
 }

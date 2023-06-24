@@ -32,10 +32,21 @@ public abstract class BaseCreature : MonoBehaviour
     private GameObject FXAnimObj;
     public Animator FXAnimator;
 
+    public void SetSpeed(float newSpeed)
+    {
+        moveSpeed = newSpeed;
+    }
+
+    public float GetMaxSpeed()
+    {
+        return maxMoveSpeed;
+    }
+
     protected void Awake()
     {
         //Set what functions run when a status effect is applied via StatusEffectManager.
         StatusEffectManager.OnStun += OnStun;
+        StatusEffectManager.OnSlow += OnSlow;
         StatusEffectManager.OnShield += OnShield;
 
         //Set game manager reference.
@@ -69,10 +80,9 @@ public abstract class BaseCreature : MonoBehaviour
     //This function stuns the enemy for a time dictated by the time_ variable passed in.
     protected void OnStun(float time_, int enemyID)
     {
-        
         //This keeps track of if the character being stunned has ther ability to attack. If so, This will prevent them from attacking until the stun is done.
         bool attackStopped = false;
-
+        float currentSpeed = moveSpeed;
         if (enemyID == GetInstanceID())
         {
             FXAnimator.SetBool("IsStunned", true);
@@ -97,9 +107,25 @@ public abstract class BaseCreature : MonoBehaviour
                 {
                     canAttack = true;
                 }
-                moveSpeed = maxMoveSpeed;
+                moveSpeed = currentSpeed;
 
                 FXAnimator.SetBool("IsStunned", false);
+            }
+        }
+    }
+
+    protected void OnSlow(float time_, int enemyID)
+    {
+        if(enemyID == GetInstanceID())
+        {
+            FXAnimator.SetBool("IsSlowed", true);
+            StartCoroutine(Slowed(time_));
+
+            IEnumerator Slowed(float time_)
+            {
+                moveSpeed /= 1.5f;
+                yield return new WaitForSeconds(time_);
+                moveSpeed *= 1.5f;
             }
         }
     }

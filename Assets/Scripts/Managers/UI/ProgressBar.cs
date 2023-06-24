@@ -8,12 +8,12 @@ public class ProgressBar : MonoBehaviour
     [SerializeField] private Image mask;
 
     //The game manager.
-    private GameManager gameMan;
+    //private GameManager gameMan;
 
     private void Awake()
     {
         //Get the game manager. This is so we can access the player's health for the health bar.
-        gameMan = FindObjectOfType<GameManager>();
+        //gameMan = FindObjectOfType<GameManager>();
 
         //Subscribe GetCurrentFill to the enemy's OnReachedEnd.
         BaseEnemy.OnReachedEnd += GetCurrentFill;
@@ -21,7 +21,11 @@ public class ProgressBar : MonoBehaviour
 
     void GetCurrentFill(GameObject enemy)
     {
-        float fillAmount = gameMan.health / gameMan.maxHealth;
-        mask.fillAmount = fillAmount;
+        //mask and this are null. Find out why. Maybe GameManager needs to get a new reference to this each new scene, as it is a new health bar each level?
+        if(this.mask != null)
+        {
+            float fillAmount = GameManager.gameManInstance.health / GameManager.gameManInstance.maxHealth;
+            mask.fillAmount = fillAmount;
+        }
     }
 }

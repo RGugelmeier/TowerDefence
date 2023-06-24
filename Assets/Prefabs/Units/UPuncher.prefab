@@ -79,13 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -528206904272049406, guid: d0a22a5df593f63418b684d3e18b4a17,
-    type: 3}
+  m_Sprite: {fileID: -930642123, guid: d0a22a5df593f63418b684d3e18b4a17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.15, y: 0.21}
+  m_Size: {x: 0.46875, y: 0.53125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -129,8 +128,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.375, y: 0.59375}
-    newSize: {x: 0.15, y: 0.21}
+    oldSize: {x: 0.46875, y: 0.53125}
+    newSize: {x: 0.46875, y: 0.53125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -166,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f569f687262bf4f95c8c5ac1d46c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackInterval: 0.5
+  attackInterval: 1
   attackRange: 0.8
   maxHealth: 100
   health: 0
@@ -177,8 +176,10 @@ MonoBehaviour:
   canTakeDamage: 0
   FXAnimManager: {fileID: 6456598628426963385, guid: f08b635af8c16174a88881d5cbdbd456,
     type: 3}
-  level: 0
+  FXAnimator: {fileID: 0}
   damageMod: 0
+  attackSpeedMod: 0
+  rangeMod: 0
   cost: 10
   isActive: 0
 --- !u!95 &8694077917230067310

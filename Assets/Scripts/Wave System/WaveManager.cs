@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 public class WaveManager : MonoBehaviour
 {
     //Holds the current level and wave number.
-    [SerializeField] private int currentLevelNum;
-    private int currentWaveNum;
+    [SerializeField] public int currentLevelNum;
+    [SerializeField] private int currentWaveNum;
 
     //holds the current wave object.
-    Wave currentWave;
+    private Wave currentWave;
 
     //An object that has a wave component on it.
     [SerializeField] GameObject wavePrefab;
@@ -59,6 +59,7 @@ public class WaveManager : MonoBehaviour
             preWaveCanvas = GameObject.Find("PrewaveUI").GetComponent<Canvas>();
             AudioManager.audioManInstance.Stop("MenuMusic");
             AudioManager.audioManInstance.Play("PreWaveAmbient");
+            currentWaveNum = 1;
         }
     }
 
@@ -78,7 +79,7 @@ public class WaveManager : MonoBehaviour
     }
 
     //End current wave.
-    void EndWave()
+    public void EndWave() //Make this public when  debugging
     {
         if(preWaveCanvas != null)
         {
@@ -97,7 +98,7 @@ public class WaveManager : MonoBehaviour
     }
 
     //Called when the wave does not exist. This should mean the level is completed. If not, the txt file path was not proper.
-    private void OnNoMoreWaves()
+    public void OnNoMoreWaves() ////Make this public when  debugging
     {
         if(OnLevelEnd != null)
             OnLevelEnd(currentLevelNum);

@@ -97,6 +97,10 @@ public class Wave : MonoBehaviour
                 {
                     addedGameObject = waveMan.fairy;
                 }
+                else
+                {
+                    Debug.LogError(line + " is not a valid creature type!");
+                }
 
                 //Add the objecy to the enemy objects to spawn if the line read is an enemy.
                 if(addedGameObject != null)
@@ -150,7 +154,6 @@ public class Wave : MonoBehaviour
     {
         if (this != null)
         {
-            //enemiesAlive.Remove(deadEnemy.GetComponent<BaseEnemy>());
             if(deadEnemy.activeInHierarchy)
             {
                 enemiesAlive--;
@@ -169,10 +172,13 @@ public class Wave : MonoBehaviour
     public void OnReachedEnd(GameObject enemy)
     {
         //enemiesAlive.Remove(enemy.GetComponent<BaseEnemy>());
-        enemiesAlive--;
-        if (enemiesAlive <= 0 && enemiesToSpawn.Count == 0)
+        if(this != null)
         {
-            EndWave();
+            enemiesAlive--;
+            if (enemiesAlive <= 0 && enemiesToSpawn.Count == 0)
+            {
+                EndWave();
+            }
         }
     }
 

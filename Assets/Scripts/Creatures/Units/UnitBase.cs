@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 //* ABSTRACT UNIT CLASS *//
@@ -8,8 +9,11 @@ using UnityEngine;
 public abstract class UnitBase : BaseCreature
 {
     //Unit stats.
-    [SerializeField] protected float damageMod, attackSpeedMod, rangeMod;
-    [HideInInspector] public float cost;
+    [SerializeField] public float damageMod, attackSpeedMod, rangeMod;
+    public float cost;
+
+    //List of enemies within attack range.
+    public LinkedList<BaseEnemy> potentialTargets = new LinkedList<BaseEnemy>();
 
     private float animResetTimer;
 
@@ -43,9 +47,9 @@ public abstract class UnitBase : BaseCreature
 
         //Initialize attack timer.
         animResetTimer = 0.5f;
-    }
 
-    
+        BaseEnemy.OnDie += OnEnemyDie;
+    }
 
     void Update()
     {
@@ -71,9 +75,10 @@ public abstract class UnitBase : BaseCreature
     {
         if(attack != null)
         {
+            //Create a new attack and set it's target
             createdAttack = attackPool.CreateNew(attack, transform.position, gameObject);
-            attackObj = createdAttack.GetComponent<AttackBase>();
-            attackObj.target = target_;
+            //attackObj = createdAttack.GetComponent<AttackBase>();
+            //attackObj.target = target_;
             if(GetComponent<UArcher>()) //Play archer's attack sound when they attack.
             {
                 AudioManager.audioManInstance.Play("BowShot");
@@ -86,6 +91,41 @@ public abstract class UnitBase : BaseCreature
         attackTimer = 0.0f;
     }
 
+    //Set the attack to it's max level form.
+    protected void MaxLevel()
+    {
+        //attackObj.isMaxLevel = true;
+    }
+
+    private void OnEnemyDie(GameObject enemy)
+    {
+        if (potentialTargets.Contains(enemy.GetComponent<BaseEnemy>()))
+        {
+            potentialTargets.Remove(enemy.GetComponent<BaseEnemy>());
+        }
+    }
+
+    // Add
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Check if the collision is an enemy
+        if(collision.gameObject.GetComponent<BaseEnemy>() != null)
+        {
+            //Add the enemy to the potential targets list
+            potentialTargets.AddFirst(collision.gameObject.GetComponent<BaseEnemy>());
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        //Check if the collision is an enemy
+        if (collision.gameObject.GetComponent<BaseEnemy>() != null)
+        {
+            //Remove the enemy to the potential targets list
+            potentialTargets.Remove(collision.gameObject.GetComponent<BaseEnemy>());
+        }
+    }
+
     //Collision handling. Used to check for enemies in range to attack.
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -94,18 +134,13 @@ public abstract class UnitBase : BaseCreature
             //If the unit's circle collider is collided with an enemy and the unit can attack. (For example, if the unit is stunned it cannot attack)
             if (collision.gameObject.GetComponent<BaseEnemy>() != null && canAttack)
             {
-                //Set the attack's target.
-                if(attackObj)
-                {
-                    attackObj.target = collision.GetComponent<BaseEnemy>();
-                }
-                //Attack if the attack timer allows it, then reset the attack timer.
                 if (attackTimer >= attackInterval)
                 {
                     //Used to hold the positions to use to check what angle the collider hits with.
                     Vector2 myPos, otherPos;
                     myPos = transform.position;
-                    otherPos = collision.gameObject.transform.position;
+                    //otherPos = collision.gameObject.transform.position;
+                    otherPos = potentialTargets.First.Value.gameObject.transform.position;
                     float angleToEnemy = FindDegree(myPos.x - otherPos.x, myPos.y - otherPos.y);
 
                     //If left
@@ -140,7 +175,7 @@ public abstract class UnitBase : BaseCreature
                         anim.SetBool("isUp", false);
                         anim.SetBool("isDown", true);
                     }
-                    LaunchAttack(collision.GetComponent<BaseEnemy>());
+                    LaunchAttack(potentialTargets.Last.Value);
                 }
             }
         }

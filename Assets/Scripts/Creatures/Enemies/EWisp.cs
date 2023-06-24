@@ -6,9 +6,7 @@ public class EWisp : BaseEnemy, IEnemy
 {
     static float CURSE_TIME_TO_KILL = 3.0f;
 
-    
-
-    //Do more stuff when a fairy reaches the end.
+    //Do more stuff when a wisp reaches the end.
     public override void ReachedEnd()
     {
         //This code has to be done here ionstead of in parent class due to the BaseCreature being deactivated before the coroutine 'Cursed' can finish.
@@ -42,7 +40,7 @@ public class EWisp : BaseEnemy, IEnemy
                 //gameMan.aliveUnits[Random.Range(0, gameMan.aliveUnits.Count)].health = 0;
             }
 
-            foreach (BaseCreature unit in gameMan.aliveUnits)
+            foreach (BaseCreature unit in curseList)
             {
                 unit.FXAnimator.SetBool("IsCursed", true);
             }

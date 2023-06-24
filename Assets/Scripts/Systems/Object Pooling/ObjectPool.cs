@@ -107,6 +107,41 @@ public abstract class ObjectPool : MonoBehaviour
         return createdObj;
     }
 
+    //This either creates a new object or uses one that was already in the pool.
+    //This is an overload that takes in the transform to create the object, and anpother GameObject that will be used as the parent object that owns the object created.
+    //**ONLY USE THIS OVERRIDE FOR THE ATTACKPOOL**//
+    public GameObject CreateNew(GameObject objToCreate, Vector2 position, GameObject parent, BaseEnemy target_)
+    {
+        //Go through each object currently in the obj pool...
+        foreach (GameObject obj in pool)
+        {
+            //... and if there is one not currently in use...
+            if (!obj.activeInHierarchy && obj.name == objToCreate.name + "(Clone)" || !obj.activeInHierarchy && obj.name == objToCreate.name + "(Clone)(Clone)")
+            {
+                //...raise the OnActivate event. This will set the defaults of the object, done in their own class...
+                if (OnActivate != null)
+                {
+                    //OnActivate(obj.GetComponent<BaseEnemy>().id);
+                    OnActivate(obj);
+                }
+                obj.GetComponent<AttackBase>().target = target_;
+                obj.transform.up = -obj.GetComponent<AttackBase>().target.transform.position + transform.position;
+                //...then use it.
+                obj.SetActive(true);
+                return obj;
+            }
+        }
+        //...and if all of them are in use...
+        //create a new one.
+        //Each object that can be part of a pool must have their default values set in their awake, that way they are instantiated in the proper space with the proper values.
+        createdObj = Instantiate(objToCreate, position, Quaternion.identity, parent.transform);
+        createdObj.GetComponent<AttackBase>().target = target_;
+        createdObj.transform.up = -createdObj.GetComponent<AttackBase>().target.transform.position + transform.position;
+        pool.Add(createdObj);
+
+        return createdObj;
+    }
+
     //This will return an object back to the pool so it can be used again.
     public void Return(GameObject objToReturn)
     {

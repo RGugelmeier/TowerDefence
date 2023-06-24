@@ -1,0 +1,21 @@
+points worth:
+10
+BB
+MM
+F
+BB
+F
+MM
+OB
+OB
+GB
+GB
+OB
+OB
+OB
+F
+MM
+F
+MM
+F
+MM

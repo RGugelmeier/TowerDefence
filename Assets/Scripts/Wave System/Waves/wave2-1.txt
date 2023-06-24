@@ -1,9 +1,8 @@
 points worth:
-50
-W
-TT
-TT
-W
-W
+10
+GB
+GB
 OB
-F
+BB
+GB
+GB

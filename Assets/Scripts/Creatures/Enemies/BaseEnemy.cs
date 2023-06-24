@@ -35,7 +35,20 @@ public abstract class BaseEnemy : BaseCreature
         moveSpeed = maxMoveSpeed;
 
         //Get all positions that the enemies will need to move to.
-        moveToNodes = GameObject.FindGameObjectsWithTag("RotateNode");
+        //moveToNodes = GameObject.FindGameObjectsWithTag("RotateNode");
+
+        moveToNodes = new GameObject[GameObject.FindGameObjectsWithTag("RotateNode").Length];
+
+        for(int i = 0; i < moveToNodes.Length; i++)
+        {
+            moveToNodes[i] = GameObject.Find("RotateNode (" + i + ")");
+        }
+
+        //dowhile (GameObject.Find("RotateNode (" + i + ")"))
+        //{
+        //    
+        //    i++;
+        //}
         //Set initial position.
         transform.Translate(moveToNodes[0].transform.position);
         //Set the first node to start the enemy moving.
@@ -118,9 +131,34 @@ public abstract class BaseEnemy : BaseCreature
         {
             if(this != null && gameObject.activeInHierarchy)
             {
+                FXAnimator.Rebind();
+                //Get rid of any status fx that are enabled so if the unit is used again by the pool, they do not have any fx playing.
+                //if (FXAnimator.GetBool("IsStunned") == true)
+                //{
+                //    FXAnimator.SetBool("IsStunned", false);
+                //}
+                //if (FXAnimator.GetBool("IsSlowed") == true)
+                //{
+                //    FXAnimator.SetBool("IsSlowed", false);
+                //}
+                //if (FXAnimator.GetBool("IsShielded") == true)
+                //{
+                //    FXAnimator.SetBool("IsShielded", false);
+                //}
+
+                transform.Translate(Vector2.left * 9999);    
+                
                 if (OnDie != null)
                 {
-                    OnDie(gameObject);
+                    //Die on the next fram. This is because the unit dies before being removed from the unit's attack list so they need to die a frame later.
+                    StartCoroutine(waitToDie());
+
+                    IEnumerator waitToDie()
+                    {
+                        yield return new WaitForFixedUpdate();
+                        OnDie(gameObject);
+                    }
+                    
                 }
             }
         }

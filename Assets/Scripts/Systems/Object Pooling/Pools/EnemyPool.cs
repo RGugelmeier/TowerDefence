@@ -27,4 +27,9 @@ public class EnemyPool : ObjectPool, IObjectPool
         }
         return true;
     }
+
+    //new public void Return(GameObject objToReturn)
+    //{
+    //    base.Return(objToReturn);
+    //}
 }

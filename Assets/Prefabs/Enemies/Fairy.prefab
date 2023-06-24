@@ -146,8 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackInterval: 0.4
   attackRange: 2
-  maxHealth: 7.5
-  health: 7.5
+  maxHealth: 10
+  health: 10
   attack: {fileID: 0}
   maxMoveSpeed: 5
   moveSpeed: 5
@@ -155,7 +155,8 @@ MonoBehaviour:
   canTakeDamage: 1
   FXAnimManager: {fileID: 6456598628426963385, guid: f08b635af8c16174a88881d5cbdbd456,
     type: 3}
-  damage: 2
+  FXAnimator: {fileID: 0}
+  damage: 4
   worth: 2
   id: 0
   nextNode: 0

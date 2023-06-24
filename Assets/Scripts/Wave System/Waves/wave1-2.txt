@@ -1,6 +1,7 @@
 points worth:
-25
-GB
-GB
+10
+BB
+BB
+BB
 BB
 BB

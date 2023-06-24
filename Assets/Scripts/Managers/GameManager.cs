@@ -8,11 +8,11 @@ using UnityEngine.Advertisements;
 public class GameManager : MonoBehaviour
 {
     //The player's health, money balance, and upgrade points.
-    [HideInInspector] public float health, maxHealth, balance;
+    public float health, maxHealth, balance;
     [HideInInspector] public int upgradePoints, puncherUpgradeCost, guardUpgradeCost, archerUpgradeCost;
-    [HideInInspector] public int puncherLevel, archerLevel, guardLevel;
+    public int puncherLevel, archerLevel, guardLevel;
     //The hioghest level the player has completed.
-    [HideInInspector] public int highestLevelCompleted;
+    public int highestLevelCompleted;
     //The number of the next level.
     public int nextLevelNumber;
     //Holds all of the units a player has currently created.
@@ -21,11 +21,16 @@ public class GameManager : MonoBehaviour
 
     public static Action OnUpdateBal;
 
+    //The canvas that is displayed when the player loses all HP
+    public Canvas GameOverCanvas;
+
     //Reference to the unit manager.
     private UnitManager unitMan;
 
     //Static gameManager instance makes it so only one instance of a game manager can exist at a time, making it a singleton.
     public static GameManager gameManInstance;
+
+    public float timeScale = 1.0f;
 
     private void Awake()
     {
@@ -52,8 +57,8 @@ public class GameManager : MonoBehaviour
         //Set initial amount of upgrade points and upgrade costs for units.
         upgradePoints = 0;
         puncherUpgradeCost = 100;
-        guardUpgradeCost = 200;
-        archerUpgradeCost = 200;
+        guardUpgradeCost = 100;
+        archerUpgradeCost = 100;
 
         //Set the initial next level to be 1. This changes when the level is finished, before it loads the next level.
         highestLevelCompleted = 0;
@@ -61,12 +66,13 @@ public class GameManager : MonoBehaviour
 
         //Subscribe events.
         BaseEnemy.OnReachedEnd += CheckDeath;
-        BaseEnemy.OnDie += IncreaseMoney;
+        BaseEnemy.OnDie += IncreaseMoney; 
         UnitBase.OnCreation += DecreaseMoney;
         if (WaveManager.OnLevelEnd == null)
         {
             WaveManager.OnLevelEnd += NextLevel;
         }
+        SceneManager.sceneLoaded += OnSceneLoaded;
 
         //Set default values.
         maxHealth = 100.0f;
@@ -74,14 +80,45 @@ public class GameManager : MonoBehaviour
         balance = 20.0f;
     }
 
+    private void Update()
+    {
+        Time.timeScale = timeScale;
+    }
+
+    //Any time a scene is laoded, check if it is a level. If it is, set the game over canvas to the proper one this that level.
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name.Contains("Level") & !scene.name.Contains("Selection"))
+        {
+            GameOverCanvas = GameObject.Find("LoseUI").GetComponent<Canvas>();
+            health = maxHealth;
+        }
+    }
+
     //Checks if the player's heal;th has dropped to or below zero. If it has, end the game.
     public void CheckDeath(GameObject enemy)
     {
         if(health <= 0.0f)
         {
-            Application.Quit();
-            Debug.Log("Game Over.");
+            foreach (BaseEnemy enemy_ in aliveEnemies)
+            {
+                enemy_.SetSpeed(0.0f);
+                enemy_.canTakeDamage = false;
+            }
+            GameOverCanvas.enabled = true;
+
+            StartCoroutine(GameOverTimer());
         }
+    }
+
+    IEnumerator GameOverTimer()
+    {
+        yield return new WaitForSeconds(5f);
+
+        GameOverCanvas.enabled = false;
+        AudioManager.audioManInstance.Stop("WaveSongLoop");
+        AudioManager.audioManInstance.Play("MenuMusic");
+        SceneManager.LoadScene("LevelSelection");
     }
 
     //Add money to the player's balance.
@@ -120,16 +157,19 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         highestLevelCompleted = currentLevel;
-        nextLevelNumber++;
 
-        if (currentLevel != 0)
+        if (currentLevel != 20)
+        {
+            nextLevelNumber++;
+        }
+
+        if (currentLevel != 0 && currentLevel != 20)
         {
             SceneManager.LoadScene("UnitUpgradeShop");
-
-            if (Advertisement.IsReady("Press_E"))
-            {
-                Advertisement.Show("Press_E");
-            }
+        }
+        else if (currentLevel != 0 && currentLevel == 20)
+        {
+            SceneManager.LoadScene("LevelSelection");
         }
         else
         {

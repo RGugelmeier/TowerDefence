@@ -1,13 +1,11 @@
 points worth:
-60
-TT
-TT
-F
-F
+10
+BB
+BB
 GB
+OB
+OB
 GB
 BB
-W
-W
-OB
+GB
 OB

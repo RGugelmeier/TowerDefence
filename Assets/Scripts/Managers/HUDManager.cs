@@ -26,6 +26,7 @@ public class HUDManager : MonoBehaviour
         //Reference to game manager.
         gameMan = FindObjectOfType<GameManager>();
         waveMan = FindObjectOfType<WaveManager>();
+        pauseGameUI = GameObject.Find("PauseMenuUI").GetComponent<Canvas>();
 
         //Set the selection image of each unit to be black to indicate they have not yet been unlocked
         if (gameMan.archerLevel == 0)

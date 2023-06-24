@@ -27,7 +27,7 @@ public class Controller : MonoBehaviour
     private UnitPool unitPool;
     private UnitBase newUnitObject;
 
-    private bool isGamePaused;
+    [SerializeField] private bool isGamePaused;
 
     private int mouseUpCheck;
 
@@ -69,6 +69,20 @@ public class Controller : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.Escape))
         {
             TogglePause();
+        }
+
+        //**--FAST FORWARD--**//
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            if (SceneManager.GetActiveScene().name.Contains("Level") && !SceneManager.GetActiveScene().name.Contains("Selection"))
+            {
+                gameMan.timeScale = 2.0f;
+            }
+        }
+        
+        if(Input.GetKeyUp(KeyCode.F))
+        {
+            gameMan.timeScale = 1.0f;
         }
 
         //**--UNIT SELECTION AND PLACEMENT--**//
@@ -126,14 +140,14 @@ public class Controller : MonoBehaviour
     }
 
     public void TogglePause()
-    {//TODO Clean up all of this mess. HUD stuff should not be happening here. Have trhis functions raise an action and HUDManager will listen fore it, then show/hide UI as needed.
+    {
         if(isGamePaused)
         {
             isGamePaused = false;
             hudMan.pauseGameUI.enabled = false;
             hudMan.inGameHUD.enabled = true;
             hudMan.preWaveUI.enabled = true;
-            Time.timeScale = 1.0f;
+            gameMan.timeScale = 1.0f;
         }
         else
         {
@@ -141,13 +155,14 @@ public class Controller : MonoBehaviour
             hudMan.pauseGameUI.enabled = true;
             hudMan.inGameHUD.enabled = false;
             hudMan.preWaveUI.enabled = false;
-            Time.timeScale = 0.0f;
+            gameMan.timeScale = 0.0f;
         }
     }
 
     public void QuitGame()
     {
         SceneManager.LoadScene("MainMenu");
+        gameMan.timeScale = 1.0f;
     }
 
     //FUNCTION//

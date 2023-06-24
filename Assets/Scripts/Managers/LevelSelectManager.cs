@@ -6,10 +6,11 @@ public class LevelSelectManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] levelSelectButtons;
-    // Start is called before the first frame update
+    
+    //Set only levels that have been reached to have active buttons to load that level. This prevents players from playing levels they have not beaten before.
     void Start()
     {
-        for(int i = 0; i <= GameManager.gameManInstance.highestLevelCompleted; i++)
+        for(int i = 0; i <= GameManager.gameManInstance.highestLevelCompleted ; i++)
         {
             levelSelectButtons[i].SetActive(true);
         }

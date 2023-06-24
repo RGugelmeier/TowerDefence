@@ -145,15 +145,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackInterval: 0
   attackRange: 0
-  maxHealth: 10
-  health: 10
+  maxHealth: 15
+  health: 15
   attack: {fileID: 0}
-  maxMoveSpeed: 2
-  moveSpeed: 2
+  maxMoveSpeed: 3
+  moveSpeed: 3
   canAttack: 0
   canTakeDamage: 1
   FXAnimManager: {fileID: 6456598628426963385, guid: f08b635af8c16174a88881d5cbdbd456,
     type: 3}
+  FXAnimator: {fileID: 0}
   damage: 5
   worth: 1
   id: 0

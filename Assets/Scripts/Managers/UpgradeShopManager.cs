@@ -9,8 +9,8 @@ public class UpgradeShopManager : MonoBehaviour
     GameManager gameMan;
 
     [SerializeField]
-    private GameObject CurrentPoints, PuncherUpgradeCost, GuardUpgradeCost, ArcherUpgradeCost;
-    private TMP_Text CurrentPointsText, PuncherUpgradeCostText, GuardUpgradeCostText, ArcherUpgradeCostText;
+    private GameObject CurrentPoints, PuncherUpgradeCost, GuardUpgradeCost, ArcherUpgradeCost, PuncherLevel, GuardLevel, ArcherLevel;
+    private TMP_Text CurrentPointsText, PuncherUpgradeCostText, GuardUpgradeCostText, ArcherUpgradeCostText, PuncherLevelText, GuardLevelText, ArcherLevelText;
 
     // Start is called before the first frame update
     void Start()
@@ -34,12 +34,18 @@ public class UpgradeShopManager : MonoBehaviour
         PuncherUpgradeCostText = PuncherUpgradeCost.GetComponent<TMP_Text>();
         GuardUpgradeCostText = GuardUpgradeCost.GetComponent<TMP_Text>();
         ArcherUpgradeCostText = ArcherUpgradeCost.GetComponent<TMP_Text>();
+        PuncherLevelText = PuncherLevel.GetComponent<TMP_Text>();
+        GuardLevelText = GuardLevel.GetComponent<TMP_Text>();
+        ArcherLevelText = ArcherLevel.GetComponent<TMP_Text>();
 
         //Set initial values for text that changed during runtime.
         CurrentPointsText.text = gameMan.upgradePoints.ToString();
         PuncherUpgradeCostText.text = gameMan.puncherUpgradeCost.ToString();
         GuardUpgradeCostText.text = gameMan.guardUpgradeCost.ToString();
         ArcherUpgradeCostText.text = gameMan.archerUpgradeCost.ToString();
+        PuncherLevelText.text = gameMan.puncherLevel.ToString();
+        GuardLevelText.text = gameMan.guardLevel.ToString();
+        ArcherLevelText.text = gameMan.archerLevel.ToString();
     }
 
     //Levels up a unit
@@ -51,7 +57,13 @@ public class UpgradeShopManager : MonoBehaviour
         //...Lastly, update the text to properly display the amopunt of upgrade points left after the upgrade.
         if (unitType == "Puncher" && gameMan.upgradePoints >= gameMan.puncherUpgradeCost)
         {
+            if (gameMan.puncherLevel == UPuncher.MAX_LEVEL)
+            {
+                AudioManager.audioManInstance.Play("Error");
+                return;
+            }
             gameMan.puncherLevel++;
+            PuncherLevelText.text = gameMan.puncherLevel.ToString();
             gameMan.upgradePoints -= gameMan.puncherUpgradeCost;
             CurrentPointsText.text = gameMan.upgradePoints.ToString();
             AudioManager.audioManInstance.Play("Purchase");
@@ -59,7 +71,13 @@ public class UpgradeShopManager : MonoBehaviour
         }
         else if (unitType == "Guard" && gameMan.upgradePoints >= gameMan.guardUpgradeCost)
         {
+            if (gameMan.guardLevel == UGuard.MAX_LEVEL)
+            {
+                AudioManager.audioManInstance.Play("Error");
+                return;
+            }
             gameMan.guardLevel++;
+            GuardLevelText.text = gameMan.guardLevel.ToString();
             gameMan.upgradePoints -= gameMan.guardUpgradeCost;
             CurrentPointsText.text = gameMan.upgradePoints.ToString();
             AudioManager.audioManInstance.Play("Purchase");
@@ -67,7 +85,13 @@ public class UpgradeShopManager : MonoBehaviour
         }
         else if (unitType == "Archer" && gameMan.upgradePoints >= gameMan.archerUpgradeCost)
         {
+            if (gameMan.archerLevel == UArcher.MAX_LEVEL)
+            {
+                AudioManager.audioManInstance.Play("Error");
+                return;
+            }
             gameMan.archerLevel++;
+            ArcherLevelText.text = gameMan.archerLevel.ToString();
             gameMan.upgradePoints -= gameMan.archerUpgradeCost;
             CurrentPointsText.text = gameMan.upgradePoints.ToString();
             AudioManager.audioManInstance.Play("Purchase");
@@ -82,6 +106,7 @@ public class UpgradeShopManager : MonoBehaviour
     {
         SaveOrLoad.SaveGame(gameMan);
         AudioManager.audioManInstance.Play("ButtonPress");
+        gameMan.balance = 20.0f;
         SceneManager.LoadScene("Level" + gameMan.nextLevelNumber);
     }
 }

@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ca4b00835c22d243b5db4e8eacd44b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackInterval: 2
+  attackInterval: 1.4
   attackRange: 0.8
   maxHealth: 250
   health: 0
@@ -212,7 +212,10 @@ MonoBehaviour:
   canTakeDamage: 0
   FXAnimManager: {fileID: 6456598628426963385, guid: f08b635af8c16174a88881d5cbdbd456,
     type: 3}
-  level: 0
+  FXAnimator: {fileID: 0}
   damageMod: 0
-  cost: 15
+  attackSpeedMod: 0
+  rangeMod: 0
+  cost: 10
   isActive: 0
+  stunMod: 0

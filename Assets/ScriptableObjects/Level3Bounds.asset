@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35cd0730cc035684abcd0136d8d16624, type: 3}
   m_Name: Level3Bounds
   m_EditorClassIdentifier: 
-  minX: 4.81
+  minX: 5.36
   minY: -20.24
-  maxX: 5.32
+  maxX: 5.36
   maxY: -18.29

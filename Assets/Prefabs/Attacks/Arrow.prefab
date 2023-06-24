@@ -124,8 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30ba1644ced3eca4a97712b66796045a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
-  speed: 20
+  damage: 3.5
+  speed: 40
   maxLiveTime: 2
+  isMaxLevel: 0
   target: {fileID: 0}
   ignoreCollision: {fileID: 0}

@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 645b72d31968935489ac9658d5a7fca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackInterval: 0.4
+  attackInterval: 1
   attackRange: 2
   maxHealth: 75
   health: 0
@@ -213,7 +213,8 @@ MonoBehaviour:
   FXAnimManager: {fileID: 6456598628426963385, guid: f08b635af8c16174a88881d5cbdbd456,
     type: 3}
   FXAnimator: {fileID: 0}
-  level: 0
   damageMod: 0
-  cost: 0
+  attackSpeedMod: 0
+  rangeMod: 0
+  cost: 10
   isActive: 0
